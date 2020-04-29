@@ -540,6 +540,7 @@ MonoBehaviour:
   - {fileID: 12179582}
   - {fileID: 12179584}
   anotherUI: {fileID: 1760883636}
+  IsAnyChestOpened: 0
 --- !u!114 &12179584
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14064,7 +14065,7 @@ TilemapRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 70f6ddb0f5dfe25459e61a0547f0fdb9, type: 2}
+  - {fileID: 2100000, guid: 7d058a3a08e9af14897a63ca4a99b1be, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

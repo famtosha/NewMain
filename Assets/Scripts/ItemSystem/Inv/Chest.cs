@@ -23,8 +23,11 @@ public class Chest : MonoBehaviour
         }
         else if (Vector3.Distance(PlayerTransform.position, gameObject.transform.position) < 2)
         {
-            PlayerArm.OpenInventory(ChestInv);
-            IsInvOpen = true;
+            if (!PlayerArm.IsAnyChestOpened)
+            {
+                PlayerArm.OpenInventory(ChestInv);
+                IsInvOpen = true;
+            }
         }
     }
 

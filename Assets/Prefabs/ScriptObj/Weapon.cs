@@ -19,7 +19,7 @@ public class Weapon : Item
             int ignore = ~(1 << 8);                                                  //это фильтра, чтобы игнорить игрока
            
             RaycastHit2D hit = Physics2D.Raycast(Start, Direct, 10,ignore);         //пускаем луч
-            if (hit.point != null)                                                   //проверяем сталкнулся ли он
+            if (hit)                                                                //проверяем сталкнулся ли он
             {
                 Instantiate(hosePref, hit.point, new Quaternion());                  //создаём мячик на месте столкновения
             }

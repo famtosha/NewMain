@@ -7,6 +7,8 @@ public class Arm : MonoBehaviour
     public List<Inventory> inventorys;
     public AnotherUI anotherUI;
 
+    public bool IsAnyChestOpened = false;
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         var item = collision.gameObject;
@@ -19,13 +21,13 @@ public class Arm : MonoBehaviour
     public void OpenInventory(Inventory inventory)
     {
         anotherUI.OpenInventory(inventory);
-        print("open inv");
+        IsAnyChestOpened = true;
     }
 
     public void CloseInventory()
     {
         anotherUI.CloseInvenotory();
-        print("Close Inv");
+        IsAnyChestOpened = false;
     }
 
     private void PickUpItem(GameObject Item)
