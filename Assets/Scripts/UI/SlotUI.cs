@@ -15,7 +15,6 @@ public class SlotUI : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler,
 
     public void UpdateData(ItemData trashData)
     {
-        Debug.Log("Updating Data: " + ID);
         if (trashData.Sprite != null) ItemSprite.sprite = trashData.Sprite;
         if(trashData.Count > 1)
         {

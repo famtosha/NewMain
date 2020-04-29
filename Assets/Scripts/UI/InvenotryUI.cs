@@ -29,53 +29,16 @@ public abstract class InvenotryUI : MonoBehaviour
         }
     }
 
-    private void Update()
-    {
-        if(SelectedSlot != -1)
-        {
-            //SlotList[SelectedSlot].GetComponent<SlotUI>().ItemSprite.transform.position = Input.mousePosition + new Vector3(3,-1,0);
-        }
-    }
-
     public void UpdateSlot(int SlotNum, ItemData trashData)
     {       
         if (trashData == null)
         {
-            Debug.Log("Clear" + SlotNum);
             ResetSlot(SlotNum);
         }
         else
         {
-            Debug.Log("update Slot" + SlotNum);
             SlotList[SlotNum].GetComponent<SlotUI>().UpdateData(trashData);
         }                       
-    }
-
-    public void RightClick(int ID)
-    {
-        //for (int i = 0; i < playerInvList.list.Count; i++)
-        //{
-        //    if (playerInvList.list[i].SelectedSlot != -1) return; 
-        //}
-
-        if (SelectedSlot == -1)
-        {
-            SelectedSlot = ID;
-            Debug.Log("Select: " + SelectedSlot);
-            return;
-        }
-        if (SelectedSlot == ID)
-        {
-            SelectedSlot = -1;
-            Debug.Log("Select the same Slot!");
-            return;
-        }
-        if (inventory.GetSlotInfo(SelectedSlot) != null)
-        {
-            Debug.Log("Switch: " + SelectedSlot + " " + ID);
-            inventory.SwitchItems(SelectedSlot, ID);
-            SelectedSlot = -1;
-        }
     }
 
     public void ResetSlot(int ID)
@@ -100,7 +63,6 @@ public abstract class InvenotryUI : MonoBehaviour
         if(SelectedSlot == ID)
         {
             SelectedSlot = -1;
-            print("1Select the same Slot!");
         }
         else
         {
@@ -110,7 +72,6 @@ public abstract class InvenotryUI : MonoBehaviour
                 {
                     inventory.SwitchItemsMultiInv(x.SelectedSlot, x.inventory, ID, inventory);
                     x.SelectedSlot = -1;
-                    print("2switch between inv");
                     return;
                 }           
             }
@@ -119,7 +80,6 @@ public abstract class InvenotryUI : MonoBehaviour
             {
 
                 inventory.SwitchItems(SelectedSlot, ID);
-                Debug.Log("3Switch: " + SelectedSlot + " " + ID);
                 SelectedSlot = -1;
                 return;
             }
@@ -128,7 +88,6 @@ public abstract class InvenotryUI : MonoBehaviour
                 if(inventory.GetSlotInfo(ID) != null)
                 {
                     SelectedSlot = ID;
-                    Debug.Log("4Select: " + SelectedSlot);
                     return;
                 }
             }

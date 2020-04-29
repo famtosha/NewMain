@@ -1,0 +1,6247 @@
+fileFormatVersion: 2
+guid: e9d982ef26ede694d9841ac215a97ac6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7377432821005594955
+    second: 2Gen's 64x64 Mixed Tileset_0
+  - first:
+      213: -8337568739041720574
+    second: 2Gen's 64x64 Mixed Tileset_1
+  - first:
+      213: -56600642553173181
+    second: 2Gen's 64x64 Mixed Tileset_2
+  - first:
+      213: -2010955641203011286
+    second: 2Gen's 64x64 Mixed Tileset_3
+  - first:
+      213: 8246990578811306852
+    second: 2Gen's 64x64 Mixed Tileset_4
+  - first:
+      213: -4340941436734007320
+    second: 2Gen's 64x64 Mixed Tileset_5
+  - first:
+      213: 5432863694312525892
+    second: 2Gen's 64x64 Mixed Tileset_6
+  - first:
+      213: -7178540291562164188
+    second: 2Gen's 64x64 Mixed Tileset_7
+  - first:
+      213: 7711091089338514665
+    second: 2Gen's 64x64 Mixed Tileset_8
+  - first:
+      213: 1275207412825925412
+    second: 2Gen's 64x64 Mixed Tileset_9
+  - first:
+      213: 5465507761953248698
+    second: 2Gen's 64x64 Mixed Tileset_10
+  - first:
+      213: -5796034795341494672
+    second: 2Gen's 64x64 Mixed Tileset_11
+  - first:
+      213: -6102911928268302467
+    second: 2Gen's 64x64 Mixed Tileset_12
+  - first:
+      213: -5658191326837331726
+    second: 2Gen's 64x64 Mixed Tileset_13
+  - first:
+      213: 5974784624712051383
+    second: 2Gen's 64x64 Mixed Tileset_14
+  - first:
+      213: -8234099012304287730
+    second: 2Gen's 64x64 Mixed Tileset_15
+  - first:
+      213: 4204488781428866322
+    second: 2Gen's 64x64 Mixed Tileset_16
+  - first:
+      213: 1501445111896246243
+    second: 2Gen's 64x64 Mixed Tileset_17
+  - first:
+      213: 3035328477060906434
+    second: 2Gen's 64x64 Mixed Tileset_18
+  - first:
+      213: -6544171054543824872
+    second: 2Gen's 64x64 Mixed Tileset_19
+  - first:
+      213: -864225482992207797
+    second: 2Gen's 64x64 Mixed Tileset_20
+  - first:
+      213: 8649011836595881370
+    second: 2Gen's 64x64 Mixed Tileset_21
+  - first:
+      213: -36777017438869640
+    second: 2Gen's 64x64 Mixed Tileset_22
+  - first:
+      213: -1005980723718942592
+    second: 2Gen's 64x64 Mixed Tileset_23
+  - first:
+      213: 4129476909526005779
+    second: 2Gen's 64x64 Mixed Tileset_24
+  - first:
+      213: -8951926241208091475
+    second: 2Gen's 64x64 Mixed Tileset_25
+  - first:
+      213: -7433221338642414454
+    second: 2Gen's 64x64 Mixed Tileset_26
+  - first:
+      213: -3678605243434785783
+    second: 2Gen's 64x64 Mixed Tileset_27
+  - first:
+      213: 5203068559368841759
+    second: 2Gen's 64x64 Mixed Tileset_28
+  - first:
+      213: 2514914843389087119
+    second: 2Gen's 64x64 Mixed Tileset_29
+  - first:
+      213: 6064084063226982663
+    second: 2Gen's 64x64 Mixed Tileset_30
+  - first:
+      213: 1269610893367090448
+    second: 2Gen's 64x64 Mixed Tileset_31
+  - first:
+      213: 3717060082617140729
+    second: 2Gen's 64x64 Mixed Tileset_32
+  - first:
+      213: -8486760011135841056
+    second: 2Gen's 64x64 Mixed Tileset_33
+  - first:
+      213: -4257257120731164843
+    second: 2Gen's 64x64 Mixed Tileset_34
+  - first:
+      213: 4380943674587600062
+    second: 2Gen's 64x64 Mixed Tileset_35
+  - first:
+      213: 7471223277190380919
+    second: 2Gen's 64x64 Mixed Tileset_36
+  - first:
+      213: -2626920051203831631
+    second: 2Gen's 64x64 Mixed Tileset_37
+  - first:
+      213: 2327833727861271554
+    second: 2Gen's 64x64 Mixed Tileset_38
+  - first:
+      213: -730328228174345593
+    second: 2Gen's 64x64 Mixed Tileset_39
+  - first:
+      213: -4290483568125777268
+    second: 2Gen's 64x64 Mixed Tileset_40
+  - first:
+      213: -1148553421049806982
+    second: 2Gen's 64x64 Mixed Tileset_41
+  - first:
+      213: 4165498846956870254
+    second: 2Gen's 64x64 Mixed Tileset_42
+  - first:
+      213: 8088218325506659758
+    second: 2Gen's 64x64 Mixed Tileset_43
+  - first:
+      213: -4907687285919723612
+    second: 2Gen's 64x64 Mixed Tileset_44
+  - first:
+      213: 6349589560816053469
+    second: 2Gen's 64x64 Mixed Tileset_45
+  - first:
+      213: -6198310609444831633
+    second: 2Gen's 64x64 Mixed Tileset_46
+  - first:
+      213: -6826196822142432742
+    second: 2Gen's 64x64 Mixed Tileset_47
+  - first:
+      213: 4143407416050710348
+    second: 2Gen's 64x64 Mixed Tileset_48
+  - first:
+      213: -2507342932703769092
+    second: 2Gen's 64x64 Mixed Tileset_49
+  - first:
+      213: 3540207059447323400
+    second: 2Gen's 64x64 Mixed Tileset_50
+  - first:
+      213: 4046915329479874883
+    second: 2Gen's 64x64 Mixed Tileset_51
+  - first:
+      213: 5323152588130095893
+    second: 2Gen's 64x64 Mixed Tileset_52
+  - first:
+      213: 3352380782143676253
+    second: 2Gen's 64x64 Mixed Tileset_53
+  - first:
+      213: -5017190461317383970
+    second: 2Gen's 64x64 Mixed Tileset_54
+  - first:
+      213: -7915251898080730949
+    second: 2Gen's 64x64 Mixed Tileset_55
+  - first:
+      213: 4458454219563466814
+    second: 2Gen's 64x64 Mixed Tileset_56
+  - first:
+      213: 9125282402542503688
+    second: 2Gen's 64x64 Mixed Tileset_57
+  - first:
+      213: 60433069230450681
+    second: 2Gen's 64x64 Mixed Tileset_58
+  - first:
+      213: -5979673903453282575
+    second: 2Gen's 64x64 Mixed Tileset_59
+  - first:
+      213: -8628657864751836652
+    second: 2Gen's 64x64 Mixed Tileset_60
+  - first:
+      213: 359778368079096282
+    second: 2Gen's 64x64 Mixed Tileset_61
+  - first:
+      213: -2242494893136999306
+    second: 2Gen's 64x64 Mixed Tileset_62
+  - first:
+      213: -2912763456730638411
+    second: 2Gen's 64x64 Mixed Tileset_63
+  - first:
+      213: 2136050233226832406
+    second: 2Gen's 64x64 Mixed Tileset_64
+  - first:
+      213: -3068038823424699427
+    second: 2Gen's 64x64 Mixed Tileset_65
+  - first:
+      213: -4312794580669692457
+    second: 2Gen's 64x64 Mixed Tileset_66
+  - first:
+      213: 336020875364388164
+    second: 2Gen's 64x64 Mixed Tileset_67
+  - first:
+      213: 2811276827827489016
+    second: 2Gen's 64x64 Mixed Tileset_68
+  - first:
+      213: 5830143146417000290
+    second: 2Gen's 64x64 Mixed Tileset_69
+  - first:
+      213: 8362162699964544356
+    second: 2Gen's 64x64 Mixed Tileset_70
+  - first:
+      213: -4763016139904250009
+    second: 2Gen's 64x64 Mixed Tileset_71
+  - first:
+      213: 5732585943365545918
+    second: 2Gen's 64x64 Mixed Tileset_72
+  - first:
+      213: 2685407352165149004
+    second: 2Gen's 64x64 Mixed Tileset_73
+  - first:
+      213: -8944868975295551273
+    second: 2Gen's 64x64 Mixed Tileset_74
+  - first:
+      213: 7940736362489176109
+    second: 2Gen's 64x64 Mixed Tileset_75
+  - first:
+      213: 7142687460759388374
+    second: 2Gen's 64x64 Mixed Tileset_76
+  - first:
+      213: -8523122075898723701
+    second: 2Gen's 64x64 Mixed Tileset_77
+  - first:
+      213: -3693783409917521679
+    second: 2Gen's 64x64 Mixed Tileset_78
+  - first:
+      213: -7866026133009321707
+    second: 2Gen's 64x64 Mixed Tileset_79
+  - first:
+      213: 3300015278172990951
+    second: 2Gen's 64x64 Mixed Tileset_80
+  - first:
+      213: -417002994133803300
+    second: 2Gen's 64x64 Mixed Tileset_81
+  - first:
+      213: -3970804955474083922
+    second: 2Gen's 64x64 Mixed Tileset_82
+  - first:
+      213: 3425574039712272297
+    second: 2Gen's 64x64 Mixed Tileset_83
+  - first:
+      213: -2562878911529900428
+    second: 2Gen's 64x64 Mixed Tileset_84
+  - first:
+      213: -2366076353309588836
+    second: 2Gen's 64x64 Mixed Tileset_85
+  - first:
+      213: 8078362473851455184
+    second: 2Gen's 64x64 Mixed Tileset_86
+  - first:
+      213: -2775873447098622680
+    second: 2Gen's 64x64 Mixed Tileset_87
+  - first:
+      213: 3131526411224720830
+    second: 2Gen's 64x64 Mixed Tileset_88
+  - first:
+      213: 8083827361118828586
+    second: 2Gen's 64x64 Mixed Tileset_89
+  - first:
+      213: 2943219866276687170
+    second: 2Gen's 64x64 Mixed Tileset_90
+  - first:
+      213: -2702656536687075536
+    second: 2Gen's 64x64 Mixed Tileset_91
+  - first:
+      213: -8772034423055392557
+    second: 2Gen's 64x64 Mixed Tileset_92
+  - first:
+      213: -6183167547281082971
+    second: 2Gen's 64x64 Mixed Tileset_93
+  - first:
+      213: 3064067286521842424
+    second: 2Gen's 64x64 Mixed Tileset_94
+  - first:
+      213: 5127378498373625803
+    second: 2Gen's 64x64 Mixed Tileset_95
+  - first:
+      213: 2780323810154754462
+    second: 2Gen's 64x64 Mixed Tileset_96
+  - first:
+      213: -4353653678412645651
+    second: 2Gen's 64x64 Mixed Tileset_97
+  - first:
+      213: 7249222354144487211
+    second: 2Gen's 64x64 Mixed Tileset_98
+  - first:
+      213: 672967854305106038
+    second: 2Gen's 64x64 Mixed Tileset_99
+  - first:
+      213: -7450554486426136711
+    second: 2Gen's 64x64 Mixed Tileset_100
+  - first:
+      213: 6795997431700695642
+    second: 2Gen's 64x64 Mixed Tileset_101
+  - first:
+      213: 3595705692623348802
+    second: 2Gen's 64x64 Mixed Tileset_102
+  - first:
+      213: 6614480794578969955
+    second: 2Gen's 64x64 Mixed Tileset_103
+  - first:
+      213: -7065372688436098521
+    second: 2Gen's 64x64 Mixed Tileset_104
+  - first:
+      213: -5980445220544325896
+    second: 2Gen's 64x64 Mixed Tileset_105
+  - first:
+      213: -1188262807803337656
+    second: 2Gen's 64x64 Mixed Tileset_106
+  - first:
+      213: 1872428357319966048
+    second: 2Gen's 64x64 Mixed Tileset_107
+  - first:
+      213: -6461276742975903945
+    second: 2Gen's 64x64 Mixed Tileset_108
+  - first:
+      213: -679927111093866805
+    second: 2Gen's 64x64 Mixed Tileset_109
+  - first:
+      213: -9061295338217829947
+    second: 2Gen's 64x64 Mixed Tileset_110
+  - first:
+      213: 1024709560418769450
+    second: 2Gen's 64x64 Mixed Tileset_111
+  - first:
+      213: 5056788471768533886
+    second: 2Gen's 64x64 Mixed Tileset_112
+  - first:
+      213: -2856219920185905791
+    second: 2Gen's 64x64 Mixed Tileset_113
+  - first:
+      213: -4057815471737993070
+    second: 2Gen's 64x64 Mixed Tileset_114
+  - first:
+      213: -32629344951121575
+    second: 2Gen's 64x64 Mixed Tileset_115
+  - first:
+      213: -4309058079550719202
+    second: 2Gen's 64x64 Mixed Tileset_116
+  - first:
+      213: 4060082365500362820
+    second: 2Gen's 64x64 Mixed Tileset_117
+  - first:
+      213: 6705199152681769055
+    second: 2Gen's 64x64 Mixed Tileset_118
+  - first:
+      213: -6440413124284805100
+    second: 2Gen's 64x64 Mixed Tileset_119
+  - first:
+      213: -8307365986189109186
+    second: 2Gen's 64x64 Mixed Tileset_120
+  - first:
+      213: 6573487025797277419
+    second: 2Gen's 64x64 Mixed Tileset_121
+  - first:
+      213: 2253595722153213378
+    second: 2Gen's 64x64 Mixed Tileset_122
+  - first:
+      213: 4538861169680547012
+    second: 2Gen's 64x64 Mixed Tileset_123
+  - first:
+      213: -1031606996141648191
+    second: 2Gen's 64x64 Mixed Tileset_124
+  - first:
+      213: 7745847194354700000
+    second: 2Gen's 64x64 Mixed Tileset_125
+  - first:
+      213: -2357247429958020517
+    second: 2Gen's 64x64 Mixed Tileset_126
+  - first:
+      213: 2756000169751602750
+    second: 2Gen's 64x64 Mixed Tileset_127
+  - first:
+      213: -5399534942737456266
+    second: 2Gen's 64x64 Mixed Tileset_128
+  - first:
+      213: -1623114883036654800
+    second: 2Gen's 64x64 Mixed Tileset_129
+  - first:
+      213: -4057091811803489087
+    second: 2Gen's 64x64 Mixed Tileset_130
+  - first:
+      213: -1112835172003732602
+    second: 2Gen's 64x64 Mixed Tileset_131
+  - first:
+      213: 1578952148272977670
+    second: 2Gen's 64x64 Mixed Tileset_132
+  - first:
+      213: 6689581939236480581
+    second: 2Gen's 64x64 Mixed Tileset_133
+  - first:
+      213: 3013516664601633359
+    second: 2Gen's 64x64 Mixed Tileset_134
+  - first:
+      213: -2399722032862466324
+    second: 2Gen's 64x64 Mixed Tileset_135
+  - first:
+      213: 2064405514497931417
+    second: 2Gen's 64x64 Mixed Tileset_136
+  - first:
+      213: -6643679214409541866
+    second: 2Gen's 64x64 Mixed Tileset_137
+  - first:
+      213: 5354061633178310008
+    second: 2Gen's 64x64 Mixed Tileset_138
+  - first:
+      213: -3560157638826618510
+    second: 2Gen's 64x64 Mixed Tileset_139
+  - first:
+      213: -9050989692831577178
+    second: 2Gen's 64x64 Mixed Tileset_140
+  - first:
+      213: -6740540553232780078
+    second: 2Gen's 64x64 Mixed Tileset_141
+  - first:
+      213: 271818581397623084
+    second: 2Gen's 64x64 Mixed Tileset_142
+  - first:
+      213: -9089130212594520731
+    second: 2Gen's 64x64 Mixed Tileset_143
+  - first:
+      213: 4870688984240711035
+    second: 2Gen's 64x64 Mixed Tileset_144
+  - first:
+      213: 1769169793140378101
+    second: 2Gen's 64x64 Mixed Tileset_145
+  - first:
+      213: -148352357083120003
+    second: 2Gen's 64x64 Mixed Tileset_146
+  - first:
+      213: 7995172223131738580
+    second: 2Gen's 64x64 Mixed Tileset_147
+  - first:
+      213: -2884333975759038110
+    second: 2Gen's 64x64 Mixed Tileset_148
+  - first:
+      213: -2545449153180517371
+    second: 2Gen's 64x64 Mixed Tileset_149
+  - first:
+      213: -2015209695522772991
+    second: 2Gen's 64x64 Mixed Tileset_150
+  - first:
+      213: -2259768645894329967
+    second: 2Gen's 64x64 Mixed Tileset_151
+  - first:
+      213: -548079156505509921
+    second: 2Gen's 64x64 Mixed Tileset_152
+  - first:
+      213: 2902408167055147604
+    second: 2Gen's 64x64 Mixed Tileset_153
+  - first:
+      213: 3552610557696251133
+    second: 2Gen's 64x64 Mixed Tileset_154
+  - first:
+      213: 4525277818739805296
+    second: 2Gen's 64x64 Mixed Tileset_155
+  - first:
+      213: 2681401177126527379
+    second: 2Gen's 64x64 Mixed Tileset_156
+  - first:
+      213: -5765333661328144433
+    second: 2Gen's 64x64 Mixed Tileset_157
+  - first:
+      213: -7629375945762424648
+    second: 2Gen's 64x64 Mixed Tileset_158
+  - first:
+      213: 2776707746794090907
+    second: 2Gen's 64x64 Mixed Tileset_159
+  - first:
+      213: -7294370310411957430
+    second: 2Gen's 64x64 Mixed Tileset_160
+  - first:
+      213: -2387669409979451131
+    second: 2Gen's 64x64 Mixed Tileset_161
+  - first:
+      213: -6953498262553856382
+    second: 2Gen's 64x64 Mixed Tileset_162
+  - first:
+      213: -1472034676207576250
+    second: 2Gen's 64x64 Mixed Tileset_163
+  - first:
+      213: 3460951759974437711
+    second: 2Gen's 64x64 Mixed Tileset_164
+  - first:
+      213: -635010930880209411
+    second: 2Gen's 64x64 Mixed Tileset_165
+  - first:
+      213: -795057148872266060
+    second: 2Gen's 64x64 Mixed Tileset_166
+  - first:
+      213: -6182566802598623640
+    second: 2Gen's 64x64 Mixed Tileset_167
+  - first:
+      213: -6597262779073272035
+    second: 2Gen's 64x64 Mixed Tileset_168
+  - first:
+      213: 8962165622823109185
+    second: 2Gen's 64x64 Mixed Tileset_169
+  - first:
+      213: -1546948524357577512
+    second: 2Gen's 64x64 Mixed Tileset_170
+  - first:
+      213: 8911856811935173391
+    second: 2Gen's 64x64 Mixed Tileset_171
+  - first:
+      213: 4008780112984298519
+    second: 2Gen's 64x64 Mixed Tileset_172
+  - first:
+      213: 2028084393940885646
+    second: 2Gen's 64x64 Mixed Tileset_173
+  - first:
+      213: -8995709796846603892
+    second: 2Gen's 64x64 Mixed Tileset_174
+  - first:
+      213: -2479221351515150246
+    second: 2Gen's 64x64 Mixed Tileset_175
+  - first:
+      213: 1830489559211646089
+    second: 2Gen's 64x64 Mixed Tileset_176
+  - first:
+      213: 620649013327920090
+    second: 2Gen's 64x64 Mixed Tileset_177
+  - first:
+      213: -7364742012204744501
+    second: 2Gen's 64x64 Mixed Tileset_178
+  - first:
+      213: 7682527055646935770
+    second: 2Gen's 64x64 Mixed Tileset_179
+  - first:
+      213: 2307608833326602493
+    second: 2Gen's 64x64 Mixed Tileset_180
+  - first:
+      213: -5552090793811650831
+    second: 2Gen's 64x64 Mixed Tileset_181
+  - first:
+      213: 2937281872497345690
+    second: 2Gen's 64x64 Mixed Tileset_182
+  - first:
+      213: 978001341712131902
+    second: 2Gen's 64x64 Mixed Tileset_183
+  - first:
+      213: -8645898700496253733
+    second: 2Gen's 64x64 Mixed Tileset_184
+  - first:
+      213: 1295261952006286850
+    second: 2Gen's 64x64 Mixed Tileset_185
+  - first:
+      213: 8761667014753780810
+    second: 2Gen's 64x64 Mixed Tileset_186
+  - first:
+      213: -4364925275236158510
+    second: 2Gen's 64x64 Mixed Tileset_187
+  - first:
+      213: 4832027560308466077
+    second: 2Gen's 64x64 Mixed Tileset_188
+  - first:
+      213: -6642924243800271805
+    second: 2Gen's 64x64 Mixed Tileset_189
+  - first:
+      213: 2417393019213432549
+    second: 2Gen's 64x64 Mixed Tileset_190
+  - first:
+      213: 5067812121228882227
+    second: 2Gen's 64x64 Mixed Tileset_191
+  - first:
+      213: 6440708572759291890
+    second: 2Gen's 64x64 Mixed Tileset_192
+  - first:
+      213: 5194621773338656893
+    second: 2Gen's 64x64 Mixed Tileset_193
+  - first:
+      213: -3285490864126565504
+    second: 2Gen's 64x64 Mixed Tileset_194
+  - first:
+      213: 3475541952002240725
+    second: 2Gen's 64x64 Mixed Tileset_195
+  - first:
+      213: 1008709671129764696
+    second: 2Gen's 64x64 Mixed Tileset_196
+  - first:
+      213: -4598827561744684127
+    second: 2Gen's 64x64 Mixed Tileset_197
+  - first:
+      213: 1830822336676250165
+    second: 2Gen's 64x64 Mixed Tileset_198
+  - first:
+      213: -2063833483044044486
+    second: 2Gen's 64x64 Mixed Tileset_199
+  - first:
+      213: 9206081590302539304
+    second: 2Gen's 64x64 Mixed Tileset_200
+  - first:
+      213: 5094444831214843719
+    second: 2Gen's 64x64 Mixed Tileset_201
+  - first:
+      213: -1905871320334687223
+    second: 2Gen's 64x64 Mixed Tileset_202
+  - first:
+      213: -3107997279197568691
+    second: 2Gen's 64x64 Mixed Tileset_203
+  - first:
+      213: 5658277754806861245
+    second: 2Gen's 64x64 Mixed Tileset_204
+  - first:
+      213: -2515098256349839375
+    second: 2Gen's 64x64 Mixed Tileset_205
+  - first:
+      213: -5679315653539464330
+    second: 2Gen's 64x64 Mixed Tileset_206
+  - first:
+      213: -8272634750443497805
+    second: 2Gen's 64x64 Mixed Tileset_207
+  - first:
+      213: -2886964325203703438
+    second: 2Gen's 64x64 Mixed Tileset_208
+  - first:
+      213: -4398953610221966675
+    second: 2Gen's 64x64 Mixed Tileset_209
+  - first:
+      213: -8436974046721296392
+    second: 2Gen's 64x64 Mixed Tileset_210
+  - first:
+      213: 5794291306244503486
+    second: 2Gen's 64x64 Mixed Tileset_211
+  - first:
+      213: 6710259724012387601
+    second: 2Gen's 64x64 Mixed Tileset_212
+  - first:
+      213: -4419353497865260254
+    second: 2Gen's 64x64 Mixed Tileset_213
+  - first:
+      213: -1754839411327626697
+    second: 2Gen's 64x64 Mixed Tileset_214
+  - first:
+      213: 1803635348930191359
+    second: 2Gen's 64x64 Mixed Tileset_215
+  - first:
+      213: -3262047953278062924
+    second: 2Gen's 64x64 Mixed Tileset_216
+  - first:
+      213: 1917670643216512831
+    second: 2Gen's 64x64 Mixed Tileset_217
+  - first:
+      213: -7946635342597919653
+    second: 2Gen's 64x64 Mixed Tileset_218
+  - first:
+      213: -845709980356192908
+    second: 2Gen's 64x64 Mixed Tileset_219
+  - first:
+      213: 2141390955843989106
+    second: 2Gen's 64x64 Mixed Tileset_220
+  - first:
+      213: 1713516960714426538
+    second: 2Gen's 64x64 Mixed Tileset_221
+  - first:
+      213: -5037483037760660060
+    second: 2Gen's 64x64 Mixed Tileset_222
+  - first:
+      213: -3402970282933055165
+    second: 2Gen's 64x64 Mixed Tileset_223
+  - first:
+      213: -5507620724608039686
+    second: 2Gen's 64x64 Mixed Tileset_224
+  - first:
+      213: -2067940625231685493
+    second: 2Gen's 64x64 Mixed Tileset_225
+  - first:
+      213: 5362593613302059598
+    second: 2Gen's 64x64 Mixed Tileset_226
+  - first:
+      213: 6749927627070205989
+    second: 2Gen's 64x64 Mixed Tileset_227
+  - first:
+      213: 2619706199703912171
+    second: 2Gen's 64x64 Mixed Tileset_228
+  - first:
+      213: -7002403096448181398
+    second: 2Gen's 64x64 Mixed Tileset_229
+  - first:
+      213: -8741210912801285754
+    second: 2Gen's 64x64 Mixed Tileset_230
+  - first:
+      213: 6304040528114973424
+    second: 2Gen's 64x64 Mixed Tileset_231
+  - first:
+      213: 1935621965058152932
+    second: 2Gen's 64x64 Mixed Tileset_232
+  - first:
+      213: -2387852432564695605
+    second: 2Gen's 64x64 Mixed Tileset_233
+  - first:
+      213: 937982529715559823
+    second: 2Gen's 64x64 Mixed Tileset_234
+  - first:
+      213: 159561745711332762
+    second: 2Gen's 64x64 Mixed Tileset_235
+  - first:
+      213: -8601368695240726446
+    second: 2Gen's 64x64 Mixed Tileset_236
+  - first:
+      213: 1766646966885520737
+    second: 2Gen's 64x64 Mixed Tileset_237
+  - first:
+      213: -9161355511837571598
+    second: 2Gen's 64x64 Mixed Tileset_238
+  - first:
+      213: 8657086845894972219
+    second: 2Gen's 64x64 Mixed Tileset_239
+  - first:
+      213: 6173019024213189135
+    second: 2Gen's 64x64 Mixed Tileset_240
+  - first:
+      213: 425563924584348349
+    second: 2Gen's 64x64 Mixed Tileset_241
+  - first:
+      213: 7071226022721280586
+    second: 2Gen's 64x64 Mixed Tileset_242
+  - first:
+      213: 3951782749129272275
+    second: 2Gen's 64x64 Mixed Tileset_243
+  - first:
+      213: 5998062864156388200
+    second: 2Gen's 64x64 Mixed Tileset_244
+  - first:
+      213: -1832400471100659022
+    second: 2Gen's 64x64 Mixed Tileset_245
+  - first:
+      213: 8011337907938674489
+    second: 2Gen's 64x64 Mixed Tileset_246
+  - first:
+      213: -1395014565000987706
+    second: 2Gen's 64x64 Mixed Tileset_247
+  - first:
+      213: -4863285958049079883
+    second: 2Gen's 64x64 Mixed Tileset_248
+  - first:
+      213: 6106430530261751746
+    second: 2Gen's 64x64 Mixed Tileset_249
+  - first:
+      213: 7240624811132318142
+    second: 2Gen's 64x64 Mixed Tileset_250
+  - first:
+      213: -1038232563696584055
+    second: 2Gen's 64x64 Mixed Tileset_251
+  - first:
+      213: 6643026656069741833
+    second: 2Gen's 64x64 Mixed Tileset_252
+  - first:
+      213: -2166571414817504725
+    second: 2Gen's 64x64 Mixed Tileset_253
+  - first:
+      213: -4761244234324120980
+    second: 2Gen's 64x64 Mixed Tileset_254
+  - first:
+      213: -6958472973544814083
+    second: 2Gen's 64x64 Mixed Tileset_255
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1984
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b791f3d9e8ced794698276a11c14108f
+      internalID: -7377432821005594955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1984
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e8f64c9237105243a874e0bf18e883f
+      internalID: -8337568739041720574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1984
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dcd77505fcf40048839e852ad58d29e
+      internalID: -56600642553173181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1984
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d409021a18af0234c8a9f6f017bc78e1
+      internalID: -2010955641203011286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1984
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b965cccc0683a34ba0410d9b68c98f0
+      internalID: 8246990578811306852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_5
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1984
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 246c036c68bdacb46996fc64ad811e1a
+      internalID: -4340941436734007320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_6
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1984
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6da745ba454e83844bf610b44d6b36f7
+      internalID: 5432863694312525892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_7
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 1984
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfb9b7f3bcb64d04d8a6b469e7afcbc9
+      internalID: -7178540291562164188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1920
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93a800db510e6f34c83a994e35107835
+      internalID: 7711091089338514665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_9
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1920
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d8eaf06561c21f4a9444b337e7707a5
+      internalID: 1275207412825925412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_10
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1920
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4b82f63b625da04dbf5d09fba406cdd
+      internalID: 5465507761953248698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_11
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1920
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdc0f74f4c29f8245a05220122b30519
+      internalID: -5796034795341494672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_12
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1920
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 416823bc5ce75334292438532399243c
+      internalID: -6102911928268302467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_13
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1920
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11a28bd5017a10943a75d49e0fb73937
+      internalID: -5658191326837331726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_14
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1920
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75ab420e99cf2e34299770b32d042bd4
+      internalID: 5974784624712051383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_15
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 1920
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5a79e5bc1ed9504c8e23e9fc12146bb
+      internalID: -8234099012304287730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1856
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58dd4e72ff2945e4d8f69f3781b3b996
+      internalID: 4204488781428866322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_17
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1856
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec755a9e5ef58d54c879b35c8ccd065d
+      internalID: 1501445111896246243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_18
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1856
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 633e24300902f274d8a7dd4803dff1a9
+      internalID: 3035328477060906434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_19
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1856
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c204be577de677744b9698e0a9b9dfbb
+      internalID: -6544171054543824872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_20
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1856
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b0ba26f7591ee9448b0195605754a69
+      internalID: -864225482992207797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_21
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1856
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 067dbd7f16bdf5c489e8908dc96bd45a
+      internalID: 8649011836595881370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_22
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1856
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e329a0295874ba449b9291fc471a34c3
+      internalID: -36777017438869640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_23
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 1856
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5754be431129d004e86e7dd8114f0fea
+      internalID: -1005980723718942592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1792
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b722eadbc6c62244ab7bd9a636b6488c
+      internalID: 4129476909526005779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_25
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1792
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 680e35c3bc86ea848ac81ea062a5f4e3
+      internalID: -8951926241208091475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_26
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1792
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7063852065ea39442a4ded02f35ff657
+      internalID: -7433221338642414454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_27
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1792
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1525964c4019f6e4ea08ded8497ecdb3
+      internalID: -3678605243434785783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_28
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1792
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c7e5aba7a495354dbe9d12acc5339e7
+      internalID: 5203068559368841759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_29
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1792
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bb8f4eb769d0684ebf9e0f3bbe23c62
+      internalID: 2514914843389087119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_30
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1792
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1628ac3fbd0a7a04cbb461ec185e1547
+      internalID: 6064084063226982663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_31
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 1792
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e01ec175f0174544925dd1fe63f1054
+      internalID: 1269610893367090448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1728
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92e17c70f4bd01747bdbff155b66c75b
+      internalID: 3717060082617140729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_33
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1728
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa04aae2d1ab32c48aeb95ed41b62935
+      internalID: -8486760011135841056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_34
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1728
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1af4e6f9c7ac4bc4a8dcec236351c8de
+      internalID: -4257257120731164843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_35
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1728
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d3e5e15bb9c916488e43d691bb33172
+      internalID: 4380943674587600062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_36
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1728
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 866ee2cb4fa81774bb5403995810b165
+      internalID: 7471223277190380919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_37
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1728
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 210c5e24736d07241bdc95dc8868a47b
+      internalID: -2626920051203831631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_38
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1728
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37dbe80ecc3ea874081ccb62ade5c379
+      internalID: 2327833727861271554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_39
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 1728
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98d35b8a57c2304468b632d75891983b
+      internalID: -730328228174345593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1664
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2041e56128c6cb4cb63e2796b2e0976
+      internalID: -4290483568125777268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_41
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1664
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 927c791354c61e241b690593eef8550a
+      internalID: -1148553421049806982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_42
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1664
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 121d244e6802b534cb3ed0b96d6ca9c6
+      internalID: 4165498846956870254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_43
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1664
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0b64fb252cc90143918d5c24ac41cfd
+      internalID: 8088218325506659758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_44
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1664
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee2e8df1ccd6ed547aa7c10c639f0683
+      internalID: -4907687285919723612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_45
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1664
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bce6f5bd587d31948ba6012585c315da
+      internalID: 6349589560816053469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_46
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1664
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2549d795e5e857745b5110efa9bd2919
+      internalID: -6198310609444831633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_47
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 1664
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f09ce3a5c490cee4c9054118e8bc33ef
+      internalID: -6826196822142432742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1600
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccce691ecfe12b245a1ec7dc6ea43424
+      internalID: 4143407416050710348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_49
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1600
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 543c1399ea9bab14ba549446fb71c866
+      internalID: -2507342932703769092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_50
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1600
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec9c64f2621271f4cbf82c1b3b4878d1
+      internalID: 3540207059447323400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_51
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1600
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85de9e60943861949a61fc71ff37eb0e
+      internalID: 4046915329479874883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_52
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1600
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a88fc015569c1d44f82c5dfc24eb3fa8
+      internalID: 5323152588130095893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_53
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1600
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad5099f25f683b6418785ac0ab74f363
+      internalID: 3352380782143676253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_54
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1600
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b012684618874804abae1e18f7473550
+      internalID: -5017190461317383970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_55
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 1600
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51425bfbf4b1a93498fd30f06edabf4c
+      internalID: -7915251898080730949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_56
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1536
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4d9df48102d6d64783e1f86153c6b77
+      internalID: 4458454219563466814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_57
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1536
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9303e5cb4d8533a4db98df7f01557574
+      internalID: 9125282402542503688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_58
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1536
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 564c70ac24f61ef47956e53bc1f5188e
+      internalID: 60433069230450681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_59
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1536
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7117f2013b6afd4cac6251d5a1873e8
+      internalID: -5979673903453282575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_60
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1536
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d648556a2f11fa48a85db8d771c1c68
+      internalID: -8628657864751836652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_61
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1536
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d0048196c8153b4891d29878206d353
+      internalID: 359778368079096282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_62
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1536
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84d2cf960169a9e418fa8db82e27a96a
+      internalID: -2242494893136999306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_63
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 1536
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ab82308b0060644785b4bc2e71b2cb5
+      internalID: -2912763456730638411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_64
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1472
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12a1927ac9fa9734eb5bc09bc14c964b
+      internalID: 2136050233226832406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_65
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1472
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7090194c00353e948bacf370ee2a9be9
+      internalID: -3068038823424699427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_66
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1472
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a743fe1733795a419e9541410c9e5dd
+      internalID: -4312794580669692457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_67
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1472
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a92338fc32a298e47ba11be7947550e4
+      internalID: 336020875364388164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_68
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1472
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ca276666a937644fa88e74ee1c23ea5
+      internalID: 2811276827827489016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_69
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1472
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6859d724428df904380f5f872c78fc11
+      internalID: 5830143146417000290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_70
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1472
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36493bc7fdf733e4d869f0824eda417a
+      internalID: 8362162699964544356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_71
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 1472
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c229620ff9ff7b4c921467b821aabed
+      internalID: -4763016139904250009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_72
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1408
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e03cbabf63de3f47bbeb6f3ea9ef04d
+      internalID: 5732585943365545918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_73
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1408
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbafa14d3834c474f912350915faaa21
+      internalID: 2685407352165149004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_74
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1408
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38a3da938dd3581408801c25e119ca6c
+      internalID: -8944868975295551273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_75
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1408
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e8060b4f6f7b9d4b8bb44b876d44bd5
+      internalID: 7940736362489176109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_76
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1408
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: daec4ff25cf143c43b38bd2cc8c4adc2
+      internalID: 7142687460759388374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_77
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1408
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fad12607ee7f73c4d968306b6bec018c
+      internalID: -8523122075898723701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_78
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1408
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f0bb76dde7bc534e8f79a08e2a3c48b
+      internalID: -3693783409917521679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_79
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 1408
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 200bf45bde36b664bae9c77726e79f27
+      internalID: -7866026133009321707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_80
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1344
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26d630889d0aa274eb5aeebc8f517b46
+      internalID: 3300015278172990951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_81
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1344
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc5afd0bbc5a6344ba216b2e73c83e28
+      internalID: -417002994133803300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_82
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1344
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3e2dfa594a41d14badcaf1d54b760ef
+      internalID: -3970804955474083922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_83
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1344
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 786fa8145ba521743a7fe4c223a01b4b
+      internalID: 3425574039712272297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_84
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1344
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9049536dcbf0f0c44aa0c295369db7c2
+      internalID: -2562878911529900428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_85
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1344
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88d18eab6ae5bda41800f9185c085105
+      internalID: -2366076353309588836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_86
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1344
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb96cc8e652092f489e51bedfc3a2f77
+      internalID: 8078362473851455184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_87
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 1344
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b06cc2e0207a2f4694c868ab4807cf6
+      internalID: -2775873447098622680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_88
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1280
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 417995f27a37c1e49bf0536cf0faa5aa
+      internalID: 3131526411224720830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_89
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1280
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a0ed2b7f61db86458b4b631bd4ea436
+      internalID: 8083827361118828586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_90
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1280
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c48fd7b7b1f877d4f9b121df29205975
+      internalID: 2943219866276687170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_91
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1280
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aeb900412d5c5894c991d28ccc466549
+      internalID: -2702656536687075536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_92
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1280
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a71ac25d267098d4ca94c1a61370470e
+      internalID: -8772034423055392557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_93
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1280
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8742ff3df1671f43991bc8d939a827b
+      internalID: -6183167547281082971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_94
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1280
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35c4c98a9b948b14cba50e3fbf023a13
+      internalID: 3064067286521842424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_95
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 1280
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09f224d39f2dd8e4c93891293623c394
+      internalID: 5127378498373625803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_96
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1216
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c47d8f3893f217478c1a915592f041c
+      internalID: 2780323810154754462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_97
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1216
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41e16e9c160317849a99edaeaca2b6a0
+      internalID: -4353653678412645651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_98
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1216
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8af4e539a88f09e46bff03ee0a20c3f1
+      internalID: 7249222354144487211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_99
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1216
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aab49462a90d9944abef9ab3b608f93c
+      internalID: 672967854305106038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_100
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1216
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f82fb457722d8b6469951fefab5dcdc0
+      internalID: -7450554486426136711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_101
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1216
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c15ac2eac62ff9341bac67d0f6364fdb
+      internalID: 6795997431700695642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_102
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1216
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6faf1d35089220344a74ac5d14cd78a1
+      internalID: 3595705692623348802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_103
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 1216
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a9f798120a0b6743b3627358e5ea35e
+      internalID: 6614480794578969955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_104
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1152
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce6b76b4e80088946969d75d2af7632b
+      internalID: -7065372688436098521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_105
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1152
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6fd5b975c4731d44813eb6d08ea599d
+      internalID: -5980445220544325896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_106
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1152
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 658768c3895e53941a30b04574aa242a
+      internalID: -1188262807803337656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_107
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1152
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eed21f52ec97e6142b1ab95a255520bc
+      internalID: 1872428357319966048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_108
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1152
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f94ca11193cdea4385cb582369197f2
+      internalID: -6461276742975903945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_109
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1152
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0644e68af8cfd634cbdca6b8bc3c1e67
+      internalID: -679927111093866805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_110
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1152
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14240dd589f155f448d870bd68a6d1cc
+      internalID: -9061295338217829947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_111
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 1152
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb09c6301429fd8449f7f4065c693ac5
+      internalID: 1024709560418769450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_112
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1088
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04cbcb94388fd6a409b19b7fe68f9924
+      internalID: 5056788471768533886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_113
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1088
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 323a22b9bbe58b140a12c18962bbbf18
+      internalID: -2856219920185905791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_114
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1088
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcf7e6dd23549cd4b96e989cc834f7d4
+      internalID: -4057815471737993070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_115
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1088
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d11b0e82d9b51243a0c5305cc43c7dc
+      internalID: -32629344951121575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_116
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1088
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48ad62d605d31424db4f412bd3313bfc
+      internalID: -4309058079550719202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_117
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1088
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6547e719630dc154c9a228a8d5b9e0ac
+      internalID: 4060082365500362820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_118
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1088
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d13b5db21d7cd724fbdbad7391df61ba
+      internalID: 6705199152681769055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_119
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 1088
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bacf4b82c01a8e34487767786b5f4993
+      internalID: -6440413124284805100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_120
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1024
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccc4064b1a4598b44b0eead58c53aea5
+      internalID: -8307365986189109186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_121
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1024
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb8a0be75def3604d9a9e691c671b841
+      internalID: 6573487025797277419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_122
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1024
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5bb134b104b24348b94bc9f5f4514ce
+      internalID: 2253595722153213378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_123
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1024
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7c1384443816c54e9cebcad4bae64df
+      internalID: 4538861169680547012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_124
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1024
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61b6a2dea2aaa604ba5517e3c37aa3a8
+      internalID: -1031606996141648191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_125
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1024
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71c490e8341e37a49804e334cafbbb5f
+      internalID: 7745847194354700000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_126
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1024
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f565278e55f6c6b4487e5609e51298fa
+      internalID: -2357247429958020517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_127
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 1024
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30b9d6460fbb4e841a27f729d25f0090
+      internalID: 2756000169751602750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_128
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 960
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 322081ec6afe59c4ca0a183cdf2d1b96
+      internalID: -5399534942737456266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_129
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 960
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c89290cb1885e8f478ff9119b4918ea0
+      internalID: -1623114883036654800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_130
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 960
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1e0b4625ad22084e93c338868ba470f
+      internalID: -4057091811803489087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_131
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 960
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c77e4a77ad06bfc4084dd4a07a2c0e6c
+      internalID: -1112835172003732602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_132
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 960
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17fac12987ef2234c9e54a2d0151e5af
+      internalID: 1578952148272977670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_133
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 960
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d32ac2bbb754d34b9614dcc5ceb7fe6
+      internalID: 6689581939236480581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_134
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 960
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f70e02e1aec9ab4aad3c68ebe9c4efb
+      internalID: 3013516664601633359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_135
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 960
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3601aba26c18564469a75f21786ffbcd
+      internalID: -2399722032862466324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_136
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 896
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0214a5446fb92664ca939c3fdc403928
+      internalID: 2064405514497931417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_137
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 896
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 206e6760d47add94da31340895f1d194
+      internalID: -6643679214409541866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_138
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 896
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70770ce84e895c6439424eb8f2b8d3a1
+      internalID: 5354061633178310008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_139
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 896
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 269825ce42038a24a8ec6a6da1bea2e4
+      internalID: -3560157638826618510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_140
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 896
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1a0ea612a7c45841b99676f2378629c
+      internalID: -9050989692831577178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_141
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 896
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c237744902e7c746a4b079d68e751b9
+      internalID: -6740540553232780078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_142
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 896
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 633d1a378130014458286fb1c19eb55e
+      internalID: 271818581397623084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_143
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 896
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 148692bd3ed9c5243bb0ad5532a129f9
+      internalID: -9089130212594520731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_144
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 832
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9dbbeebf4097374f9cdfdea26c24f5f
+      internalID: 4870688984240711035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_145
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 832
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c7e6ec89f0f1bc4d8e311e6c690c528
+      internalID: 1769169793140378101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_146
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 832
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf19566d5bd0f3d489ae9df3c2548645
+      internalID: -148352357083120003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_147
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 832
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 154b2030a70c491478895e21bf5d5046
+      internalID: 7995172223131738580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_148
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 832
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0c5609e4071c8349971c66edd6c84a9
+      internalID: -2884333975759038110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_149
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 832
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55c06c296200a7a489a1992844d24841
+      internalID: -2545449153180517371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_150
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 832
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d626af361811ce94d9d3b13cbf6f3707
+      internalID: -2015209695522772991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_151
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 832
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2eac268b89beecd4bbd3cc9d1f135343
+      internalID: -2259768645894329967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_152
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 768
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fcc21939ebf68341a37d6ffcd303479
+      internalID: -548079156505509921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_153
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 768
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d372b9ca26f9d8e438f401cb9a344d6c
+      internalID: 2902408167055147604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_154
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 768
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f7c634892cd42d48a324928bcdac8a4
+      internalID: 3552610557696251133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_155
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 768
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecc9b2de832dae9458edef4977f0bc3b
+      internalID: 4525277818739805296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_156
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 768
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dff5a6668c02b3479cd62bb2a93edd5
+      internalID: 2681401177126527379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_157
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 768
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36dbf04570b69ec46bfc293a33a62ef7
+      internalID: -5765333661328144433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_158
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 768
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87c9c170b1605884995b0e57411b7ebd
+      internalID: -7629375945762424648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_159
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 768
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd941ac381bb1d24b8a73dc026d8edf1
+      internalID: 2776707746794090907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_160
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 704
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 580c5b782a8ae55418cd6a396f26f64e
+      internalID: -7294370310411957430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_161
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 704
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cfd7a4bef1f23d44ae78b7f2fbb64cc
+      internalID: -2387669409979451131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_162
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 704
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b48079498666ff41b2e8782477d52f0
+      internalID: -6953498262553856382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_163
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 704
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96c38223ccfccdd429649307e63cd339
+      internalID: -1472034676207576250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_164
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 704
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 319e7ae15792cd144a791918eaacedf5
+      internalID: 3460951759974437711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_165
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 704
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 374f1616cc215da40a71bbeeefd1d3e7
+      internalID: -635010930880209411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_166
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 704
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5f216ef325716a48888a873248a4595
+      internalID: -795057148872266060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_167
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 704
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 894a79fedfb19f843bc145c734c18297
+      internalID: -6182566802598623640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_168
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 640
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d16288c4d41b404e88f596c634b0544
+      internalID: -6597262779073272035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_169
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 640
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8e07a794530e8341b29b29813955925
+      internalID: 8962165622823109185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_170
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 640
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c75b4893bd4029741a0de4886ee311c1
+      internalID: -1546948524357577512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_171
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 640
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93505e8267400a34181d775643b7b82b
+      internalID: 8911856811935173391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_172
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 640
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ece02f86002296049aca92843a37c858
+      internalID: 4008780112984298519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_173
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 640
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2d72e2a7a0552c41afaca6a28bc2eec
+      internalID: 2028084393940885646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_174
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 640
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d53e3e841387dc4b8398179a9c09487
+      internalID: -8995709796846603892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_175
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 640
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4d46d07ddeb559499638c358a242edc
+      internalID: -2479221351515150246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_176
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 576
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 797a4f50d926bd444ac6fa0e6d6ca252
+      internalID: 1830489559211646089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_177
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 576
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fad90cf4727a414ca3a0105c3e9279e
+      internalID: 620649013327920090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_178
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 576
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f62608ecd472754bbaf5ad6272277d2
+      internalID: -7364742012204744501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_179
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 576
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ec7323cac25806408a2ba202c29d130
+      internalID: 7682527055646935770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_180
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 576
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4df864a7146647a409a80a841c971e0e
+      internalID: 2307608833326602493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_181
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 576
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46c4287b7575e5346a37c946ad6fe649
+      internalID: -5552090793811650831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_182
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 576
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be621cb80e3c6e34e9da040e8fc9e599
+      internalID: 2937281872497345690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_183
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 576
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee4a1f9ef96a6454087cc71765905a7e
+      internalID: 978001341712131902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_184
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 512
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b2d03ceac7233f40a1abff9bf898dcb
+      internalID: -8645898700496253733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_185
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 512
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09b440e8d746f0b468c16999b1761fde
+      internalID: 1295261952006286850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_186
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 512
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 138e6f7f7e7605c4f84fb802f2f850ae
+      internalID: 8761667014753780810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_187
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 512
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 487a71efd0189a04aaa2e1c0ab241844
+      internalID: -4364925275236158510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_188
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 512
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d08d59180e15e974c845e16c5d80a138
+      internalID: 4832027560308466077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_189
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 512
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e340dd8982cdab44a009bc852514bf4
+      internalID: -6642924243800271805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_190
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 512
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 680dcd6c39d392c4c9662c1611936835
+      internalID: 2417393019213432549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_191
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 512
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad169b51065685943b2010cca0e4c611
+      internalID: 5067812121228882227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_192
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 448
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2a7fd4c8fc9339459c3548cf6a5497e
+      internalID: 6440708572759291890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_193
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 448
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30875bd57f5f80b45b01fdd1f58da833
+      internalID: 5194621773338656893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_194
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 448
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57b1135e253370d4dbcacb86e20becb8
+      internalID: -3285490864126565504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_195
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 448
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a87526da151335a4fadf6a2ba365e475
+      internalID: 3475541952002240725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_196
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 448
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d6cd99a26a227c40a3309e94ef42688
+      internalID: 1008709671129764696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_197
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 448
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d5f6367d24b9204797d0a6faf29bb53
+      internalID: -4598827561744684127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_198
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 448
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bd981614122e534dab5c524e63199fe
+      internalID: 1830822336676250165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_199
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 448
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 307b8bb3495e56840a795cffe4e176b4
+      internalID: -2063833483044044486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_200
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 384
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ddc0c06def9d4b44b7819d0dc336447
+      internalID: 9206081590302539304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_201
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 384
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93bcf1f7e0d5a0447abe600c3561500c
+      internalID: 5094444831214843719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_202
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 384
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ad141c9939812447840d3feef35de0e
+      internalID: -1905871320334687223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_203
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 384
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c52360bc62a6f2741b263dc8bba11a32
+      internalID: -3107997279197568691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_204
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 384
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ad6c2d64e12daa429ab703b5b37d55c
+      internalID: 5658277754806861245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_205
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 384
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68c4e6e133209aa478c3154ac2aa2174
+      internalID: -2515098256349839375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_206
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 384
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b37b837af842e6846a0a793d9518841c
+      internalID: -5679315653539464330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_207
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 384
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fff2719cee901374e8d037a00c7fcae3
+      internalID: -8272634750443497805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_208
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 662d421ba40f7b64aa2e4a144edda792
+      internalID: -2886964325203703438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_209
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 012aef9de16c0074e9bdb724f978d062
+      internalID: -4398953610221966675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_210
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb9ecb3ad4f93bd449d40c214d0654a5
+      internalID: -8436974046721296392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_211
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c77898621ec0ce74789d76d87d110f9d
+      internalID: 5794291306244503486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_212
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96312286684052144a3ca1299a2a6d3c
+      internalID: 6710259724012387601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_213
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0e684799b75e9140a0cacad374effd3
+      internalID: -4419353497865260254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_214
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f1ea64d41e56524aaacbd0d4b73e4eb
+      internalID: -1754839411327626697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_215
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5062f8ad0677e746b660f5fd024c916
+      internalID: 1803635348930191359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_216
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 805f570673aefe94fb92989aedc282f0
+      internalID: -3262047953278062924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_217
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cb5c1ee1b90a4c4fb7a6dc40022e966
+      internalID: 1917670643216512831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_218
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 276274ae2595bc04bb66ab6de989ad02
+      internalID: -7946635342597919653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_219
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3710a21d0daf6b4b80e03a9f272106e
+      internalID: -845709980356192908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_220
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d72361b1d421ea54fa8f6adb54e9f087
+      internalID: 2141390955843989106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_221
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 720f27ad8e7a7a745b5269de2b6d3a8c
+      internalID: 1713516960714426538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_222
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fd7c0dbde8d5324393192d8e808029e
+      internalID: -5037483037760660060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_223
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fd94616e379825498a6475eb36f5d25
+      internalID: -3402970282933055165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_224
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f77c0a045622abf43b52ba3dc50f4bc8
+      internalID: -5507620724608039686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_225
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f4d22974ebe12548a87742c945a9408
+      internalID: -2067940625231685493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_226
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c54dbf5aad9f2e4cafdf7b5aabda85d
+      internalID: 5362593613302059598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_227
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9028b2b23426a034e80f546c5d9b0852
+      internalID: 6749927627070205989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_228
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0915877f0e0763047a18ba5ebddede80
+      internalID: 2619706199703912171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_229
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 021df817c3530ad45b7c5c4cdbb182c5
+      internalID: -7002403096448181398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_230
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b45136a083865047826c8e6e8757807
+      internalID: -8741210912801285754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_231
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3172166d1c12da74aae55522e8a6e01d
+      internalID: 6304040528114973424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_232
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8df3a1afb06fcc4cbe057ecee7c9221
+      internalID: 1935621965058152932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_233
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 457345fa76cbd8142b528c71e365bb88
+      internalID: -2387852432564695605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_234
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08beb2c9911d3d449b6e9e09f20d1e08
+      internalID: 937982529715559823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_235
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e25e4ebce3ebe74c9a78f3145860d7e
+      internalID: 159561745711332762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_236
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e10f9c6f171e26842b402498f51f2fbb
+      internalID: -8601368695240726446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_237
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8ec07c498e32b64cb9186ebfe235990
+      internalID: 1766646966885520737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_238
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89d616ad03d668e4e94d5e7730f31cf7
+      internalID: -9161355511837571598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_239
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 124af4dabc82bf141807124624fdcae4
+      internalID: 8657086845894972219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_240
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25bc59b59fd9b7b43ad16f956d6e0ff5
+      internalID: 6173019024213189135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_241
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21e95730b09001e439e3ef578f6331b5
+      internalID: 425563924584348349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_242
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01f2b03fc3218934cb1c24aca0b457f1
+      internalID: 7071226022721280586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_243
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb6d2c16414288e43824068e188e54ee
+      internalID: 3951782749129272275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_244
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f51f0b28db574de4393d8ed9e6b1c68b
+      internalID: 5998062864156388200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_245
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5af89408064687541ada2a3a42c9345c
+      internalID: -1832400471100659022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_246
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b72601886672cea4c80f1efe57125a7e
+      internalID: 8011337907938674489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_247
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 981d0ef9ad80b6348a4f124c185d20cc
+      internalID: -1395014565000987706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_248
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50dd8b7b4b6f9f747b1af7b6c226527c
+      internalID: -4863285958049079883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_249
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9038951abc9c1b945ba53dd071ba380f
+      internalID: 6106430530261751746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_250
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02848aed0b3cce84287fed992c5f41b2
+      internalID: 7240624811132318142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_251
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04778ceee8814ee4397e822c342763e1
+      internalID: -1038232563696584055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_252
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f42e2fcac8f2e5c45ab87f45bdf88d91
+      internalID: 6643026656069741833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_253
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22434bf415aa6c74980b881aac37c170
+      internalID: -2166571414817504725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_254
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 265c6f14be4957043b5cc73b5d17be8a
+      internalID: -4761244234324120980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Gen's 64x64 Mixed Tileset_255
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e18e759599b0d8459812baf3d12137a
+      internalID: -6958472973544814083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

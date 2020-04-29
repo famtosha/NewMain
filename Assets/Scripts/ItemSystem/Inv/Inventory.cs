@@ -115,7 +115,6 @@ public class Inventory : MonoBehaviour
         var data = _inventory[SlotNum];
         if(data == null)
         {
-            print("data is null :)");
             return null;
         }
         else
