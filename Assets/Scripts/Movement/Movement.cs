@@ -21,9 +21,10 @@ public class Movement : MonoBehaviour
     void Move()
     {
         Vector3 MoveDirection = new Vector2(Input.GetAxis("Horizontal") * Speed * Time.deltaTime, Input.GetAxis("Vertical") * Speed * Time.deltaTime);
-
-        transform.Translate(MoveDirection);
+        transform.position += MoveDirection;
         camera.transform.position = new Vector3(transform.position.x, transform.position.y, camera.transform.position.z);
+
+        
     }
     void Look()
     {
