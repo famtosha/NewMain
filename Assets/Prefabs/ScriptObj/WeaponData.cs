@@ -6,16 +6,16 @@ public class WeaponData : ItemData
 {
     public enum WeaponType { pistol, smg, heavy, rifle, melee, shotgun };
     [SerializeField] public WeaponType _weaponType;
-    [SerializeField] private int _damage;
-    [SerializeField] private int _recoil;
+    [SerializeField] private float _damage;
+    [SerializeField] private float _recoil;
     [SerializeField] private int _magazineCapacity;
-    [SerializeField] private int _firingRate;
-    [SerializeField] private int _reloadTime;
+    [SerializeField] private float _firingRate;
+    [SerializeField] private float _reloadTime;
     [SerializeField] private AudioClip _shotSound;
     [SerializeField] private AudioClip _reloadSound;
 
 
-    public int Damage
+    public float Damage
     {
         get
         {
@@ -26,7 +26,7 @@ public class WeaponData : ItemData
             _damage = value;
         }
     }
-    public int Recoil
+    public float Recoil
     {
         get
         {
@@ -48,7 +48,7 @@ public class WeaponData : ItemData
             _magazineCapacity = value;
         }
     }
-    public int FiringRate
+    public float FiringRate
     {
         get
         {
@@ -59,7 +59,7 @@ public class WeaponData : ItemData
             _firingRate = value;
         }
     }
-    public int ReloadTime
+    public float ReloadTime
     {
         get
         {

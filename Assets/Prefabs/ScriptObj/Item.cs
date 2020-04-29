@@ -8,7 +8,7 @@ public class Item : MonoBehaviour
     [SerializeField] public ItemData ItemDataCurrend;
     public Transform PlayerTransform;
 
-    private void Start()
+    protected void Start()
     {
         ItemDataCurrend = Instantiate(ItemDataOrigin);
     }
@@ -19,7 +19,7 @@ public class Item : MonoBehaviour
     public virtual string GetInfo()
     {
         string result = "";
-        result += ItemDataCurrend.Description + "\n";
+        result += ItemDataCurrend.Description;
         return result;
     }
 

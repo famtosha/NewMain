@@ -5,27 +5,29 @@ using UnityEngine;
 public class Movement : MonoBehaviour
 {
     public float Speed = 1;
-    public GameObject camera;
-
-    private void Start()
-    {
-        //Cursor.lockState = CursorLockMode.Locked;
-    }
+    public GameObject PlayerCamera;
+    public Rigidbody2D PlayerRB;
 
     void Update()
     {
         Move();
         Look();
+        MoveCamera();
+    }
+
+    void MoveCamera()
+    {
+        PlayerCamera.transform.position = new Vector3(transform.position.x, transform.position.y, PlayerCamera.transform.position.z);
     }
 
     void Move()
     {
         Vector3 MoveDirection = new Vector2(Input.GetAxis("Horizontal") * Speed * Time.deltaTime, Input.GetAxis("Vertical") * Speed * Time.deltaTime);
-        transform.position += MoveDirection;
-        camera.transform.position = new Vector3(transform.position.x, transform.position.y, camera.transform.position.z);
+        PlayerRB.AddForce(MoveDirection);
 
-        
+        print(PlayerRB.velocity.magnitude);     
     }
+
     void Look()
     {
         var y = Input.mousePosition;

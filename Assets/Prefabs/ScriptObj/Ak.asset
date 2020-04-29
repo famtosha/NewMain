@@ -18,15 +18,15 @@ MonoBehaviour:
   _craftability: 0
   _craftable: 0
   _sprite: {fileID: 21300000, guid: 705f8c6303c69a541910d2ecc79c03a9, type: 3}
-  _description: 
+  _description: RemoveThis -_-
   _tradable: 0
   _rarity: 0
   _itemType: 0
   _weaponType: 3
   _damage: 10
   _recoil: 0
-  _magazineCapacity: 0
-  _firingRate: 0
+  _magazineCapacity: 30
+  _firingRate: 0.1
   _reloadTime: 0
   _shotSound: {fileID: 0}
   _reloadSound: {fileID: 0}

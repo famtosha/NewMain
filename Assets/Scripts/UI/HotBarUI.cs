@@ -81,11 +81,19 @@ public class HotBarUI : InvenotryUI
         if (Input.GetAxis("Mouse ScrollWheel") < 0f) SelectNextItem();
         if (Input.GetAxis("Mouse ScrollWheel") > 0f) SelectPrevItem();
 
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButton(0))
         {
             if (inventory.GetSlotInfo(_selectedItem) != null)
             {
                 inventory.GetSlotInfo(_selectedItem).GetComponent<Item>().UseItem();
+            }
+        }
+
+        if (Input.GetKey(KeyCode.R))
+        {
+            if (inventory.GetSlotInfo(_selectedItem) != null)
+            {
+                inventory.GetSlotInfo(_selectedItem)?.GetComponent<Weapon>()?.Reload();
             }
         }
 
