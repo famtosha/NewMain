@@ -11,8 +11,8 @@ public class Movement : MonoBehaviour
     void Update()
     {
         Move();
-        Look();
         MoveCamera();
+        Look();      
     }
 
     void MoveCamera()
@@ -23,9 +23,7 @@ public class Movement : MonoBehaviour
     void Move()
     {
         Vector3 MoveDirection = new Vector2(Input.GetAxis("Horizontal") * Speed * Time.deltaTime, Input.GetAxis("Vertical") * Speed * Time.deltaTime);
-        PlayerRB.AddForce(MoveDirection);
-
-        print(PlayerRB.velocity.magnitude);     
+        PlayerRB.AddForce(MoveDirection);  
     }
 
     void Look()

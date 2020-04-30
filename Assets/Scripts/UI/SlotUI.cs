@@ -10,6 +10,7 @@ public class SlotUI : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler,
     public InvenotryUI BackPackUI;
     public Text Text;
     public UIManager UIManager;
+    public Image BackGround;
 
     public int ID;
 
@@ -33,7 +34,7 @@ public class SlotUI : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler,
 
     public void ChangeColor(Color color)
     {
-        ItemSprite.color = color;
+        BackGround.color = color;
     }
 
     public void OnPointerClick(PointerEventData eventData)

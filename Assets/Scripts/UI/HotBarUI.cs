@@ -32,7 +32,7 @@ public class HotBarUI : InvenotryUI
         {
             SelectedItem++;
         }
-        SlotList[SelectedItem].GetComponent<SlotUI>().ChangeColor(Color.red);
+        SlotList[SelectedItem].GetComponent<SlotUI>().ChangeColor(Color.cyan);
         EnableItem();
     }
 
@@ -48,7 +48,7 @@ public class HotBarUI : InvenotryUI
         {
             SelectedItem--;
         }
-        SlotList[SelectedItem].GetComponent<SlotUI>().ChangeColor(Color.red);
+        SlotList[SelectedItem].GetComponent<SlotUI>().ChangeColor(Color.cyan);
         EnableItem();
     }
 

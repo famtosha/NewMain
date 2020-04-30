@@ -45,7 +45,7 @@ public class Weapon : Item
                 Vector2 x = new Vector2(Direct.x, Direct.y);
                 var bullet = Instantiate(bulletPrefab, (Vector2)Start + x.normalized, new Quaternion());
 
-                bullet.GetComponent<Rigidbody2D>().AddForce(Direct.normalized * BulletSpeed);
+                bullet.GetComponent<Rigidbody2D>().AddForce(x.normalized * BulletSpeed);
                 AmmoLeft--;
             }
         }        

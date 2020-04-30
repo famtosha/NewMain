@@ -9,15 +9,6 @@ public class Arm : MonoBehaviour
 
     public bool IsAnyChestOpened = false;
 
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        var item = collision.gameObject;
-        if (item.GetComponent<Item>() != null)
-        {
-            PickUpItem(item);
-        }
-    }
-
     public void OpenInventory(Inventory inventory)
     {
         anotherUI.OpenInventory(inventory);
@@ -30,7 +21,7 @@ public class Arm : MonoBehaviour
         IsAnyChestOpened = false;
     }
 
-    private void PickUpItem(GameObject Item)
+    public void PickUpItem(GameObject Item)
     {
         foreach (var inv in inventorys)
         {

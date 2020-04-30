@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &8316588281682333089
+--- !u!1 &6209853981794561988
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,40 +8,40 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 5747537833716293763}
-  - component: {fileID: 2281722086054293364}
-  - component: {fileID: 8303399794080462183}
-  - component: {fileID: 9030009031227246616}
-  - component: {fileID: -2927131877826655493}
-  - component: {fileID: 5608396884111513111}
+  - component: {fileID: 771914562440347275}
+  - component: {fileID: 5983657911883692609}
+  - component: {fileID: 4532355537171745129}
+  - component: {fileID: 9125476740883993432}
+  - component: {fileID: 3880292699959982261}
+  - component: {fileID: 4249473294462733670}
   m_Layer: 0
-  m_Name: circle
+  m_Name: Bullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &5747537833716293763
+--- !u!4 &771914562440347275
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8316588281682333089}
+  m_GameObject: {fileID: 6209853981794561988}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.778, y: 10.785, z: 0}
+  m_LocalPosition: {x: -0.28, y: 7.3, z: -19.115234}
   m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &2281722086054293364
+--- !u!212 &5983657911883692609
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8316588281682333089}
+  m_GameObject: {fileID: 6209853981794561988}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -84,14 +84,14 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!50 &8303399794080462183
+--- !u!50 &4532355537171745129
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8316588281682333089}
+  m_GameObject: {fileID: 6209853981794561988}
   m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
@@ -99,19 +99,19 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 0
+  m_GravityScale: 1
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!58 &9030009031227246616
+--- !u!58 &9125476740883993432
 CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8316588281682333089}
+  m_GameObject: {fileID: 6209853981794561988}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -121,14 +121,14 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 6
---- !u!96 &-2927131877826655493
+--- !u!96 &3880292699959982261
 TrailRenderer:
   serializedVersion: 2
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8316588281682333089}
+  m_GameObject: {fileID: 6209853981794561988}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 1
@@ -217,13 +217,13 @@ TrailRenderer:
   m_MinVertexDistance: 0.1
   m_Autodestruct: 0
   m_Emitting: 1
---- !u!114 &5608396884111513111
+--- !u!114 &4249473294462733670
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8316588281682333089}
+  m_GameObject: {fileID: 6209853981794561988}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 83f3c9d23361da14eb072729bda1ccd2, type: 3}

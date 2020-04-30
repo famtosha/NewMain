@@ -342,6 +342,7 @@ MonoBehaviour:
   BackPackUI: {fileID: 0}
   Text: {fileID: 1533759753497893125}
   UIManager: {fileID: 0}
+  BackGround: {fileID: 5738601259307967450}
   ID: 0
 --- !u!1 &3609323612291964130
 GameObject:
