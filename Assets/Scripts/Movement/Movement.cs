@@ -31,9 +31,7 @@ public class Movement : MonoBehaviour
         var y = Input.mousePosition;
         y.z = 10;
         y = Camera.main.ScreenToWorldPoint(y);
-
         var dir = new Vector3(y.x - transform.position.x, y.y - transform.position.y);
-
         transform.up = dir;
     }
 }

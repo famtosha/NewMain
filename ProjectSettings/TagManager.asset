@@ -14,7 +14,7 @@ TagManager:
   - 
   - 
   - Player
-  - 
+  - Enemy
   - 
   - 
   - 
@@ -41,9 +41,15 @@ TagManager:
   - name: Ground
     uniqueID: 2180675471
     locked: 0
-  - name: Default
-    uniqueID: 0
+  - name: Floor
+    uniqueID: 1574263193
     locked: 0
   - name: Walls
     uniqueID: 733256107
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Roof
+    uniqueID: 3456424859
     locked: 0

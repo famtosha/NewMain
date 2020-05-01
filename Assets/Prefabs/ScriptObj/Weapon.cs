@@ -37,15 +37,14 @@ public class Weapon : Item
             NextFire = Time.time + FiringRate;
             if (AmmoLeft > 0)
             {
-                Vector3 PointerPos = Input.mousePosition;
-                PointerPos.z = 10;
-                Vector3 Start = PlayerTransform.position;
-                Vector3 Direct = (Camera.main.ScreenToWorldPoint(PointerPos) - Start);
+                Vector3 Start = gameObject.transform.position;
 
-                Vector2 x = new Vector2(Direct.x, Direct.y);
-                var bullet = Instantiate(bulletPrefab, (Vector2)Start + x.normalized, new Quaternion());
+                Vector2 TrueStart = Start;
+                Vector2 TrueDirect = transform.right;
 
-                bullet.GetComponent<Rigidbody2D>().AddForce(x.normalized * BulletSpeed);
+                var bullet = Instantiate(bulletPrefab,TrueStart + TrueDirect,transform.rotation);
+
+                bullet.GetComponent<Rigidbody2D>().AddForce(TrueDirect.normalized * BulletSpeed);
                 AmmoLeft--;
             }
         }        

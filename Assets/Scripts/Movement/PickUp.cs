@@ -16,20 +16,16 @@ public class PickUp : MonoBehaviour
         {
             IsPickUping = false;
         }
-        print(IsPickUping);
     }
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        print("something is near");
         if (IsPickUping)
         {
-            print("try to pick up");
             var Item = collision.gameObject;
             if (Item.GetComponent<Item>() != null)
             {
                 PlayerArm.PickUpItem(Item);
-                print("pick up item");
             }
         }
 
