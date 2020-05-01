@@ -27,4 +27,14 @@ public class Item : MonoBehaviour
     {
 
     }
+
+    public virtual void EquipItem()
+    {
+
+    }
+
+    public virtual void UnEquipItem()
+    {
+
+    }
 }

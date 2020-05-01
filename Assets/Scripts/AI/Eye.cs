@@ -25,7 +25,7 @@ public class Eye : MonoBehaviour
             TimeLeft = UpdateTime;
 
             RaycastHit2D hit = Physics2D.Raycast(transform.position, Player.transform.position - transform.position,30,~(1 <<9));
-            Debug.DrawRay(transform.position, Player.transform.position - transform.position,Color.red,1000f);
+            Debug.DrawRay(transform.position, Player.transform.position - transform.position,Color.red,0.2f);
             print(hit.transform.gameObject.name);
             print(Player.name);
             if (hit.transform.gameObject.name == Player.name)

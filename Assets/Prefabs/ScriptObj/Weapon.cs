@@ -10,6 +10,7 @@ public class Weapon : Item
     private int AmmoLeft;
     private float FiringRate;
     private float NextFire;
+    private bool IsReloading = false;
 
     new private void Start()
     {
@@ -24,15 +25,29 @@ public class Weapon : Item
         return AmmoLeft + " / " + ((WeaponData)ItemDataCurrend).MagazineCapacity;
     }
 
+    public override void EquipItem()
+    {
+        base.EquipItem();
+        IsReloading = false;
+    }
+
     public virtual void Reload()
     {
+        StartCoroutine(StartReload());
+    }
+
+    private IEnumerator StartReload()
+    {
+        IsReloading = true;
+        yield return new WaitForSeconds(((WeaponData)ItemDataCurrend).ReloadTime);
         AmmoLeft = ((WeaponData)ItemDataCurrend).MagazineCapacity;
+        IsReloading = false;
     }
 
     public override void UseItem()
     {
 
-        if (Time.time > NextFire)
+        if (Time.time > NextFire && !IsReloading)
         {
             NextFire = Time.time + FiringRate;
             if (AmmoLeft > 0)

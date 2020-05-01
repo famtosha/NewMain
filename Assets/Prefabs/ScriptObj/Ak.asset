@@ -27,6 +27,6 @@ MonoBehaviour:
   _recoil: 0
   _magazineCapacity: 30
   _firingRate: 0.1
-  _reloadTime: 0
+  _reloadTime: 2
   _shotSound: {fileID: 0}
   _reloadSound: {fileID: 0}
