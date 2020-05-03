@@ -12,6 +12,7 @@ public class UIManager : MonoBehaviour
     public GameObject HotBar;
     public GameObject ItemContexMenu;
     public GameObject AnotherInventoryMenu;
+    public GameObject DeathMenu;
 
     public event Action OnPauseMenuOpen;
     public event Action OnPauseMenuClose;
@@ -41,6 +42,16 @@ public class UIManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape)) ChangePausemenuState();
         if (Input.GetKeyDown(KeyCode.I)) ChangeBackPackMenu();
+    }
+
+    public void DisableDeathMenu()
+    {
+        DeathMenu.GetComponent<Canvas>().enabled = false;
+    }
+
+    public void EnableDeathMenu()
+    {
+        DeathMenu.GetComponent<Canvas>().enabled = true;
     }
 
     public void DisablePauseMenu()
