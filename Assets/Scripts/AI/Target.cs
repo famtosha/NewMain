@@ -1,10 +1,17 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Target : MonoBehaviour, ITarget
 {
     [SerializeField] private float _health = 100;
+    public event Action Dead;
+
+    private void Start()
+    {
+        Dead += Death;
+    }
 
     private float Health
     {
@@ -17,7 +24,10 @@ public class Target : MonoBehaviour, ITarget
             _health = value;
             if(_health <= 0)
             {
-                Death();
+                if(Dead != null)
+                {
+                    Dead();
+                }
             }
         }
     }

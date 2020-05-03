@@ -47,7 +47,7 @@ public class SlotUI : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler,
         if (UIManager == null) return;
 
         UIManager.EnableItemContexMenu();
-        UIManager.ItemContexMenu.transform.position = Input.mousePosition + new Vector3(100,-20,0);
+        UIManager.ItemContexMenu.transform.position = Input.mousePosition + new Vector3(120,-40,0);
         var item = BackPackUI.inventory.GetSlotInfo(ID);
         if(item != null)
         {

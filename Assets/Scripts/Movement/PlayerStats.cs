@@ -1,31 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using UnityEngine;
 
 class PlayerStats : Target
 {
-    private float _health;
+    [SerializeField] private UIManager uiManager;
     private float _hunger;
     private float _thirst;
 
     public float Temperature { get; set; }
-    public float Health
-    {
-        get
-        {
-            return _health;
-        }
-        set
-        {
-            _health += value;
-            if(_health < 0)
-            {
-                PlayerDeath("eat some shit");
-            }
-        }
-    }
     public float Hunger
     {
         get
@@ -57,9 +39,14 @@ class PlayerStats : Target
         }
     }
 
-    private void PlayerDeath(string Reason)
+    private void Start()
     {
-        gameObject.GetComponent<InvenotryUI>().UIManager.EnableDeathMenu();
-        Destroy(gameObject);
+        Dead += PlayerDeath;
+    }
+
+    private void PlayerDeath()
+    {
+        uiManager.EnableDeathMenu();
+        gameObject.SetActive(false);
     }
 }
