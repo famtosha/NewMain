@@ -58,7 +58,7 @@ public abstract class InvenotryUI : MonoBehaviour
         inventory.DropItem(ID);
     }
 
-    public void NewClick(int ID)
+    public void LeftClick(int ID)
     {
         if(SelectedSlot == ID)
         {
@@ -93,5 +93,10 @@ public abstract class InvenotryUI : MonoBehaviour
             }
 
         }
+    }
+
+    public void RightClick(int ID)
+    {
+
     }
 }

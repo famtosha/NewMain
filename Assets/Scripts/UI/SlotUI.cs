@@ -39,7 +39,7 @@ public class SlotUI : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler,
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        BackPackUI.NewClick(ID);
+        BackPackUI.LeftClick(ID);
     }
 
     public void OnPointerEnter(PointerEventData eventData)

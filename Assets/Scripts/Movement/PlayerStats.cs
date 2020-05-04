@@ -1,13 +1,51 @@
 ﻿using System;
 using UnityEngine;
 
-class PlayerStats : Target
+class PlayerStats : MonoBehaviour, ITarget
 {
-    [SerializeField] private UIManager uiManager;
-    private float _hunger;
-    private float _thirst;
+    public event Action<PlayerStats> UpdateStats;
 
-    public float Temperature { get; set; }
+    private void OnDataChanged()
+    {
+        UpdateStats?.Invoke(this);
+    }
+
+    [SerializeField] private UIManager uiManager;
+    [SerializeField] private float _hunger;
+    [SerializeField] private float _thirst;
+    [SerializeField] private float _health;
+    [SerializeField] private float _temperature;
+
+    public float Health
+    {
+        get
+        {
+            return _health;
+        }
+        set
+        {
+            _health = value;
+            if(_health <= 0)
+            {
+                PlayerDeath();
+            }
+            OnDataChanged();
+        }
+    }
+
+    public float Temperature
+    {
+        get
+        {
+            return _temperature;
+        }
+        set
+        {
+            Temperature = value;
+            OnDataChanged();
+        }
+    }
+
     public float Hunger
     {
         get
@@ -16,13 +54,15 @@ class PlayerStats : Target
         }
         set
         {
-            _hunger += value;
+            _hunger = value;
             if (_hunger < 0)
             {
                 _hunger = 0;
             }
+            OnDataChanged();
         }
     }
+
     public float Thirst
     {
         get
@@ -31,22 +71,27 @@ class PlayerStats : Target
         }
         set
         {
-            _thirst += value;
+            _thirst = value;
             if (_thirst < 0)
             {
                 _thirst = 0;
             }
+            OnDataChanged();
         }
-    }
-
-    private void Start()
-    {
-        Dead += PlayerDeath;
     }
 
     private void PlayerDeath()
     {
         uiManager.EnableDeathMenu();
         gameObject.SetActive(false);
+    }
+
+    private void Update()
+    {
+        Hunger -= 0.001f;
+    }
+    public void DealDamage(float Damage)
+    {
+        Health -= Damage;
     }
 }

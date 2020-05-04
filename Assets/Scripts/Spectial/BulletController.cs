@@ -17,7 +17,7 @@ public class BulletController : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        var target = collision.gameObject.GetComponent<Target>();
+        var target = collision.gameObject.GetComponent<ITarget>();
         if (target != null)
         {
             target.DealDamage(10);

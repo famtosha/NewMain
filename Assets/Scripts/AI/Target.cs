@@ -13,7 +13,7 @@ public class Target : MonoBehaviour, ITarget
         Dead += Death;
     }
 
-    private float Health
+    public float Health
     {
         get
         {
