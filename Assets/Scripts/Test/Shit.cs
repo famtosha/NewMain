@@ -7,14 +7,22 @@ using UnityEngine.EventSystems;
 public class Shit : MonoBehaviour
 {
     [SerializeField] private TilemapRenderer Thins;
+    [SerializeField] public GameObject Player;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Thins.enabled = false;  
+        if (collision.gameObject.name == Player.name)
+        {
+            Thins.enabled = false;
+        }
+        
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        Thins.enabled = true;
+        if (collision.gameObject.name == Player.name)
+        {
+            Thins.enabled = true;
+        }         
     }
 }
