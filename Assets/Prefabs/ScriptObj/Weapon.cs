@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class Weapon : Item
 {
-    public GameObject bulletPrefab;
-    public int BulletSpeed;
+    public GameObject Barriel;
 
     private int AmmoLeft;
     private float FiringRate;
@@ -52,7 +51,7 @@ public class Weapon : Item
             NextFire = Time.time + FiringRate;
             if (AmmoLeft > 0)
             {
-                Vector3 Start = gameObject.transform.position;
+                Vector3 Start = Barriel.transform.position;
 
                 Vector2 TrueStart = Start;
                 Vector2 TrueDirect = transform.right;

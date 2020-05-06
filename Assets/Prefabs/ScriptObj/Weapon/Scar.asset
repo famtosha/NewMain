@@ -10,23 +10,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 894ba69e2bd8c204ca26932cba70edc3, type: 3}
-  m_Name: Ak
+  m_Name: Scar
   m_EditorClassIdentifier: 
-  _name: AK
+  _name: Scal-L
   _count: 1
   _maxCount: 99
   _craftability: 0
   _craftable: 0
-  _sprite: {fileID: 21300000, guid: 705f8c6303c69a541910d2ecc79c03a9, type: 3}
-  _description: RemoveThis -_-
+  _sprite: {fileID: 21300000, guid: 7affad4a3708b0449bdbec8cee53318a, type: 3}
+  _description: Assault Rifle
   _tradable: 0
   _rarity: 0
   _itemType: 0
   _weaponType: 3
-  _damage: 10
-  _recoil: 0
-  _magazineCapacity: 30
-  _firingRate: 0.1
+  _damage: 25
+  _recoil: 1.5
+  _magazineCapacity: 20
+  _firingRate: 0.15
   _reloadTime: 2
   _shotSound: {fileID: 0}
   _reloadSound: {fileID: 0}

@@ -8,7 +8,7 @@ public class Item : MonoBehaviour
     [SerializeField] public ItemData ItemDataCurrend;
     public Transform PlayerTransform;
 
-    protected void Start()
+    protected virtual void Start()
     {
         ItemDataCurrend = Instantiate(ItemDataOrigin);
     }
