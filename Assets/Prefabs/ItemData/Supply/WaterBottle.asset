@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89614d340046b32449bef9ed66ff6c49, type: 3}
+  m_Name: WaterBottle
+  m_EditorClassIdentifier: 
+  _name: Bottle of water
+  _count: 1
+  _maxCount: 99
+  _craftability: 0
+  _craftable: 0
+  _sprite: {fileID: 21300000, guid: 7c8eb3375a70cea4eb446ac79981a1c7, type: 3}
+  _description: just a bottle of water
+  _tradable: 0
+  _rarity: 0
+  _itemType: 5
+  _foodGive: 0
+  _waterGive: 50
+  _temperatureGive: 0
+  _healthGive: 0

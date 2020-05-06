@@ -64,6 +64,7 @@ public class HotBarUI : InvenotryUI
             item.GetComponent<BoxCollider2D>().enabled = false;
             item.gameObject.transform.Rotate(0, 0, 90);
             item.GetComponent<Item>().EquipItem();
+            item.GetComponent<Item>().OnItemRemoved += RemoveItem;
         }
     }
 
@@ -74,7 +75,14 @@ public class HotBarUI : InvenotryUI
         {
             item.gameObject.SetActive(false);
             item.GetComponent<BoxCollider2D>().enabled = true;
+            item.GetComponent<Item>().OnItemRemoved -= RemoveItem;
         }     
+    }
+
+    public void RemoveItem()
+    {
+        inventory.RemoveFromInventory(_selectedItem);
+        inventory.UpdateSlot(_selectedItem);
     }
 
     private void Update()

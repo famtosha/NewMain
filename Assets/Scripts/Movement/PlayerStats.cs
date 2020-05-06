@@ -29,6 +29,10 @@ class PlayerStats : MonoBehaviour, ITarget
             {
                 PlayerDeath();
             }
+            else
+            {
+                _health = Mathf.Clamp(_health, 0, 100);
+            }
             OnDataChanged();
         }
     }
@@ -41,7 +45,7 @@ class PlayerStats : MonoBehaviour, ITarget
         }
         set
         {
-            Temperature = value;
+            _temperature = value;
             OnDataChanged();
         }
     }
@@ -59,6 +63,10 @@ class PlayerStats : MonoBehaviour, ITarget
             {
                 _hunger = 0;
             }
+            else
+            {
+                _hunger = Mathf.Clamp(_hunger, 0, 100);
+            }
             OnDataChanged();
         }
     }
@@ -75,6 +83,10 @@ class PlayerStats : MonoBehaviour, ITarget
             if (_thirst < 0)
             {
                 _thirst = 0;
+            }
+            else
+            {
+                _thirst = Mathf.Clamp(_thirst, 0, 100);
             }
             OnDataChanged();
         }

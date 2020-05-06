@@ -18,7 +18,7 @@ public class PlayerStatsUI : MonoBehaviour
         HealthText.text = Mathf.RoundToInt(x.Health).ToString();
         WaterText.text = Mathf.RoundToInt(x.Thirst).ToString();
         FoodText.text = Mathf.RoundToInt(x.Hunger).ToString();
-        TemperatureText.text = Mathf.RoundToInt(x.Temperature).ToString();
+        TemperatureText.text = x.Temperature.ToString();
     }
 
     private void Start()

@@ -29,15 +29,17 @@ public abstract class InvenotryUI : MonoBehaviour
         }
     }
 
-    public void UpdateSlot(int SlotNum, ItemData trashData)
-    {       
-        if (trashData == null)
+    public void UpdateSlot(int SlotNum, ItemData itemdata)
+    {
+        
+        if (itemdata == null)
         {
+            print("to clear slot");
             ResetSlot(SlotNum);
         }
         else
         {
-            SlotList[SlotNum].GetComponent<SlotUI>().UpdateData(trashData);
+            SlotList[SlotNum].GetComponent<SlotUI>().UpdateData(itemdata);
         }                       
     }
 
