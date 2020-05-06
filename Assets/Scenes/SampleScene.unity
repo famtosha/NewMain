@@ -616,7 +616,6 @@ MonoBehaviour:
   bulletPrefab: {fileID: 6209853981794561988, guid: d7379dfab5a6d4b4d90b92ac30c0df9f,
     type: 3}
   BulletSpeed: 1000
-  BulletTrail: {fileID: 0}
 --- !u!61 &142672374
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -656,7 +655,7 @@ GameObject:
   - component: {fileID: 144521120}
   - component: {fileID: 144521119}
   - component: {fileID: 144521122}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Roof
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -689,7 +688,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09feda0c22a0b564590a7523ba2d288e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RoofRenderer: {fileID: 144521120}
+  Roof: {fileID: 144521121}
   Player: {fileID: 12179575}
   PlayerCamera: {fileID: 553278023}
   ultrashit: {fileID: 553278024}
@@ -700,7 +699,7 @@ TilemapRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 144521117}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -142331,7 +142330,6 @@ MonoBehaviour:
   bulletPrefab: {fileID: 6209853981794561988, guid: d7379dfab5a6d4b4d90b92ac30c0df9f,
     type: 3}
   BulletSpeed: 1000
-  BulletTrail: {fileID: 0}
 --- !u!61 &469535740
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -142552,7 +142550,6 @@ MonoBehaviour:
   bulletPrefab: {fileID: 6209853981794561988, guid: d7379dfab5a6d4b4d90b92ac30c0df9f,
     type: 3}
   BulletSpeed: 1000
-  BulletTrail: {fileID: 0}
 --- !u!61 &525501042
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -149682,7 +149679,6 @@ MonoBehaviour:
   bulletPrefab: {fileID: 6209853981794561988, guid: d7379dfab5a6d4b4d90b92ac30c0df9f,
     type: 3}
   BulletSpeed: 1000
-  BulletTrail: {fileID: 0}
 --- !u!61 &1646947310
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -150793,8 +150789,6 @@ MonoBehaviour:
   bulletPrefab: {fileID: 6209853981794561988, guid: d7379dfab5a6d4b4d90b92ac30c0df9f,
     type: 3}
   BulletSpeed: 1000
-  BulletTrail: {fileID: 7984197458870505908, guid: 348fa7c928d51f84298839005bf3595c,
-    type: 3}
 --- !u!61 &1960479667
 BoxCollider2D:
   m_ObjectHideFlags: 0
