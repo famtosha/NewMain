@@ -4,25 +4,28 @@ using UnityEngine;
 using UnityEngine.Tilemaps;
 using UnityEngine.EventSystems;
 
-public class Shit : MonoBehaviour
+public class RoofController : MonoBehaviour
 {
-    [SerializeField] private TilemapRenderer Thins;
+    [SerializeField] private TilemapRenderer RoofRenderer;
     [SerializeField] public GameObject Player;
+    [SerializeField] private Camera PlayerCamera;
+    [SerializeField] private CameraMove ultrashit;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.name == Player.name)
         {
-            Thins.enabled = false;
-        }
-        
+            RoofRenderer.enabled = false;
+            ultrashit.MoveDown();
+        }      
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.gameObject.name == Player.name)
         {
-            Thins.enabled = true;
+            RoofRenderer.enabled = true;
+            ultrashit.MoveUp();
         }         
     }
 }

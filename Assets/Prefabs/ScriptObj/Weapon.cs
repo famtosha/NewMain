@@ -57,9 +57,26 @@ public class Weapon : Item
                 Vector2 TrueStart = Start;
                 Vector2 TrueDirect = transform.right;
 
-                var bullet = Instantiate(bulletPrefab,TrueStart + TrueDirect,transform.rotation);
+                RaycastHit2D hit = Physics2D.Raycast(TrueStart, TrueDirect, 30,~(1 << 8));
 
-                bullet.GetComponent<Rigidbody2D>().AddForce(TrueDirect.normalized * BulletSpeed);
+                if (hit)
+                { 
+                    var target = hit.transform.gameObject.GetComponent<ITarget>();
+                    if(target != null)
+                    {
+                        target.DealDamage(((WeaponData)ItemDataCurrend).Damage);
+                    }
+
+                    var targetRB = hit.transform.gameObject.GetComponent<Rigidbody2D>();
+                    if (targetRB)
+                    {
+                        targetRB.AddForce(TrueDirect.normalized * 100);
+                    }
+
+                    Debug.DrawRay(TrueStart, hit.point - TrueStart, Color.red, 0.2f);
+                }
+
+                
                 AmmoLeft--;
             }
         }        
