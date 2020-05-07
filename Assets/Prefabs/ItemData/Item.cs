@@ -29,9 +29,9 @@ public class Item : MonoBehaviour
         OnItemRemoved?.Invoke();
     }
 
-    public virtual void UseItem()
+    public virtual void UseItem(out bool IsUsed)
     {
-        
+        IsUsed = false;
     }
 
     public virtual void EquipItem()

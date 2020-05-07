@@ -16,14 +16,23 @@ public class SlotUI : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler,
 
     public void UpdateData(ItemData trashData)
     {
-        if (trashData.Sprite != null) ItemSprite.sprite = trashData.Sprite;
-        if(trashData.Count > 1)
+        if(trashData == null)
         {
-            Text.text = trashData.Count.ToString();
+            print("clear data");
+            ItemSprite.sprite = null;
+            Text.text = "";
         }
         else
         {
-            Text.text = "";
+            if (trashData.Sprite != null) ItemSprite.sprite = trashData.Sprite;
+            if (trashData.Count > 1)
+            {
+                Text.text = trashData.Count.ToString();
+            }
+            else
+            {
+                Text.text = "";
+            }
         }
     }  
 

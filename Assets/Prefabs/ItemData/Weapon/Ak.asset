@@ -30,3 +30,7 @@ MonoBehaviour:
   _reloadTime: 2
   _shotSound: {fileID: 0}
   _reloadSound: {fileID: 0}
+  ShootSoundList:
+  - {fileID: 8300000, guid: c2734806566ceaf4caf02b7ac47852fa, type: 3}
+  - {fileID: 8300000, guid: 0ed5931605c640c4e975b7145c6ebd87, type: 3}
+  - {fileID: 8300000, guid: 15947269a43f4ff47b9661648449dfa2, type: 3}

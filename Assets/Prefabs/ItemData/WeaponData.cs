@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
 
 
 [CreateAssetMenu(fileName = "New Weapon", menuName = "Weapon", order = 51)]
@@ -13,6 +15,7 @@ public class WeaponData : ItemData
     [SerializeField] private float _reloadTime;
     [SerializeField] private AudioClip _shotSound;
     [SerializeField] private AudioClip _reloadSound;
+    [SerializeField] public List<AudioClip> ShootSoundList;
 
     public float Damage
     {

@@ -29,30 +29,9 @@ public abstract class InvenotryUI : MonoBehaviour
         }
     }
 
-    public void UpdateSlot(int SlotNum, ItemData itemdata)
+    virtual public void UpdateSlot(int SlotNum, ItemData itemdata)
     {
-        
-        if (itemdata == null)
-        {
-            print("to clear slot");
-            ResetSlot(SlotNum);
-        }
-        else
-        {
-            SlotList[SlotNum].GetComponent<SlotUI>().UpdateData(itemdata);
-        }                       
-    }
-
-    public void ResetSlot(int ID)
-    {
-        Destroy(SlotList[ID]);
-        var slot = Instantiate(SlotModel);
-        SlotList[ID] = slot;
-        slot.GetComponent<SlotUI>().ID = ID;
-        slot.GetComponent<SlotUI>().BackPackUI = this;
-        slot.GetComponent<SlotUI>().UIManager = UIManager;
-        slot.transform.SetParent(gameObject.transform);
-        slot.transform.SetSiblingIndex(ID);
+        SlotList[SlotNum].GetComponent<SlotUI>().UpdateData(itemdata);
     }
 
     public void DropItem(int ID)

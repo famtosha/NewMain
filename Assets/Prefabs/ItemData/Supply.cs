@@ -1,14 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-
+using System.Collections;
+using UnityEngine;
 
 class Supply : Item
 {
-    public override void UseItem()
+    public override void UseItem(out bool IsUsed)
     {
         var data = ((SupplyData)ItemDataCurrend);
         var playerStats = PlayerTransform.gameObject.GetComponent<PlayerStats>();
@@ -17,7 +13,8 @@ class Supply : Item
         playerStats.Hunger += data.FoodGive;
         playerStats.Temperature += data.TemperatureGive;
         base.RemoveItem();
-        base.UseItem();
+        base.UseItem(out bool shit);
+        IsUsed = true;
         Destroy(gameObject);
     }
 }

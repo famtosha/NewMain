@@ -10,6 +10,7 @@ public class Weapon : Item
     private float FiringRate;
     private float NextFire;
     private bool IsReloading = false;
+    public AudioSource audioSource;
 
     new private void Start()
     {
@@ -43,7 +44,7 @@ public class Weapon : Item
         IsReloading = false;
     }
 
-    public override void UseItem()
+    public override void UseItem(out bool IsUsed)
     {
 
         if (Time.time > NextFire && !IsReloading)
@@ -71,6 +72,8 @@ public class Weapon : Item
                     {
                         targetRB.AddForce(TrueDirect.normalized * 100);
                     }
+                    var shotlist = ((WeaponData)ItemDataCurrend).ShootSoundList;
+                    audioSource.PlayOneShot(shotlist[Random.Range(0, shotlist.Count)]);
 
                     Debug.DrawRay(TrueStart, hit.point - TrueStart, Color.red, 0.2f);
                 }
@@ -78,6 +81,7 @@ public class Weapon : Item
                 
                 AmmoLeft--;
             }
-        }        
+        }
+        IsUsed = false; ;
     }
 }

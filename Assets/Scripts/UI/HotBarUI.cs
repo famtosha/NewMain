@@ -1,62 +1,30 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class HotBarUI : InvenotryUI
 {
-    public int _selectedItem = 1;
-
     public GameObject ArmPos;
 
-    public int SelectedItem
+    public override void UpdateSlot(int SlotNum, ItemData itemdata)
     {
-        get
+        base.UpdateSlot(SlotNum, itemdata);
+        if(itemdata != null)
         {
-            return _selectedItem;
-        }
-        set
-        {
-            _selectedItem = value;
-        }
-    }
-
-    public void SelectNextItem()
-    {
-        SlotList[SelectedItem].GetComponent<SlotUI>().ChangeColor(Color.white);
-        DisableItem();
-        if (_selectedItem + 1 == inventory.InventorySize)
-        {
-            SelectedItem = 0;
+            UpdateSlot(SlotNum, false);
         }
         else
         {
-            SelectedItem++;
+            UpdateSlot(SlotNum, true);
         }
-        SlotList[SelectedItem].GetComponent<SlotUI>().ChangeColor(Color.cyan);
-        EnableItem();
     }
 
-    public void SelectPrevItem()
+    public void EnableItem(int Num)
     {
-        SlotList[SelectedItem].GetComponent<SlotUI>().ChangeColor(Color.white);
-        DisableItem();
-        if (_selectedItem == 0)
-        {
-            SelectedItem = inventory.InventorySize - 1;          
-        }
-        else
-        {
-            SelectedItem--;
-        }
-        SlotList[SelectedItem].GetComponent<SlotUI>().ChangeColor(Color.cyan);
-        EnableItem();
-    }
-
-    public void EnableItem()
-    {
-        
-        var item = inventory.GetSlotInfo(_selectedItem);
-        if(item != null)
+        SlotList[Num].GetComponent<SlotUI>().ChangeColor(Color.cyan);
+        var item = inventory.GetSlotInfo(Num);
+        if(item)
         {
             item.gameObject.SetActive(true);
             item.transform.position = ArmPos.transform.position;
@@ -64,48 +32,37 @@ public class HotBarUI : InvenotryUI
             item.GetComponent<BoxCollider2D>().enabled = false;
             item.gameObject.transform.Rotate(0, 0, 90);
             item.GetComponent<Item>().EquipItem();
-            item.GetComponent<Item>().OnItemRemoved += RemoveItem;
-        }
+        }      
     }
 
-    public void DisableItem()
+    public void DisableItem(int Num)
     {
-        var item = inventory.GetSlotInfo(_selectedItem);
-        if(item != null)
+        SlotList[Num].GetComponent<SlotUI>().ChangeColor(Color.white);
+        var item = inventory.GetSlotInfo(Num);
+        if(item)
         {
             item.gameObject.SetActive(false);
             item.GetComponent<BoxCollider2D>().enabled = true;
-            item.GetComponent<Item>().OnItemRemoved -= RemoveItem;
         }     
     }
 
-    public void RemoveItem()
+    private void UpdateSlot(int Num, bool Active)
     {
-        inventory.RemoveFromInventory(_selectedItem);
-        inventory.UpdateSlot(_selectedItem);
+        if (Active)
+        {
+            EnableItem(Num);
+        }
+        else
+        {
+            DisableItem(Num);
+        }
     }
 
-    private void Update()
+    new private void Start()
     {
-        if (Input.GetAxis("Mouse ScrollWheel") < 0f) SelectNextItem();
-        if (Input.GetAxis("Mouse ScrollWheel") > 0f) SelectPrevItem();
+        base.Start();
+        ((HotBar)inventory).OnChangeSelectedItem += UpdateSlot;
 
-        if (Input.GetMouseButton(0))
-        {
-            if (inventory.GetSlotInfo(_selectedItem) != null)
-            {
-                var item = inventory.GetSlotInfo(_selectedItem).GetComponent<Item>();
-                item.UseItem();
-            }
-        }
-
-        if (Input.GetKey(KeyCode.R))
-        {
-            if (inventory.GetSlotInfo(_selectedItem) != null)
-            {
-                inventory.GetSlotInfo(_selectedItem)?.GetComponent<Weapon>()?.Reload();
-            }
-        }
-
+        
     }
 }

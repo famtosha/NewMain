@@ -10,7 +10,7 @@ public class Inventory : MonoBehaviour
     public int InventorySize => _inventory.Length;
     public event Action<int,ItemData> _updateSlot;
 
-    public void UpdateSlot(int ID)
+    protected void UpdateSlot(int ID)
     {
         _updateSlot(ID, GetData(ID));
     }

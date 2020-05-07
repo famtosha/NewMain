@@ -33,7 +33,7 @@ public class Eye : MonoBehaviour
                 if (hit.transform.gameObject.name == Player.name)
                 {
                     LookAtPlayer();
-                    weapon.UseItem();
+                    weapon.UseItem(out bool shit);
                     RB.AddForce((Player.transform.position - gameObject.transform.position).normalized * 50);
                 }
             }
