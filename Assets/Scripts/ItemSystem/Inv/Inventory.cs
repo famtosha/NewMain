@@ -6,11 +6,12 @@ using UnityEngine;
 public class Inventory : MonoBehaviour
 {
     [SerializeField] protected GameObject[] _inventory = new GameObject[24];
+
     public Arm Arm;
     public int InventorySize => _inventory.Length;
     public event Action<int,ItemData> _updateSlot;
 
-    protected void UpdateSlot(int ID)
+    virtual protected void UpdateSlot(int ID)
     {
         _updateSlot(ID, GetData(ID));
     }

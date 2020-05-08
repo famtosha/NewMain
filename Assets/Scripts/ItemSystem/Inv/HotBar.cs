@@ -5,25 +5,45 @@ using UnityEngine;
 
 public class HotBar : Inventory
 {
+    public event Action<int, bool> OnChangeSelectedItem;
+
+    public ItemShower ItemShower;
+
     private void Start()
     {
         _inventory = new GameObject[9];
     }
 
-    public event Action<int,bool> OnChangeSelectedItem;
+    protected override void UpdateSlot(int ID)
+    {
+        base.UpdateSlot(ID);
+        if (_inventory[ID] == null)
+        {
+            ItemShower.HideItem();
+        }
+        else
+        {
+            if(ID == HotBarSelected)
+            {
+                ItemShower.ShowItem(_inventory[ID]);
+            }
+        }
+    }
 
     private int _hotBarSelected = 0;
 
-    private int HotBarSelected
+    public int HotBarSelected
     {
         get { return _hotBarSelected; }
-        set
+        private set
         {
             if(OnChangeSelectedItem != null)
             {
+                ItemShower.HideItem();
                 OnChangeSelectedItem(_hotBarSelected,false);
                 _hotBarSelected = value;
                 OnChangeSelectedItem(value,true);
+                ItemShower.ShowItem(_inventory[value]);
             }
         }
     }
@@ -57,11 +77,10 @@ public class HotBar : Inventory
         var item = _inventory[HotBarSelected];
         if(item)
         {
-            item.GetComponent<Item>().UseItem(out bool Isused);
-            if (Isused)
+            item.GetComponent<Item>().UseItem(out bool IsUsed);
+            if (IsUsed)
             {
                 _inventory[HotBarSelected] = null;
-                OnChangeSelectedItem(HotBarSelected, false);
                 UpdateSlot(HotBarSelected);
             }
         }
@@ -80,7 +99,7 @@ public class HotBar : Inventory
     {
         if (Input.GetAxis("Mouse ScrollWheel") > 0f) SelectNext();
         if (Input.GetAxis("Mouse ScrollWheel") < 0f) SelectPrev();
-        if(Input.GetMouseButton(0)) UseItem();
+        if(Input.GetKey(KeyCode.E)) UseItem();
         if (Input.GetKeyDown(KeyCode.R)) ReloadWeapon();
     }
 }

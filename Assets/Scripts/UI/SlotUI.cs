@@ -18,7 +18,6 @@ public class SlotUI : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler,
     {
         if(trashData == null)
         {
-            print("clear data");
             ItemSprite.sprite = null;
             Text.text = "";
         }

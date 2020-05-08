@@ -34,6 +34,11 @@ public class Item : MonoBehaviour
         IsUsed = false;
     }
 
+    public virtual void UseItem()
+    {
+
+    }
+
     public virtual void EquipItem()
     {
 

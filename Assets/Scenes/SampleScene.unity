@@ -360,22 +360,8 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   Arm: {fileID: 12179583}
+  ItemShower: {fileID: 30452288}
 --- !u!114 &12179585
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -551,6 +537,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 30452287}
+  - component: {fileID: 30452288}
   m_Layer: 8
   m_Name: Arm
   m_TagString: Untagged
@@ -572,6 +559,19 @@ Transform:
   m_Father: {fileID: 12179580}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &30452288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 30452286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 056224a5ebc6618408fb0a68493b7d7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ArmPos: {fileID: 30452286}
 --- !u!1001 &142672370
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -694,6 +694,7 @@ MonoBehaviour:
   ItemDataCurrend: {fileID: 0}
   PlayerTransform: {fileID: 12179580}
   Barriel: {fileID: 0}
+  audioSource: {fileID: 0}
 --- !u!61 &142672374
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -142406,6 +142407,7 @@ MonoBehaviour:
   ItemDataCurrend: {fileID: 0}
   PlayerTransform: {fileID: 12179580}
   Barriel: {fileID: 0}
+  audioSource: {fileID: 0}
 --- !u!61 &469535740
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -142624,6 +142626,7 @@ MonoBehaviour:
   ItemDataCurrend: {fileID: 0}
   PlayerTransform: {fileID: 12179580}
   Barriel: {fileID: 0}
+  audioSource: {fileID: 0}
 --- !u!61 &525501042
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -147618,7 +147621,6 @@ MonoBehaviour:
   inventory: {fileID: 12179584}
   UIManager: {fileID: 537254970}
   playerInvList: {fileID: 12179577}
-  _selectedItem: 0
   ArmPos: {fileID: 30452286}
 --- !u!114 &874125339
 MonoBehaviour:
@@ -149988,6 +149990,7 @@ MonoBehaviour:
   ItemDataCurrend: {fileID: 0}
   PlayerTransform: {fileID: 12179580}
   Barriel: {fileID: 0}
+  audioSource: {fileID: 0}
 --- !u!61 &1646947310
 BoxCollider2D:
   m_ObjectHideFlags: 0
