@@ -99,9 +99,19 @@ public class Inventory : MonoBehaviour
 
     public void SwitchItemsMultiInv(int FSlot, Inventory FInventory, int SSlot, Inventory SInventory)
     {
-        var Item = FInventory.RemoveFromInventory(FSlot);
-        SInventory.AddToInventory(Item, SSlot);
+        var FItem = FInventory.RemoveFromInventory(FSlot);
+        var SItem = SInventory.RemoveFromInventory(SSlot);
 
+
+        if (FItem)
+        {
+            SInventory.AddToInventory(FItem, SSlot);
+        }
+        if (SItem)
+        {
+            FInventory.AddToInventory(SItem, FSlot);
+        }
+                  
         FInventory.UpdateSlot(FSlot);
         SInventory.UpdateSlot(SSlot);
     }
