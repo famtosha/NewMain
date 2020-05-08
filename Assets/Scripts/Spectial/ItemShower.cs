@@ -10,7 +10,6 @@ public class ItemShower : MonoBehaviour
     public void ShowItem(GameObject Item)
     {
         if (ItemToShow != null) HideItem();
-
         if (Item)
         {
             ItemToShow = Item;
@@ -20,7 +19,7 @@ public class ItemShower : MonoBehaviour
             ItemToShow.GetComponent<BoxCollider2D>().enabled = false;
             ItemToShow.gameObject.transform.Rotate(0, 0, 90);
             ItemToShow.GetComponent<Item>().EquipItem();
-        }
+        }       
     }
 
     public void HideItem()

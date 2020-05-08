@@ -39,8 +39,9 @@ public class Weapon : Item
     private IEnumerator StartReload()
     {
         IsReloading = true;
+        audioSource.PlayOneShot(((WeaponData)ItemDataCurrend).ReloadSound);
         yield return new WaitForSeconds(((WeaponData)ItemDataCurrend).ReloadTime);
-        AmmoLeft = ((WeaponData)ItemDataCurrend).MagazineCapacity;
+        AmmoLeft = ((WeaponData)ItemDataCurrend).MagazineCapacity;      
         IsReloading = false;
     }
 
@@ -57,7 +58,7 @@ public class Weapon : Item
                 Vector2 TrueStart = Start;
                 Vector2 TrueDirect = transform.right;
 
-                RaycastHit2D hit = Physics2D.Raycast(TrueStart, TrueDirect, 30,~(1 << 8));
+                RaycastHit2D hit = Physics2D.Raycast(TrueStart, TrueDirect, 30,~(1 << 10));
 
                 if (hit)
                 { 
@@ -72,16 +73,17 @@ public class Weapon : Item
                     {
                         targetRB.AddForce(TrueDirect.normalized * 100);
                     }
-                    var shotlist = ((WeaponData)ItemDataCurrend).ShootSoundList;
-                    audioSource.PlayOneShot(shotlist[Random.Range(0, shotlist.Count)]);
-
                     Debug.DrawRay(TrueStart, hit.point - TrueStart, Color.red, 0.2f);
-                }
-
-                
+                }               
+                var shotlist = ((WeaponData)ItemDataCurrend).ShootSoundList;
+                audioSource.PlayOneShot(shotlist[Random.Range(0, shotlist.Count)]);
                 AmmoLeft--;
             }
+            else
+            {
+                audioSource.PlayOneShot(((WeaponData)ItemDataCurrend).EmptySound);
+            }
         }
-        IsUsed = false; ;
+        IsUsed = false;
     }
 }

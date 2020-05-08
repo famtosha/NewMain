@@ -16,6 +16,8 @@ public class WeaponData : ItemData
     [SerializeField] private AudioClip _shotSound;
     [SerializeField] private AudioClip _reloadSound;
     [SerializeField] public List<AudioClip> ShootSoundList;
+    [SerializeField] public AudioClip ReloadSound;
+    [SerializeField] public AudioClip EmptySound;
 
     public float Damage
     {

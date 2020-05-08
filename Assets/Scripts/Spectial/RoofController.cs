@@ -36,9 +36,17 @@ public class RoofController : MonoBehaviour
     {
         if (collision.gameObject.name == Player.name)
         {
-            IsInRoom = true;
             ultrashit.MoveDown();
         }      
+    }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if(collision.gameObject.name == Player.name)
+        {
+            IsInRoom = true;
+            ultrashit.IsInRoom = true;
+        }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
@@ -46,7 +54,7 @@ public class RoofController : MonoBehaviour
         if (collision.gameObject.name == Player.name)
         {
             IsInRoom = false;
-            ultrashit.MoveUp();
+            ultrashit.LeaveRoom();
         }         
     }
 }

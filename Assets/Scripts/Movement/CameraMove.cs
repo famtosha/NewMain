@@ -7,7 +7,7 @@ public class CameraMove : MonoBehaviour
 {
     [SerializeField] private Transform PlayerPos;
     [SerializeField] private Transform CameraPos;
-    private bool IsInRoom = false;
+    public bool IsInRoom = false;
     private bool IsMoving = false;
     private float CameraZ;
     private float _time = 0f;
@@ -26,7 +26,7 @@ public class CameraMove : MonoBehaviour
    
         if (IsInRoom)
         {
-            CameraZ = -0.4f;
+            CameraZ = -0.6f;
         }
         else
         {
@@ -44,7 +44,7 @@ public class CameraMove : MonoBehaviour
         IsMoving = true;
     }
 
-    public void MoveUp()
+    public void LeaveRoom()
     {
         IsInRoom = false;
         IsMoving = true;

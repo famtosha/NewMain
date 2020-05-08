@@ -17,16 +17,16 @@ public class Inventory : MonoBehaviour
     }
 
     public void AddToInventory(GameObject Item,int Slot)
-    {
-        
+    {      
         _inventory[Slot] = Item;
+        Item.transform.SetParent(gameObject.transform);
         UpdateSlot(Slot);
     }
 
     public GameObject RemoveFromInventory(int Slot)
     {
         var x = _inventory[Slot];
-        _inventory[Slot] = null;
+        _inventory[Slot] = null;      
         return x;
     }
 

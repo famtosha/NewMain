@@ -24,18 +24,19 @@ public class Eye : MonoBehaviour
         {
             TimeLeft = UpdateTime;
 
-            RaycastHit2D hit = Physics2D.Raycast(transform.position, Player.transform.position - transform.position,30,~(1 <<9));
-            Debug.DrawRay(transform.position, Player.transform.position - transform.position,Color.red,0.2f);
+            LayerMask layerMask = 1 << 9 & 1 << 10;
+            RaycastHit2D hit = Physics2D.Raycast(transform.position, Player.transform.position - transform.position,30, ~layerMask);
+            
             if(hit)
             {
-                print(hit.transform.gameObject.name);
-                print(Player.name);
+                print(hit.transform.gameObject.name + " " + Player.name);
                 if (hit.transform.gameObject.name == Player.name)
-                {
+                {                  
                     LookAtPlayer();
                     weapon.UseItem(out bool shit);
                     RB.AddForce((Player.transform.position - gameObject.transform.position).normalized * 50);
                 }
+                Debug.DrawRay(transform.position, Player.transform.position - transform.position, Color.red, 0.2f);
             }
         }
         
