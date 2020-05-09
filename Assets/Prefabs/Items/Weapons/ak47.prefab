@@ -102,6 +102,9 @@ MonoBehaviour:
   Barriel: {fileID: 3283360179233582614}
   audioSource: {fileID: 5671621739779907662}
   ParticleSystem: {fileID: 7090502604596312661}
+  Ignore:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!61 &3853829513305868570
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3853,7 +3856,7 @@ ParticleSystem:
     m_Dampen:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0
+      scalar: 1
       minScalar: 0
       maxCurve:
         serializedVersion: 2

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _name: Scal-L
   _count: 1
-  _maxCount: 99
+  _maxCount: 1
   _craftability: 0
   _craftable: 0
   _sprite: {fileID: 21300000, guid: 7affad4a3708b0449bdbec8cee53318a, type: 3}
@@ -30,3 +30,6 @@ MonoBehaviour:
   _reloadTime: 2
   _shotSound: {fileID: 0}
   _reloadSound: {fileID: 0}
+  ShootSoundList: []
+  ReloadSound: {fileID: 0}
+  EmptySound: {fileID: 0}

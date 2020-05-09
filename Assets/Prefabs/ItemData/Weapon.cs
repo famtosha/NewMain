@@ -12,6 +12,7 @@ public class Weapon : Item
     private bool IsReloading = false;
     public AudioSource audioSource;
     public ParticleSystem ParticleSystem;
+    public LayerMask Ignore;
 
     new private void Start()
     {
@@ -59,7 +60,7 @@ public class Weapon : Item
                 Vector2 TrueStart = Start;
                 Vector2 TrueDirect = transform.right;
 
-                RaycastHit2D hit = Physics2D.Raycast(TrueStart, TrueDirect, 30,~(1 << 10));
+                RaycastHit2D hit = Physics2D.Raycast(TrueStart, TrueDirect, 30,~Ignore);
 
                 Vector2 HitPoint;
                 if (hit)

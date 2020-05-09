@@ -25,6 +25,7 @@ public class Inventory : MonoBehaviour
 
     public GameObject RemoveFromInventory(int Slot)
     {
+        if(_inventory[Slot] != null) _inventory[Slot].transform.SetParent(null);
         var x = _inventory[Slot];
         _inventory[Slot] = null;      
         return x;
