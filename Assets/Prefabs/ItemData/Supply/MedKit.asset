@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _name: MedKit
   _count: 1
-  _maxCount: 99
+  _maxCount: 1
   _craftability: 0
   _craftable: 0
   _sprite: {fileID: 21300000, guid: 7bc4a31b19a2dd848ac22ab920569e3f, type: 3}

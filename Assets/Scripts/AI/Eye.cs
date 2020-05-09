@@ -7,6 +7,7 @@ public class Eye : MonoBehaviour
     [SerializeField] private GameObject Player;
     [SerializeField] private Rigidbody2D RB;
     [SerializeField] private GameObject Weapon;
+    [SerializeField] private LayerMask Ignore;
     private Weapon weapon;
     private float UpdateTime = 0.2f;
     private float TimeLeft;
@@ -24,8 +25,8 @@ public class Eye : MonoBehaviour
         {
             TimeLeft = UpdateTime;
 
-            LayerMask layerMask = 1 << 9 & 1 << 10;
-            RaycastHit2D hit = Physics2D.Raycast(transform.position, Player.transform.position - transform.position,30, ~layerMask);
+            
+            RaycastHit2D hit = Physics2D.Raycast(transform.position, Player.transform.position - transform.position,30, ~Ignore);
             
             if(hit)
             {

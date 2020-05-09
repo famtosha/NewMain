@@ -25,14 +25,17 @@ public class Arm : MonoBehaviour
     {
         foreach (var inv in inventorys)
         {
+            Item.SetActive(false);
             if (inv.AddToFreeSlot(Item))
             {
-                Item.SetActive(false);
                 Item.transform.SetParent(gameObject.transform);
-                break;
+                return;
             }
-        }
-     
+            else
+            {
+                Item.SetActive(true);
+            }
+        }    
     }
 
     public void DropItem(GameObject Item)
