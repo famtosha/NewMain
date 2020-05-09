@@ -13,7 +13,7 @@ class Supply : Item
         playerStats.Hunger += data.FoodGive;
         playerStats.Temperature += data.TemperatureGive;
         base.RemoveItem();
-        base.UseItem(out bool shit);
+        base.UseItem();
         IsUsed = true;
         Destroy(gameObject);
     }

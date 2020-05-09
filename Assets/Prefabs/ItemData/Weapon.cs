@@ -11,6 +11,7 @@ public class Weapon : Item
     private float NextFire;
     private bool IsReloading = false;
     public AudioSource audioSource;
+    public ParticleSystem ParticleSystem;
 
     new private void Start()
     {
@@ -60,8 +61,10 @@ public class Weapon : Item
 
                 RaycastHit2D hit = Physics2D.Raycast(TrueStart, TrueDirect, 30,~(1 << 10));
 
+                Vector2 HitPoint;
                 if (hit)
-                { 
+                {
+                    HitPoint = hit.point;
                     var target = hit.transform.gameObject.GetComponent<ITarget>();
                     if(target != null)
                     {
@@ -73,8 +76,16 @@ public class Weapon : Item
                     {
                         targetRB.AddForce(TrueDirect.normalized * 100);
                     }
-                    Debug.DrawRay(TrueStart, hit.point - TrueStart, Color.red, 0.2f);
-                }               
+
+                }
+                else
+                {
+                    HitPoint = TrueStart  + (((Vector2)transform.right) * 3);
+                }
+
+                ParticleSystem.Play();
+                Debug.DrawRay(TrueStart, HitPoint - TrueStart, Color.red, 0.2f);
+
                 var shotlist = ((WeaponData)ItemDataCurrend).ShootSoundList;
                 audioSource.PlayOneShot(shotlist[Random.Range(0, shotlist.Count)]);
                 AmmoLeft--;

@@ -19,7 +19,6 @@ public class ItemShower : MonoBehaviour
             ItemToShow.GetComponent<BoxCollider2D>().enabled = false;
             ItemToShow.gameObject.transform.Rotate(0, 0, 90);
             ItemToShow.GetComponent<Item>().EquipItem();
-            print("Show item: " + ItemToShow.name);
         }       
     }
 
