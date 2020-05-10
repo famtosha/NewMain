@@ -33,6 +33,11 @@ public class UIManager : MonoBehaviour
     public bool IsPauseMenuOpen => PauseMenu.GetComponent<Canvas>().enabled;
     public bool IsAnotherInventoryMenuOpen => AnotherInventoryMenu.GetComponent<Canvas>().enabled;
 
+    public void MakeEvent(Action action)
+    {
+        action?.Invoke();
+    }
+
     private void Start()
     {
         HotBar.GetComponent<Canvas>().enabled = true;
@@ -40,8 +45,27 @@ public class UIManager : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape)) ChangePausemenuState();
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if (IsBackPackOpen)
+            {
+                ChangeBackPackMenu();
+            }
+            else
+            {
+                if (!IsAnotherInventoryMenuOpen)
+                {
+                    ChangePausemenuState();
+                }
+            }
+        }
         if (Input.GetKeyDown(KeyCode.I)) ChangeBackPackMenu();
+    }
+
+    public void CloseEveryThing()
+    {
+        DisableBackPackMenu();
+        DisableAnotherInventoryMenu();
     }
 
     public void DisableDeathMenu()
@@ -57,13 +81,13 @@ public class UIManager : MonoBehaviour
     public void DisablePauseMenu()
     {
         PauseMenu.GetComponent<Canvas>().enabled = false;
-        //PauseMenu.SetActive(false);
+        Time.timeScale = 1;
     }
 
     public void EnablePauseMenu()
     {
         PauseMenu.GetComponent<Canvas>().enabled = true;
-        //PauseMenu.SetActive(true);
+        Time.timeScale = 0f;
     }
 
     public void ChangePausemenuState()

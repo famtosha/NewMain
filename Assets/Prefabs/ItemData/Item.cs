@@ -5,7 +5,7 @@ public class Item : MonoBehaviour
 {
     public event Action OnItemRemoved;
 
-    [SerializeField] protected ItemData ItemDataOrigin;
+    [SerializeField] public ItemData ItemDataOrigin;
     [SerializeField] public ItemData ItemDataCurrend;
     public Transform PlayerTransform;
 

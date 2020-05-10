@@ -12,6 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89614d340046b32449bef9ed66ff6c49, type: 3}
   m_Name: MedKit
   m_EditorClassIdentifier: 
+  rarity: 0
+  itemType: 5
+  ID: 1
   _name: MedKit
   _count: 1
   _maxCount: 1

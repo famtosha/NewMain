@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.Experimental.PlayerLoop;
 
 public abstract class InvenotryUI : MonoBehaviour
 { 
@@ -20,11 +21,12 @@ public abstract class InvenotryUI : MonoBehaviour
         SlotList = new GameObject[inventory.InventorySize];
         for (int i = 0; i < SlotList.Length; i++)
         {
-            var slot = Instantiate(SlotModel);
+            var slot = Instantiate(SlotModel);           
             slot.GetComponent<SlotUI>().ID = i;
             slot.GetComponent<SlotUI>().BackPackUI = this;
             slot.GetComponent<SlotUI>().UIManager = UIManager;
             slot.transform.SetParent(gameObject.transform);
+            slot.transform.localScale = new Vector3(0.5f, 0.5f, 1);
             SlotList[i] = slot;
         }
     }

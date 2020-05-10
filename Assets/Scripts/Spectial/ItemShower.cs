@@ -15,7 +15,7 @@ public class ItemShower : MonoBehaviour
             ItemToShow = Item;
             ItemToShow.gameObject.SetActive(true);
             ItemToShow.transform.position = ArmPos.transform.position;
-            ItemToShow.gameObject.transform.rotation = new Quaternion();
+            ItemToShow.gameObject.transform.rotation = ArmPos.transform.rotation;
             ItemToShow.GetComponent<BoxCollider2D>().enabled = false;
             ItemToShow.gameObject.transform.Rotate(0, 0, 90);
             ItemToShow.GetComponent<Item>().EquipItem();

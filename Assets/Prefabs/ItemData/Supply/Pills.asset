@@ -12,9 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89614d340046b32449bef9ed66ff6c49, type: 3}
   m_Name: Pills
   m_EditorClassIdentifier: 
+  rarity: 0
+  itemType: 5
+  ID: 2
   _name: Pills
   _count: 1
-  _maxCount: 99
+  _maxCount: 1
   _craftability: 0
   _craftable: 0
   _sprite: {fileID: 21300000, guid: 8a32f0a11e634164fbab8f08c1afcbf4, type: 3}

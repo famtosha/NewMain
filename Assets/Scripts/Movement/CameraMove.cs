@@ -7,6 +7,7 @@ public class CameraMove : MonoBehaviour
 {
     [SerializeField] private Transform PlayerPos;
     [SerializeField] private Transform CameraPos;
+    [SerializeField] private Camera Camera;
     public bool IsInRoom = false;
     private bool IsMoving = false;
     private float CameraZ;
@@ -26,15 +27,16 @@ public class CameraMove : MonoBehaviour
    
         if (IsInRoom)
         {
-            CameraZ = -0.6f;
+            CameraZ = 5f;
         }
         else
         {
-            CameraZ = -1f;
+            CameraZ = 10f;
         }
 
-        float z = Mathf.Lerp(CameraPos.position.z,CameraZ,_time/3);
-        Vector3 NewPos = new Vector3(PlayerPos.position.x, PlayerPos.position.y, z);
+        float z = Mathf.Lerp(Camera.orthographicSize,CameraZ,_time/3);
+        Vector3 NewPos = new Vector3(PlayerPos.position.x, PlayerPos.position.y, CameraPos.position.z);
+        Camera.orthographicSize = z;
         CameraPos.position = NewPos;
     }
 

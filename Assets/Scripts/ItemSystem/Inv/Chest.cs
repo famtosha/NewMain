@@ -35,6 +35,13 @@ public class Chest : MonoBehaviour
     {
         if (IsInvOpen)
         {
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                PlayerArm.CloseInventory();
+                IsInvOpen = false;
+                return;
+            }
+
             if(Vector3.Distance(PlayerTransform.position, gameObject.transform.position) > 2)
             {
                 PlayerArm.CloseInventory();
