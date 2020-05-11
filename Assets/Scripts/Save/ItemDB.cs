@@ -12,6 +12,7 @@ public class ItemDB : MonoBehaviour
         LoadDataBase();
     }
 
+
     private void LoadDataBase()
     {
         GameObject[] items = Resources.LoadAll<GameObject>("Items");
@@ -57,7 +58,7 @@ public class ItemDB : MonoBehaviour
 
         for (int i = 0; i < ItemDictionary.Count; i++)
         {
-            if (ItemDictionary[i].GetComponent<Item>().ItemDataOrigin.itemType == itemType)
+            if (ItemDictionary[i].GetComponent<Item>().ItemDataOrigin.ItemType == itemType)
             {
                 Result.Add(ItemDictionary[i]);
             }
@@ -71,7 +72,7 @@ public class ItemDB : MonoBehaviour
 
         for (int i = 0; i < ItemDictionary.Count; i++)
         {
-            if(ItemDictionary[i].GetComponent<Item>().ItemDataOrigin.rarity == itemRarity)
+            if(ItemDictionary[i].GetComponent<Item>().ItemDataOrigin.Rarity == itemRarity)
             {
                 Result.Add(ItemDictionary[i]);
             }

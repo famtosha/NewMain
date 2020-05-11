@@ -91,7 +91,7 @@ public class HotBar : Inventory
         var item = _inventory[HotBarSelected];
         if (item)
         {
-            ((Weapon)item.GetComponent<Item>()).Reload();
+            ((Weapon)item.GetComponent<Item>())?.Reload();
         }
     }
 

@@ -20,6 +20,7 @@ public class Inventory : MonoBehaviour
     {      
         _inventory[Slot] = Item;
         Item.transform.SetParent(gameObject.transform);
+        Item.GetComponent<Item>().PlayerTransform = gameObject.transform;
         UpdateSlot(Slot);
     }
 

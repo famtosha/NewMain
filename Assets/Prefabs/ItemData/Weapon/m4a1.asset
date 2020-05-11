@@ -12,16 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 894ba69e2bd8c204ca26932cba70edc3, type: 3}
   m_Name: m4a1
   m_EditorClassIdentifier: 
-  _name: M4A1
+  Rarity: 0
+  ItemType: 0
+  ID: 5
+  Name: m4a1
   _count: 1
-  _maxCount: 1
-  _craftability: 0
-  _craftable: 0
-  _sprite: {fileID: 21300000, guid: d9e78acd99b5e43488ecbea6a3d3dfdd, type: 3}
-  _description: Assault Rifle
-  _tradable: 0
-  _rarity: 0
-  _itemType: 0
+  MaxCount: 99
+  SpriteInInventiry: {fileID: 21300000, guid: d9e78acd99b5e43488ecbea6a3d3dfdd, type: 3}
+  SpriteInArm: {fileID: 21300000, guid: d9e78acd99b5e43488ecbea6a3d3dfdd, type: 3}
+  SpriteInWorld: {fileID: 21300000, guid: d9e78acd99b5e43488ecbea6a3d3dfdd, type: 3}
+  Description: m4a1
+  Tradable: 0
+  Craftability: 0
+  Craftable: 0
   _weaponType: 3
   _damage: 20
   _recoil: 2
@@ -30,6 +33,7 @@ MonoBehaviour:
   _reloadTime: 2
   _shotSound: {fileID: 0}
   _reloadSound: {fileID: 0}
-  ShootSoundList: []
-  ReloadSound: {fileID: 0}
-  EmptySound: {fileID: 0}
+  ShootSoundList:
+  - {fileID: 8300000, guid: 15947269a43f4ff47b9661648449dfa2, type: 3}
+  ReloadSound: {fileID: 8300000, guid: 283791f840ebd9e4ab2b6e44f1732328, type: 3}
+  EmptySound: {fileID: 8300000, guid: 3f1f7407866d25541b5f9721f0e45e78, type: 3}

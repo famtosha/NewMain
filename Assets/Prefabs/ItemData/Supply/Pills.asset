@@ -12,19 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89614d340046b32449bef9ed66ff6c49, type: 3}
   m_Name: Pills
   m_EditorClassIdentifier: 
-  rarity: 0
-  itemType: 5
+  Rarity: 0
+  ItemType: 5
   ID: 2
-  _name: Pills
+  Name: Pills
   _count: 1
-  _maxCount: 1
-  _craftability: 0
-  _craftable: 0
-  _sprite: {fileID: 21300000, guid: 8a32f0a11e634164fbab8f08c1afcbf4, type: 3}
-  _description: some coffe pills
-  _tradable: 0
-  _rarity: 0
-  _itemType: 5
+  MaxCount: 1
+  SpriteInInventiry: {fileID: 21300000, guid: 8a32f0a11e634164fbab8f08c1afcbf4, type: 3}
+  SpriteInArm: {fileID: 21300000, guid: 8a32f0a11e634164fbab8f08c1afcbf4, type: 3}
+  SpriteInWorld: {fileID: 21300000, guid: 8a32f0a11e634164fbab8f08c1afcbf4, type: 3}
+  Description: Some Pils
+  Tradable: 0
+  Craftability: 0
+  Craftable: 0
   _foodGive: 0
   _waterGive: 0
   _temperatureGive: 5

@@ -13,6 +13,7 @@ public class Weapon : Item
     public AudioSource audioSource;
     public ParticleSystem ParticleSystem;
     public LayerMask Ignore;
+    public float MaxRazbros = 300;
 
     new private void Start()
     {
@@ -35,7 +36,10 @@ public class Weapon : Item
 
     public virtual void Reload()
     {
-        StartCoroutine(StartReload());
+        if (!IsReloading)
+        {
+            StartCoroutine(StartReload());
+        }       
     }
 
     private IEnumerator StartReload()
@@ -55,10 +59,11 @@ public class Weapon : Item
             NextFire = Time.time + FiringRate;
             if (AmmoLeft > 0)
             {
+                
                 Vector3 Start = Barriel.transform.position;
 
                 Vector2 TrueStart = Start;
-                Vector2 TrueDirect = transform.right;
+                Vector2 TrueDirect = Barriel.transform.right;
 
                 RaycastHit2D hit = Physics2D.Raycast(TrueStart, TrueDirect, 30,~Ignore);
 
@@ -77,15 +82,14 @@ public class Weapon : Item
                     {
                         targetRB.AddForce(TrueDirect.normalized * 100);
                     }
-
                 }
                 else
                 {
-                    HitPoint = TrueStart  + (((Vector2)transform.right) * 3);
+                    HitPoint = TrueStart  + (((Vector2)Barriel.transform.right) * 3);
                 }
 
                 ParticleSystem.Play();
-                Debug.DrawRay(TrueStart, HitPoint - TrueStart, Color.red, 0.2f);
+                Debug.DrawLine(TrueStart, HitPoint, Color.red, 0.2f);
 
                 var shotlist = ((WeaponData)ItemDataCurrend).ShootSoundList;
                 audioSource.PlayOneShot(shotlist[Random.Range(0, shotlist.Count)]);

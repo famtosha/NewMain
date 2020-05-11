@@ -23,7 +23,7 @@ public class SlotUI : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler,
         }
         else
         {
-            if (trashData.Sprite != null) ItemSprite.sprite = trashData.Sprite;
+            if (trashData.SpriteInInventiry != null) ItemSprite.sprite = trashData.SpriteInInventiry;
             if (trashData.Count > 1)
             {
                 Text.text = trashData.Count.ToString();
