@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: MedKit
   m_EditorClassIdentifier: 
   Rarity: 0
-  ItemType: 5
+  ItemType: 1
   ID: 1
   Name: MedKit
   _count: 1

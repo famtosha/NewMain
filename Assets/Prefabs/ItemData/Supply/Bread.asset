@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Bread
   m_EditorClassIdentifier: 
   Rarity: 0
-  ItemType: 5
+  ItemType: 4
   ID: 0
   Name: Bread
   _count: 1

@@ -5,9 +5,6 @@ using System.Net.NetworkInformation;
 using UnityEngine;
 using UnityEngine.UI;
 
-public enum ItemRarity { common, uncommon, rare, epic, godlike }
-public enum ItemType { weapon, weapon_part, material, trash, utilities, food }
-
 [CreateAssetMenu(fileName = "New Item", menuName = "Item", order = 51)]
 
 public class ItemData : ScriptableObject

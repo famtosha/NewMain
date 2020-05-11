@@ -13,7 +13,7 @@ public class Inventory : MonoBehaviour
 
     virtual protected void UpdateSlot(int ID)
     {
-        _updateSlot(ID, GetData(ID));
+        _updateSlot?.Invoke(ID, GetData(ID));
     }
 
     public void AddToInventory(GameObject Item,int Slot)

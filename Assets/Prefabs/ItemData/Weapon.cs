@@ -88,7 +88,7 @@ public class Weapon : Item
                     HitPoint = TrueStart  + (((Vector2)Barriel.transform.right) * 3);
                 }
 
-                ParticleSystem.Play();
+                ParticleSystem?.Play();
                 Debug.DrawLine(TrueStart, HitPoint, Color.red, 0.2f);
 
                 var shotlist = ((WeaponData)ItemDataCurrend).ShootSoundList;

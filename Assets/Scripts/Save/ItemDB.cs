@@ -83,7 +83,6 @@ public class ItemDB : MonoBehaviour
     public GameObject GetRandomItem()
     {
         var x = Random.Range(0, ItemDictionary.Count);
-        print(x);
         return ItemDictionary[x];
     }
 
@@ -96,8 +95,15 @@ public class ItemDB : MonoBehaviour
 
     public GameObject GetRandomItem(ItemType itemType)//shit
     {
-        var items = GetAllItems(itemType);
-        var item = items[Random.Range(0, items.Count)];
-        return ItemDictionary.FirstOrDefault(t => t.Value == item).Value;
+        if(itemType == ItemType.Default)
+        {
+            return GetRandomItem();
+        }
+        else
+        {
+            var items = GetAllItems(itemType);
+            var item = items[Random.Range(0, items.Count)];
+            return ItemDictionary.FirstOrDefault(t => t.Value == item).Value;
+        }
     }
 }

@@ -5,27 +5,23 @@ using UnityEngine;
 public class Chest : MonoBehaviour
 {
     public Inventory ChestInv;
-    public Arm PlayerArm;
-    private Transform PlayerTransform;
-    private bool IsInvOpen = false;
+    public Arm User;
 
-    private void Start()
-    {
-        PlayerTransform = PlayerArm.gameObject.transform;
-    }
+    private Transform PlayerTransform => User.gameObject.transform;
+    private bool IsInvOpen = false;
 
     private void OnMouseUp()
     {
         if (IsInvOpen)
         {
-            PlayerArm.CloseInventory();
+            User.CloseInventory();
             IsInvOpen = false;
         }
         else if (Vector3.Distance(PlayerTransform.position, gameObject.transform.position) < 2)
         {
-            if (!PlayerArm.IsAnyChestOpened)
+            if (!User.IsAnyChestOpened)
             {
-                PlayerArm.OpenInventory(ChestInv);
+                User.OpenInventory(ChestInv);
                 IsInvOpen = true;
             }
         }
@@ -37,14 +33,14 @@ public class Chest : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Escape))
             {
-                PlayerArm.CloseInventory();
+                User.CloseInventory();
                 IsInvOpen = false;
                 return;
             }
 
             if(Vector3.Distance(PlayerTransform.position, gameObject.transform.position) > 2)
             {
-                PlayerArm.CloseInventory();
+                User.CloseInventory();
                 IsInvOpen = false;
             }
         }

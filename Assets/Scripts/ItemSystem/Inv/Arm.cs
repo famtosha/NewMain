@@ -12,6 +12,7 @@ public class Arm : MonoBehaviour
     public void OpenInventory(Inventory inventory)
     {
         anotherUI.OpenInventory(inventory);
+        inventory.gameObject.GetComponent<Chest>().User = gameObject.GetComponent<Arm>();
         IsAnyChestOpened = true;
     }
 

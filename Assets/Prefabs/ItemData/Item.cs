@@ -12,9 +12,14 @@ public class Item : MonoBehaviour
     public string Name => ItemDataCurrend.Name;
     public int Count => ItemDataCurrend.Count;
 
-    protected virtual void Start()
+    private void Awake()
     {
         ItemDataCurrend = Instantiate(ItemDataOrigin);
+    }
+
+    protected virtual void Start()
+    {
+        
     }
 
     public virtual string GetInfo()

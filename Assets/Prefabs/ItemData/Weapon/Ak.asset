@@ -17,7 +17,7 @@ MonoBehaviour:
   ID: 4
   Name: ak47
   _count: 1
-  MaxCount: 99
+  MaxCount: 1
   SpriteInInventiry: {fileID: 21300000, guid: a27d5fc3a6ea94546824d15e04dac950, type: 3}
   SpriteInArm: {fileID: 21300000, guid: a27d5fc3a6ea94546824d15e04dac950, type: 3}
   SpriteInWorld: {fileID: 21300000, guid: a27d5fc3a6ea94546824d15e04dac950, type: 3}

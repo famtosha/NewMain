@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: WaterBottle
   m_EditorClassIdentifier: 
   Rarity: 0
-  ItemType: 5
+  ItemType: 4
   ID: 3
   Name: Water
   _count: 1
