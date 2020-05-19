@@ -41,6 +41,9 @@ TagManager:
   - name: Ground
     uniqueID: 2180675471
     locked: 0
+  - name: Floor_Dark
+    uniqueID: 4026050083
+    locked: 0
   - name: Floor
     uniqueID: 1574263193
     locked: 0
