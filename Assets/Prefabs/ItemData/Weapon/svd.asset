@@ -18,9 +18,8 @@ MonoBehaviour:
   Name: SVD
   _count: 1
   MaxCount: 1
-  SpriteInInventiry: {fileID: 21300000, guid: e70ecde59d888b345ae75f9203b0f8d5, type: 3}
-  SpriteInArm: {fileID: 21300000, guid: e70ecde59d888b345ae75f9203b0f8d5, type: 3}
-  SpriteInWorld: {fileID: 21300000, guid: e70ecde59d888b345ae75f9203b0f8d5, type: 3}
+  SpriteInArm: {fileID: 21300000, guid: fa7148c8bd54f0a4e86f789e69687fff, type: 3}
+  SpriteInWorld: {fileID: 21300000, guid: fa7148c8bd54f0a4e86f789e69687fff, type: 3}
   Description: SVD
   Tradable: 0
   Craftability: 0
@@ -29,7 +28,7 @@ MonoBehaviour:
   _damage: 50
   _recoil: 4
   _magazineCapacity: 5
-  _firingRate: 0.05
+  _firingRate: 1
   _reloadTime: 4
   _shotSound: {fileID: 0}
   _reloadSound: {fileID: 0}

@@ -18,9 +18,8 @@ MonoBehaviour:
   Name: m4a1
   _count: 1
   MaxCount: 1
-  SpriteInInventiry: {fileID: 21300000, guid: d9e78acd99b5e43488ecbea6a3d3dfdd, type: 3}
-  SpriteInArm: {fileID: 21300000, guid: d9e78acd99b5e43488ecbea6a3d3dfdd, type: 3}
-  SpriteInWorld: {fileID: 21300000, guid: d9e78acd99b5e43488ecbea6a3d3dfdd, type: 3}
+  SpriteInArm: {fileID: 21300000, guid: 9d2893bf237464944a923fad0ba45427, type: 3}
+  SpriteInWorld: {fileID: 21300000, guid: 9d2893bf237464944a923fad0ba45427, type: 3}
   Description: m4a1
   Tradable: 0
   Craftability: 0

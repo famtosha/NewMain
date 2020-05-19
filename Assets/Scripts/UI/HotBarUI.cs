@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HotBarUI : InvenotryUI
+public class HotBarUI : InventoryUI
 {
     public GameObject ArmPos;
 

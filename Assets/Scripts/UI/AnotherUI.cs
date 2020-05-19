@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AnotherUI : InvenotryUI
+public class AnotherUI : InventoryUI
 {
 
     new private void Start()

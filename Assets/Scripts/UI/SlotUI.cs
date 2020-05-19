@@ -7,7 +7,7 @@ using UnityEngine.EventSystems;
 public class SlotUI : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler, IPointerExitHandler
 {
     public Image ItemSprite;
-    public InvenotryUI BackPackUI;
+    public InventoryUI BackPackUI;
     public Text Text;
     public UIManager UIManager;
     public Image BackGround;
@@ -23,7 +23,7 @@ public class SlotUI : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler,
         }
         else
         {
-            if (trashData.SpriteInInventiry != null) ItemSprite.sprite = trashData.SpriteInInventiry;
+            if (trashData.SpriteInWorld != null) ItemSprite.sprite = trashData.SpriteInWorld;
             if (trashData.Count > 1)
             {
                 Text.text = trashData.Count.ToString();

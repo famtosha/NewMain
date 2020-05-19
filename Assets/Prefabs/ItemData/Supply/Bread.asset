@@ -13,14 +13,13 @@ MonoBehaviour:
   m_Name: Bread
   m_EditorClassIdentifier: 
   Rarity: 0
-  ItemType: 4
+  ItemType: 5
   ID: 0
   Name: Bread
   _count: 1
   MaxCount: 1
-  SpriteInInventiry: {fileID: 21300000, guid: 8d10447da3aa2344b94352cf3780491f, type: 3}
-  SpriteInArm: {fileID: 21300000, guid: 8d10447da3aa2344b94352cf3780491f, type: 3}
-  SpriteInWorld: {fileID: 21300000, guid: 8d10447da3aa2344b94352cf3780491f, type: 3}
+  SpriteInArm: {fileID: 21300000, guid: 120cbe2940cd35745a20412a1c1280ab, type: 3}
+  SpriteInWorld: {fileID: 21300000, guid: 120cbe2940cd35745a20412a1c1280ab, type: 3}
   Description: Some food
   Tradable: 0
   Craftability: 0

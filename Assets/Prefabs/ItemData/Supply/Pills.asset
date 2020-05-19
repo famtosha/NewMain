@@ -13,14 +13,13 @@ MonoBehaviour:
   m_Name: Pills
   m_EditorClassIdentifier: 
   Rarity: 0
-  ItemType: 1
+  ItemType: 5
   ID: 2
   Name: Pills
   _count: 1
   MaxCount: 1
-  SpriteInInventiry: {fileID: 21300000, guid: 8a32f0a11e634164fbab8f08c1afcbf4, type: 3}
-  SpriteInArm: {fileID: 21300000, guid: 8a32f0a11e634164fbab8f08c1afcbf4, type: 3}
-  SpriteInWorld: {fileID: 21300000, guid: 8a32f0a11e634164fbab8f08c1afcbf4, type: 3}
+  SpriteInArm: {fileID: 21300000, guid: 32ab605576943fa4bb3f9d9bbe716c95, type: 3}
+  SpriteInWorld: {fileID: 21300000, guid: 32ab605576943fa4bb3f9d9bbe716c95, type: 3}
   Description: Some Pils
   Tradable: 0
   Craftability: 0

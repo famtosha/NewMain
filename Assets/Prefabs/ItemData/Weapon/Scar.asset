@@ -18,9 +18,8 @@ MonoBehaviour:
   Name: Scar-L
   _count: 1
   MaxCount: 1
-  SpriteInInventiry: {fileID: 21300000, guid: 7affad4a3708b0449bdbec8cee53318a, type: 3}
-  SpriteInArm: {fileID: 21300000, guid: 7affad4a3708b0449bdbec8cee53318a, type: 3}
-  SpriteInWorld: {fileID: 21300000, guid: 7affad4a3708b0449bdbec8cee53318a, type: 3}
+  SpriteInArm: {fileID: 21300000, guid: ce4f56f494958fe45b7c0cfafba2d5d4, type: 3}
+  SpriteInWorld: {fileID: 21300000, guid: ce4f56f494958fe45b7c0cfafba2d5d4, type: 3}
   Description: Scar-L
   Tradable: 0
   Craftability: 0

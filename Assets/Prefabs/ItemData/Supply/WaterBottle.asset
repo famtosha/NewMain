@@ -13,14 +13,13 @@ MonoBehaviour:
   m_Name: WaterBottle
   m_EditorClassIdentifier: 
   Rarity: 0
-  ItemType: 4
+  ItemType: 5
   ID: 3
   Name: Water
   _count: 1
   MaxCount: 1
-  SpriteInInventiry: {fileID: 21300000, guid: 7c8eb3375a70cea4eb446ac79981a1c7, type: 3}
-  SpriteInArm: {fileID: 21300000, guid: 7c8eb3375a70cea4eb446ac79981a1c7, type: 3}
-  SpriteInWorld: {fileID: 21300000, guid: 7c8eb3375a70cea4eb446ac79981a1c7, type: 3}
+  SpriteInArm: {fileID: 21300000, guid: 2d51b40fa0bf6b8448a87f2dc13a59ba, type: 3}
+  SpriteInWorld: {fileID: 21300000, guid: 2d51b40fa0bf6b8448a87f2dc13a59ba, type: 3}
   Description: Some water
   Tradable: 0
   Craftability: 0
