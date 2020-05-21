@@ -4,8 +4,14 @@ using UnityEngine;
 
 public class PickUp : MonoBehaviour
 {
-    [SerializeField] private Arm PlayerArm;
+    private Arm PlayerArm;
     private bool IsPickUping = false;
+
+    private void Start()
+    {
+        PlayerArm = transform.GetComponentInParent<Arm>();
+    }
+
     private void Update()
     {
         if (Input.GetKey(KeyCode.F))

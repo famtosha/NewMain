@@ -21,11 +21,10 @@ public class AnotherUI : InventoryUI
             SlotList[i] = slot;         
             slot.GetComponent<SlotUI>().ID = i;
             slot.GetComponent<SlotUI>().BackPackUI = this;
-            slot.GetComponent<SlotUI>().UIManager = UIManager;
             slot.transform.SetParent(gameObject.transform);
             UpdateSlot(i, inventory.GetData(i));
         }
-        UIManager.EnableAnotherInventoryMenu();
+        UIManager.instance.EnableAnotherInventoryMenu();
     }
 
     public void CloseInvenotory()
@@ -38,6 +37,6 @@ public class AnotherUI : InventoryUI
         }
         inventory._updateSlot -= UpdateSlot;
         inventory = null;
-        UIManager.DisableAnotherInventoryMenu();
+        UIManager.instance.DisableAnotherInventoryMenu();
     }
 }

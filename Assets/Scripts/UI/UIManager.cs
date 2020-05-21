@@ -5,6 +5,24 @@ using UnityEngine;
 
 public class UIManager : MonoBehaviour
 {
+    public static UIManager instance = null;
+
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+            print("Load SceneLoader");
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+
+        DontDestroyOnLoad(gameObject);
+    }
+
+
     public CanvasGroup canvasGroup;
 
     public GameObject PauseMenu;
@@ -13,6 +31,7 @@ public class UIManager : MonoBehaviour
     public GameObject ItemContexMenu;
     public GameObject AnotherInventoryMenu;
     public GameObject DeathMenu;
+    public GameObject InteractMenu;
 
     public event Action OnPauseMenuOpen;
     public event Action OnPauseMenuClose;

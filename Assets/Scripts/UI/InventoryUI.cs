@@ -10,7 +10,6 @@ public abstract class InventoryUI : MonoBehaviour
     private int SelectedSlot = -1;
     [SerializeField] protected  GameObject[] SlotList;
     public Inventory inventory;
-    public UIManager UIManager;
     public PlayerInvList playerInvList;
 
     protected void Start()
@@ -24,7 +23,6 @@ public abstract class InventoryUI : MonoBehaviour
             var slot = Instantiate(SlotModel);           
             slot.GetComponent<SlotUI>().ID = i;
             slot.GetComponent<SlotUI>().BackPackUI = this;
-            slot.GetComponent<SlotUI>().UIManager = UIManager;
             slot.transform.SetParent(gameObject.transform);
             slot.transform.localScale = new Vector3(0.5f, 0.5f, 1);
             SlotList[i] = slot;

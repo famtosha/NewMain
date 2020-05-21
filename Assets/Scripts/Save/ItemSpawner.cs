@@ -4,13 +4,11 @@ using UnityEngine;
 
 public class ItemSpawner : MonoBehaviour
 {
-    public ItemDB itemDB;
-
     public GameObject SpawnItem(int ID)
     {
         try
         {
-            return Instantiate(itemDB.GetItem(ID));
+            return Instantiate(ItemDB.instance.GetItem(ID));
         }
         catch
         {
@@ -21,19 +19,19 @@ public class ItemSpawner : MonoBehaviour
 
     public GameObject SpawnRandomItem()
     {
-        var item = itemDB.GetRandomItem();
+        var item = ItemDB.instance.GetRandomItem();
         return SpawnItem(item.GetComponent<Item>().ItemDataOrigin.ID);
     }
 
     public GameObject SpawnRandomItem(ItemRarity itemRarity)
     {
-        var item = itemDB.GetRandomItem(itemRarity);
+        var item = ItemDB.instance.GetRandomItem(itemRarity);
         return SpawnItem(item.GetComponent<Item>().ItemDataOrigin.ID);
     }
 
     public GameObject SpawnRandomItem(ItemType itemType)
     {
-        var item = itemDB.GetRandomItem(itemType);
+        var item = ItemDB.instance.GetRandomItem(itemType);
         return SpawnItem(item.GetComponent<Item>().ItemDataOrigin.ID);
     }
 }

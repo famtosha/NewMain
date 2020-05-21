@@ -5,7 +5,6 @@ using UnityEngine;
 public class ItemShower : MonoBehaviour
 {
     public GameObject ItemToShow;
-    public GameObject ArmPos;
 
     public void ShowItem(GameObject Item)
     {
@@ -14,8 +13,8 @@ public class ItemShower : MonoBehaviour
         {
             ItemToShow = Item;
             ItemToShow.gameObject.SetActive(true);
-            ItemToShow.transform.position = ArmPos.transform.position;
-            ItemToShow.gameObject.transform.rotation = ArmPos.transform.rotation;
+            ItemToShow.transform.position = gameObject.transform.position;
+            ItemToShow.gameObject.transform.rotation = gameObject.transform.rotation;
             ItemToShow.GetComponent<BoxCollider2D>().enabled = false;
             ItemToShow.gameObject.transform.Rotate(0, 0, 90);
             ItemToShow.GetComponent<Item>().EquipItem();

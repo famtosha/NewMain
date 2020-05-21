@@ -9,7 +9,6 @@ public class SlotUI : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler,
     public Image ItemSprite;
     public InventoryUI BackPackUI;
     public Text Text;
-    public UIManager UIManager;
     public Image BackGround;
 
     public int ID;
@@ -52,25 +51,25 @@ public class SlotUI : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler,
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        if (UIManager == null) return;
+        if (UIManager.instance == null) return;
 
-        UIManager.EnableItemContexMenu();
-        UIManager.ItemContexMenu.transform.position = Input.mousePosition + new Vector3(120,-40,0);
+        UIManager.instance.EnableItemContexMenu();
+        UIManager.instance.ItemContexMenu.transform.position = Input.mousePosition + new Vector3(120,-40,0);
         var item = BackPackUI.inventory.GetSlotInfo(ID);
         if(item != null)
         {
             var x = item.GetComponent<Item>();
-            UIManager.ItemContexMenu.GetComponent<ItemCont>().Upadate(x.Name, x.GetInfo());
+            UIManager.instance.ItemContexMenu.GetComponent<ItemCont>().Upadate(x.Name, x.GetInfo());
         }
         else
         {
-            UIManager.ItemContexMenu.GetComponent<ItemCont>().Upadate("", "");
+            UIManager.instance.ItemContexMenu.GetComponent<ItemCont>().Upadate("", "");
         }     
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
-        if (UIManager == null) return;
-        UIManager.DisableItemContexMenu();
+        if (UIManager.instance == null) return;
+        UIManager.instance.DisableItemContexMenu();
     }
 }

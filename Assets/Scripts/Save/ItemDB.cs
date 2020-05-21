@@ -6,12 +6,24 @@ using UnityEngine;
 public class ItemDB : MonoBehaviour
 {
     public Dictionary<int, GameObject> ItemDictionary = new Dictionary<int, GameObject>();
+    public static ItemDB instance = null;
 
     private void Awake()
     {
+        if (instance == null)
+        {
+            instance = this;
+            print("Load IDB");
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+
+        DontDestroyOnLoad(gameObject);
+
         LoadDataBase();
     }
-
 
     private void LoadDataBase()
     {
@@ -19,7 +31,7 @@ public class ItemDB : MonoBehaviour
 
         for (int i = 0; i < items.Length; i++)
         {
-            if(items[i].GetComponent<Item>() != null)
+            if (items[i].GetComponent<Item>() != null)
             {
                 ItemDictionary.Add(i, items[i]);
                 items[i].GetComponent<Item>().ItemDataOrigin.ID = i;
@@ -72,7 +84,7 @@ public class ItemDB : MonoBehaviour
 
         for (int i = 0; i < ItemDictionary.Count; i++)
         {
-            if(ItemDictionary[i].GetComponent<Item>().ItemDataOrigin.Rarity == itemRarity)
+            if (ItemDictionary[i].GetComponent<Item>().ItemDataOrigin.Rarity == itemRarity)
             {
                 Result.Add(ItemDictionary[i]);
             }
@@ -95,7 +107,7 @@ public class ItemDB : MonoBehaviour
 
     public GameObject GetRandomItem(ItemType itemType)//shit
     {
-        if(itemType == ItemType.Default)
+        if (itemType == ItemType.Default)
         {
             return GetRandomItem();
         }

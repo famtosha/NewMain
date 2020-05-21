@@ -4,9 +4,15 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
-    public float Speed = 1;
-    public GameObject PlayerCamera;
-    public Rigidbody2D PlayerRB;
+    [SerializeField] private float Speed = 1;
+    private GameObject PlayerCamera;
+    private Rigidbody2D PlayerRB;
+
+    private void Start()
+    {
+        PlayerCamera = Camera.main.gameObject;
+        PlayerRB = gameObject.GetComponent<Rigidbody2D>();
+    }
 
     void Update()
     {

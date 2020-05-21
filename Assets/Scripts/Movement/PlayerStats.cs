@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 class PlayerStats : MonoBehaviour, ITarget
@@ -10,11 +11,12 @@ class PlayerStats : MonoBehaviour, ITarget
         UpdateStats?.Invoke(this);
     }
 
-    [SerializeField] private UIManager uiManager;
-    [SerializeField] private float _hunger;
-    [SerializeField] private float _thirst;
-    [SerializeField] private float _health;
-    [SerializeField] private float _temperature;
+    [SerializeField] private float _hunger = 100;
+    [SerializeField] private float _thirst = 100;
+    [SerializeField] private float _health = 100;
+    [SerializeField] private float _temperature = 36.6f;
+
+    public List<Buff> PlayerBuffs = new List<Buff>();
 
     public float Health
     {
@@ -94,14 +96,19 @@ class PlayerStats : MonoBehaviour, ITarget
 
     private void PlayerDeath()
     {
-        uiManager.EnableDeathMenu();
+        UIManager.instance.EnableDeathMenu();
         gameObject.SetActive(false);
     }
 
     private void Update()
     {
         Hunger -= 0.001f;
+        foreach (Buff buff in PlayerBuffs)
+        {
+            buff.DurationLeft -= 0.01f;
+        }
     }
+
     public void DealDamage(float Damage)
     {
         Health -= Damage;
