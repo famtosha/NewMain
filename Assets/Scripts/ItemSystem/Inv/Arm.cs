@@ -5,19 +5,26 @@ using UnityEngine;
 public class Arm : MonoBehaviour
 {
     public List<Inventory> inventorys;
-    public AnotherUI anotherUI;
+    private AnotherUI anotherUI;
 
     public bool IsAnyChestOpened = false;
 
+    private void Start()
+    {
+        anotherUI = UIManager.instance.AnotherInventoryMenu.GetComponentInChildren<AnotherUI>();
+        //inventorys = gameObject.GetComponent<PlayerInvList>().list;
+    }
+
     public void OpenInventory(Inventory inventory)
     {
+        Time.timeScale = 0;
         anotherUI.OpenInventory(inventory);
-        inventory.gameObject.GetComponent<Chest>().User = gameObject.GetComponent<Arm>();
         IsAnyChestOpened = true;
     }
 
     public void CloseInventory()
     {
+        Time.timeScale = 1;
         anotherUI.CloseInvenotory();
         IsAnyChestOpened = false;
     }

@@ -23,6 +23,7 @@ public class PlayerStatsUI : MonoBehaviour
 
     private void Start()
     {
+        playerStats = GameMan.instance.Player.GetComponent<PlayerStats>();
         playerStats.UpdateStats += UpdatePlayerStats;
     }
 }

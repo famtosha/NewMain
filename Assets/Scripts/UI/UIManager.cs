@@ -19,7 +19,7 @@ public class UIManager : MonoBehaviour
             Destroy(gameObject);
         }
 
-        DontDestroyOnLoad(gameObject);
+        //DontDestroyOnLoad(gameObject);
     }
 
 
@@ -31,7 +31,6 @@ public class UIManager : MonoBehaviour
     public GameObject ItemContexMenu;
     public GameObject AnotherInventoryMenu;
     public GameObject DeathMenu;
-    public GameObject InteractMenu;
 
     public event Action OnPauseMenuOpen;
     public event Action OnPauseMenuClose;

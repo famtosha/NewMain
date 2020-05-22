@@ -9,7 +9,7 @@ public class ButtonCont : interactebleItem
 
     private bool IsLightActive = false;
 
-    public override void UseObj()
+    public override void UseObj(GameObject interacter)
     {
         if (!IsLightActive)
         {

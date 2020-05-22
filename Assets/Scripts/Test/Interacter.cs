@@ -34,7 +34,7 @@ public class Interacter : MonoBehaviour
         {
             if(ItemNowTouch != null)
             {
-                ItemNowTouch.GetComponent<interactebleItem>().UseObj();
+                ItemNowTouch.GetComponent<interactebleItem>().UseObj(gameObject.transform.parent.gameObject);
             }
         }
     }

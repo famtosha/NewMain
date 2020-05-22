@@ -8,7 +8,7 @@ public class EnemySpawn : interactebleItem
     [SerializeField] int EnemyCount = 1;
     [SerializeField] GameObject Enemy;
 
-    public override void UseObj()
+    public override void UseObj(GameObject interacter)
     {
 
     }

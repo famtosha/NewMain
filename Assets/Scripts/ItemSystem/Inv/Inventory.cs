@@ -7,9 +7,14 @@ public class Inventory : MonoBehaviour
 {
     [SerializeField] protected GameObject[] _inventory = new GameObject[24];
 
-    public Arm Arm;
+    private Arm Arm;
     public int InventorySize => _inventory.Length;
     public event Action<int,ItemData> _updateSlot;
+
+    private void Start()
+    {
+        Arm = gameObject.GetComponent<Arm>();
+    }
 
     virtual protected void UpdateSlot(int ID)
     {

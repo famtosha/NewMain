@@ -2,47 +2,40 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Chest : MonoBehaviour
+public class Chest : interactebleItem
 {
-    public Inventory ChestInv;
-    public Arm User;
+    private Inventory ChestInvenotory;
+    private bool IsChestOpened = false;
 
-    private Transform PlayerTransform => User.gameObject.transform;
-    private bool IsInvOpen = false;
-
-    private void OnMouseUp()
+    override protected void Start()
     {
-        if (IsInvOpen)
+        base.Start();
+        ChestInvenotory = gameObject.GetComponent<Inventory>();
+    }
+
+    public override void TouchObj(bool thing)
+    {
+        if (thing)
         {
-            User.CloseInventory();
-            IsInvOpen = false;
+            textMesh.text = "B";
         }
-        else if (Vector3.Distance(PlayerTransform.position, gameObject.transform.position) < 2)
+        else
         {
-            if (!User.IsAnyChestOpened)
-            {
-                User.OpenInventory(ChestInv);
-                IsInvOpen = true;
-            }
+            textMesh.text = "";
         }
     }
 
-    private void Update()
+    public override void UseObj(GameObject interacter)
     {
-        if (IsInvOpen)
+        if (IsChestOpened)
         {
-            if (Input.GetKeyDown(KeyCode.Escape))
-            {
-                User.CloseInventory();
-                IsInvOpen = false;
-                return;
-            }
-
-            if(Vector3.Distance(PlayerTransform.position, gameObject.transform.position) > 2)
-            {
-                User.CloseInventory();
-                IsInvOpen = false;
-            }
+            interacter.GetComponent<Arm>().CloseInventory();
+            IsChestOpened = false;
+        }
+        else
+        {
+            interacter.GetComponent<Arm>().OpenInventory(ChestInvenotory);
+            IsChestOpened = true;
         }
     }
 }

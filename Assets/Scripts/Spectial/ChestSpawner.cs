@@ -13,7 +13,6 @@ public class ChestSpawner : MonoBehaviour
     private void Start()
     {
         GameObject ChestClone = Instantiate(ChestPrefab,gameObject.transform.position, new Quaternion());
-        ChestClone.GetComponent<Chest>().User = PlayerArm;
         ChestInventory = ChestClone.GetComponent<Inventory>();
 
         int itemCount = Random.Range(0, ChestInventory.InventorySize);

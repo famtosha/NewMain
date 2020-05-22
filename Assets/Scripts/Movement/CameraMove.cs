@@ -13,6 +13,11 @@ public class CameraMove : MonoBehaviour
     private float CameraZ;
     private float _time = 0f;
 
+    private void Start()
+    {
+        PlayerPos = GameMan.instance.Player.transform;
+    }
+
     void Update()
     {
         if (IsMoving)

@@ -7,11 +7,12 @@ public class HotBar : Inventory
 {
     public event Action<int, bool> OnChangeSelectedItem;
 
-    public ItemShower ItemShower;
+    private ItemShower ItemShower;
 
     private void Start()
     {
         _inventory = new GameObject[9];
+        ItemShower = gameObject.GetComponentInChildren<ItemShower>();
     }
 
     protected override void UpdateSlot(int ID)

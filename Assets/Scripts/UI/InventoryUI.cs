@@ -12,19 +12,19 @@ public abstract class InventoryUI : MonoBehaviour
     public Inventory inventory;
     public PlayerInvList playerInvList;
 
-    protected void Start()
+    protected virtual void Start()
     {
+        playerInvList = GameMan.instance.Player.GetComponent<PlayerInvList>();
 
         inventory._updateSlot += UpdateSlot;
 
         SlotList = new GameObject[inventory.InventorySize];
         for (int i = 0; i < SlotList.Length; i++)
         {
-            var slot = Instantiate(SlotModel);           
+            var slot = Instantiate(SlotModel);
             slot.GetComponent<SlotUI>().ID = i;
             slot.GetComponent<SlotUI>().BackPackUI = this;
             slot.transform.SetParent(gameObject.transform);
-            slot.transform.localScale = new Vector3(0.5f, 0.5f, 1);
             SlotList[i] = slot;
         }
     }
@@ -47,7 +47,7 @@ public abstract class InventoryUI : MonoBehaviour
         }
         else
         {
-            foreach(var x in playerInvList.list)
+            foreach (var x in playerInvList.list)
             {
                 if(x.inventory != null && x.inventory != inventory && x.SelectedSlot != -1)
                 {
@@ -59,7 +59,6 @@ public abstract class InventoryUI : MonoBehaviour
 
             if (SelectedSlot != -1)
             {
-
                 inventory.SwitchItems(SelectedSlot, ID);
                 SelectedSlot = -1;
                 return;

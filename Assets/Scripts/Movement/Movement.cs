@@ -10,6 +10,7 @@ public class Movement : MonoBehaviour
 
     private void Start()
     {
+        GameMan.instance.Player = this.gameObject;
         PlayerCamera = Camera.main.gameObject;
         PlayerRB = gameObject.GetComponent<Rigidbody2D>();
     }

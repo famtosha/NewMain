@@ -5,8 +5,14 @@ using UnityEngine.UI;
 
 public class ItemCont : MonoBehaviour
 {
-    public Text ItemName;
-    public Text ItemDiscr;
+    private Text ItemName;
+    private Text ItemDiscr;
+
+    private void Start()
+    {
+        ItemName = transform.GetChild(0).GetComponent<Text>();
+        ItemDiscr = transform.GetChild(1).GetComponent<Text>();
+    }
 
     public void Upadate(string Name, string ItemDis)
     {

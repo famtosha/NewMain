@@ -7,12 +7,12 @@ public class interactebleItem : MonoBehaviour
 {
     protected TextMesh textMesh;
 
-    protected void Start()
+    protected virtual void Start()
     {
-        textMesh = gameObject.GetComponent<TextMesh>();
+        textMesh = gameObject.GetComponentInChildren<TextMesh>();
     }
 
-    public virtual void UseObj()
+    public virtual void UseObj(GameObject interacter)
     {
 
     }

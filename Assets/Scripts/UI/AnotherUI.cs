@@ -5,9 +5,9 @@ using UnityEngine;
 public class AnotherUI : InventoryUI
 {
 
-    new private void Start()
+    protected override void Start()
     {
-        
+        playerInvList = GameMan.instance.Player.GetComponent<PlayerInvList>();
     }
 
     public void OpenInventory(Inventory ChestInventory)
