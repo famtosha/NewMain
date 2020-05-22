@@ -15,8 +15,11 @@ public class LightDisabling : MonoBehaviour
 
     void Start()
     {
-        gameObject.transform.GetChild
-        gameObject.transform.GetComponentsInChildren<Light2D>().ToList();
+
+        for (int i = 0; i < transform.childCount; i++)
+        {
+            Disabling.Add(transform.GetChild(i).gameObject.GetComponent<Light2D>());
+        }
         if (IsSync)
         {
             StartCoroutine(syncFlashing());
@@ -40,7 +43,7 @@ public class LightDisabling : MonoBehaviour
             yield return new WaitForSeconds(Random.Range(minWaitTime, maxWaitTime));
             foreach (var light in Disabling)
             {
-                light.enabled = light.enabled;
+                light.enabled = !light.enabled;
             }
 
         }
@@ -52,7 +55,7 @@ public class LightDisabling : MonoBehaviour
         while (true)
         {
             yield return new WaitForSeconds(Random.Range(minWaitTime, maxWaitTime));
-            light.enabled = light.enabled;
+            light.enabled = !light.enabled;
 
         }
     }

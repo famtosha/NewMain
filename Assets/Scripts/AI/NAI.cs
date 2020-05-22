@@ -16,7 +16,7 @@ public class NAI : MonoBehaviour
     private float CheckSpeed = 0.1f;
     private float LookDist = 10;
     private float CompDist = 5;
-    private float MoveSpeed = 15;
+    private float MoveSpeed = 3;
     private float FOV = 175;
 
     private float TimeLeftToCheck = 0;

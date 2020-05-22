@@ -10,10 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 6076118250428349661}
   - component: {fileID: 6076118250428349662}
-  - component: {fileID: 6076118250428349663}
   - component: {fileID: 6076118250428349660}
   m_Layer: 0
-  m_Name: Bathroom
+  m_Name: Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -72,22 +71,6 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
---- !u!114 &6076118250428349663
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6076118250428349656}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c37a59f2d718d57418a67a7ae9da1646, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  light: {fileID: 6076118250428349662}
-  minIntensity: 0.5
-  maxIntensity: 1
-  smoothing: 20
 --- !u!114 &6076118250428349660
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -100,5 +83,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04f2656d1fbb5654a85c34f6e59b7d2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Disabling: []
   minWaitTime: 0.3
   maxWaitTime: 0.6
+  IsSync: 0
