@@ -11,5 +11,6 @@ public class SpawnSpot : MonoBehaviour
     {
         var item = ItemSpawner.SpawnRandomItem(ItemType);
         item.transform.position = transform.position;
+        Destroy(gameObject);
     }
 }

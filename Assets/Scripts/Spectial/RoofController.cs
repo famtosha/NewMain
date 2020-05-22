@@ -8,9 +8,13 @@ using System;
 public class RoofController : MonoBehaviour
 {
     [SerializeField] private Tilemap Roof;
-    [SerializeField] public GameObject Player;
-    [SerializeField] private Camera PlayerCamera;
+    private GameObject Player;
     [SerializeField] private CameraMove ultrashit;
+
+    private void Start()
+    {
+        Player = GameMan.instance.Player;
+    }
 
     private bool IsInRoom = false;
 

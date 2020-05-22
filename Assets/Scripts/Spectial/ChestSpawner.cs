@@ -22,5 +22,6 @@ public class ChestSpawner : MonoBehaviour
             ChestInventory.AddToFreeSlot(item);
             item.SetActive(false);
         }
+        Destroy(gameObject);
     }
 }
