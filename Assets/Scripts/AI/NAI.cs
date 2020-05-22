@@ -17,7 +17,7 @@ public class NAI : MonoBehaviour
     private float LookDist = 10;
     private float CompDist = 5;
     private float MoveSpeed = 15;
-    private float FOV = 150;
+    private float FOV = 175;
 
     private float TimeLeftToCheck = 0;
     private float ChaseTimeLeft = 0;
@@ -30,9 +30,10 @@ public class NAI : MonoBehaviour
         Vector2 TargetDirection = TargetPosition - MyPosition;
 
         transform.up = TargetDirection;
+        Weapon.GetComponent<Item>().UseItem(out bool isused);
     }
 
-    public void MoveToTarger()
+    public void MoveToTarget()
     {
         Vector2 TargetPosition = Target.transform.position;
         Vector2 MyPosition = transform.position;
@@ -49,7 +50,7 @@ public class NAI : MonoBehaviour
     public void ChaseEnemy()
     {
         if (!(ChaseTimeLeft < ChaseTime)) LookAtTarget();
-        MoveToTarger();
+        MoveToTarget();
     }
 
     public void Update()
