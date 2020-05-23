@@ -48,6 +48,10 @@ class PlayerStats : MonoBehaviour, ITarget
         set
         {
             _temperature = value;
+            if(_temperature > 42 || _temperature < 34)
+            {
+                PlayerDeath();
+            }
             OnDataChanged();
         }
     }
@@ -103,6 +107,7 @@ class PlayerStats : MonoBehaviour, ITarget
     private void Update()
     {
         Hunger -= 0.001f;
+        Temperature -= 0.001f;
         foreach (Buff buff in PlayerBuffs)
         {
             buff.DurationLeft -= 0.01f;
