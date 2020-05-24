@@ -5,6 +5,7 @@ using UnityEngine;
 public class Movement : MonoBehaviour
 {
     [SerializeField] private float Speed = 1;
+    [Range(0,2)] public int MoveType = 0;
     private GameObject PlayerCamera;
     private Rigidbody2D PlayerRB;
 
@@ -29,8 +30,20 @@ public class Movement : MonoBehaviour
 
     void Move()
     {
-        Vector3 MoveDirection = new Vector2(Input.GetAxis("Horizontal") * Speed * Time.deltaTime, Input.GetAxis("Vertical") * Speed * Time.deltaTime);
-        PlayerRB.AddForce(MoveDirection);  
+        Vector2 MoveDirection = new Vector2(Input.GetAxis("Horizontal") * Speed * Time.deltaTime, Input.GetAxis("Vertical") * Speed * Time.deltaTime);
+                  
+        switch (MoveType)
+        {
+            case 0:
+                PlayerRB.AddForce(MoveDirection, ForceMode2D.Impulse);
+                break;
+            case 1:
+                PlayerRB.MovePosition((Vector2)PlayerRB.transform.position + MoveDirection);
+                break;
+            case 2:
+                PlayerRB.velocity = MoveDirection;
+                break;
+        }
     }
 
     void Look()
