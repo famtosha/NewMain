@@ -1,9 +1,12 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class NAI : MonoBehaviour
 {
+    public static event Action<GameObject> OnPlayerDetect;
+
     public LayerMask Ignore;
 
     public GameObject Target;
@@ -22,6 +25,19 @@ public class NAI : MonoBehaviour
     private float TimeLeftToCheck = 0;
     private float ChaseTimeLeft = 0;
 
+
+    private void MoveToPos(Vector2 position, float timeOut = 10f)
+    {
+        timeOut += Time.deltaTime;
+    }
+
+    private void PlayerDetectHandler(GameObject sender)
+    {
+        if (sender != gameObject)
+        {
+            MoveToPos(sender.transform.position);
+        }
+    }
 
     public void LookAtTarget()
     {
@@ -53,43 +69,49 @@ public class NAI : MonoBehaviour
         MoveToTarget();
     }
 
+    private void Start()
+    {
+        OnPlayerDetect += PlayerDetectHandler;
+    }
+
+    //TimeLeftToCheck += Time.deltaTime;
+    //    if (ChaseTimeLeft > 0) ChaseEnemy();
+    //    if (TimeLeftToCheck >= CheckSpeed)
+    //    {
+    //        if (CanSeeTarget())
+    //        {
+    //            ChaseTimeLeft = ChaseTime;
+    //            TimeLeftToCheck = 0;
+    //        }
+    //        else
+    //        {
+    //            ChaseTimeLeft -= 0.1f;
+    //        }
+    //    }
+
     public void Update()
     {
-        TimeLeftToCheck += Time.deltaTime;
-        if (ChaseTimeLeft > 0) ChaseEnemy();
 
-        if (TimeLeftToCheck >= CheckSpeed)
-        {
-            if (CanSeeTarget())
-            {
-                ChaseTimeLeft = ChaseTime;
-                TimeLeftToCheck = 0;
-            }
-            else
-            {
-                ChaseTimeLeft -= 0.1f;
-            }
-        }
     }
 
     public bool CanSeeTarget()
     {      
-        Vector2 TargetPosition = Target.transform.position; //позиция таргета
-        Vector2 MyPosition = transform.position;            //собственная позиция
-        Vector2 FOVCenter = transform.up;                   //центр зрения
+        Vector2 TargetPosition = Target.transform.position; 
+        Vector2 MyPosition = transform.position;           
+        Vector2 FOVCenter = transform.up;                  
 
-        Vector2 TargetDirect = TargetPosition - MyPosition; //вектор к таргенту
-        Vector2 FOVCenterDirection = FOVCenter;             //вектор к центра зрения
+        Vector2 TargetDirect = TargetPosition - MyPosition; 
+        Vector2 FOVCenterDirection = FOVCenter;           
             
-        float Angle = Vector2.Angle(TargetDirect, FOVCenterDirection); //угол между предыдущими двумя векторами 
+        float Angle = Vector2.Angle(TargetDirect, FOVCenterDirection); 
 
         RaycastHit2D Hit = Physics2D.Raycast(MyPosition, TargetDirect, LookDist, ~(Ignore));
         
         if (Hit)
         {
-            if (Hit.transform.gameObject == Target) //проверка нет ли стены перед ним и на дистанцию 
+            if (Hit.transform.gameObject == Target) 
             {
-                if (Angle < FOV / 2)            //проверка проверка на поподение в поле зрения 
+                if (Angle < FOV / 2)           
                 {
                     return true;
                 }

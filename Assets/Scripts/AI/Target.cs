@@ -34,6 +34,11 @@ public class Target : MonoBehaviour, ITarget
 
     private void Death()
     {
+        var x = gameObject.GetComponent<NNAI>();
+        if(x != null)
+        {
+            NNAI.OnPlayerDetect -= x.PlayerDetectHandler;
+        }
         Destroy(gameObject);
     }
 
