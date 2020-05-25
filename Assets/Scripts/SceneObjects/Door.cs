@@ -4,46 +4,41 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Door : interactebleItem
-{
-    private bool IsOpen = false;
-    private float State = 0;
-    [SerializeField] private GameObject EndPos;
+{   
     [SerializeField] private GameObject InteractbleZone;
+    [SerializeField] private AudioClip DoorSound;
+    private AudioSource audioSource;
+    private Animator animator;
 
-    Vector3 startPos;
-    Vector3 endPos;
+    private bool _isOpen = false;
+
+    public bool IsOpen
+    {
+        get
+        {
+            return _isOpen;
+        }
+        set
+        {
+            _isOpen = value;
+            animator.SetBool("IsOpen", value);
+            if (DoorSound != null)
+            {
+                audioSource.PlayOneShot(DoorSound);
+            }
+        }
+    }
 
     protected override void Start()
     {
         base.Start();
-        endPos = EndPos.transform.position;
-        startPos = gameObject.transform.position;
-    }
-
-    private void Update()
-    {
-        if (IsOpen)
-        {
-            State += 0.1f;
-        }
-        else
-        {
-            State -= 0.1f;
-        }
-        State = Mathf.Clamp(State, 0, 1);
-        transform.position = Vector3.Lerp(startPos, endPos,State);
+        animator = transform.parent.gameObject.GetComponent<Animator>();
+        audioSource = gameObject.GetComponent<AudioSource>();
     }
 
     private void ChangeDoorState()
     {
-        if (!IsOpen)
-        {
-            IsOpen = true;
-        }
-        else
-        {           
-            IsOpen = false;
-        }
+        IsOpen = !IsOpen;
     }
 
     public override void UseObj(GameObject interacter)

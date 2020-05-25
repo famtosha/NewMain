@@ -22,8 +22,6 @@ public class LightFlickering : MonoBehaviour
     void Start()
     {
         smoothQueue = new Queue<float>(smoothing);
-
-
     }
 
     void Update()
