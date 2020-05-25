@@ -8,8 +8,8 @@ using System;
 public class RoofController : MonoBehaviour
 {
     [SerializeField] private Tilemap Roof;
-    private GameObject Player;
     [SerializeField] private CameraMove ultrashit;
+    private GameObject Player;
 
     private void Start()
     {
@@ -40,7 +40,7 @@ public class RoofController : MonoBehaviour
     {
         if (collision.gameObject.name == Player.name)
         {
-            ultrashit.MoveDown();
+            ultrashit.IsInRoom = true;
         }      
     }
 
@@ -58,7 +58,7 @@ public class RoofController : MonoBehaviour
         if (collision.gameObject.name == Player.name)
         {
             IsInRoom = false;
-            ultrashit.LeaveRoom();
+            ultrashit.IsInRoom = false;
         }         
     }
 }

@@ -5,18 +5,36 @@ using UnityEngine;
 class PlayerStats : MonoBehaviour, ITarget
 {
     public event Action<PlayerStats> UpdateStats;
+    public List<Buff> PlayerBuffs = new List<Buff>();
+    [SerializeField] private float _hunger = 100;
+    [SerializeField] private float _thirst = 100;
+    [SerializeField] private float _health = 100;
+    [SerializeField] private float _temperature = 36.6f;
+
+    public bool IsInRoom = false;
 
     private void OnDataChanged()
     {
         UpdateStats?.Invoke(this);
     }
 
-    [SerializeField] private float _hunger = 100;
-    [SerializeField] private float _thirst = 100;
-    [SerializeField] private float _health = 100;
-    [SerializeField] private float _temperature = 36.6f;
+    private void Update()
+    {
+        Hunger -= 0.001f;       
+        foreach (Buff buff in PlayerBuffs)
+        {
+            buff.DurationLeft -= 0.01f;
+        }
 
-    public List<Buff> PlayerBuffs = new List<Buff>();
+        if (IsInRoom)
+        {
+            Temperature -= 0.0001f;
+        }
+        else
+        {
+            Temperature -= 0.01f;
+        }
+    }
 
     public float Health
     {
@@ -102,16 +120,6 @@ class PlayerStats : MonoBehaviour, ITarget
     {
         UIManager.instance.EnableDeathMenu();
         gameObject.SetActive(false);
-    }
-
-    private void Update()
-    {
-        Hunger -= 0.001f;
-        Temperature -= 0.001f;
-        foreach (Buff buff in PlayerBuffs)
-        {
-            buff.DurationLeft -= 0.01f;
-        }
     }
 
     public void DealDamage(float Damage)

@@ -8,10 +8,11 @@ public class CameraMove : MonoBehaviour
     [SerializeField] private Transform PlayerPos;
     [SerializeField] private Transform CameraPos;
     [SerializeField] private Camera Camera;
+    [SerializeField] private float CameraMin;
+    [SerializeField] private float CameraMax;
     public bool IsInRoom = false;
-    private bool IsMoving = false;
-    private float CameraZ;
     private float _time = 0f;
+
 
     private void Start()
     {
@@ -20,40 +21,19 @@ public class CameraMove : MonoBehaviour
 
     void Update()
     {
-        if (IsMoving)
-        {
-            _time += Time.deltaTime;
-            if (_time >= 1)
-            {
-                IsMoving = false;
-                _time = 0f;
-            }
-        }       
-   
         if (IsInRoom)
         {
-            CameraZ = 5f;
+            _time += 0.03f;
         }
         else
         {
-            CameraZ = 10f;
+            _time -= 0.03f;
         }
 
-        float z = Mathf.Lerp(Camera.orthographicSize,CameraZ,_time/3);
+        _time = Mathf.Clamp(_time, 0, 1);
+        
         Vector3 NewPos = new Vector3(PlayerPos.position.x, PlayerPos.position.y, CameraPos.position.z);
-        Camera.orthographicSize = z;
         CameraPos.position = NewPos;
-    }
-
-    public void MoveDown()
-    {
-        IsInRoom = true;
-        IsMoving = true;
-    }
-
-    public void LeaveRoom()
-    {
-        IsInRoom = false;
-        IsMoving = true;
+        Camera.orthographicSize = Mathf.Lerp(CameraMax, CameraMin, _time * _time);   
     }
 }
