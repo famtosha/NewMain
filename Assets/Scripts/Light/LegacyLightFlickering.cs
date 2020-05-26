@@ -1,17 +1,16 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
 using UnityEngine.Experimental.Rendering.LWRP;
+
 public class LegacyLightFlickering : MonoBehaviour
 {
-
-    public new Light2D light;
+    public Light2D Light;
     public float minIntensity = 0f;
     public float maxIntensity = 1f;
-    [Range(1, 50)]
-    public int smoothing = 5;
+    [Range(1, 50)] public int smoothing = 5;
 
-    Queue<float> smoothQueue;
-    float lastSum = 0;
+    private Queue<float> smoothQueue;
+    private float lastSum = 0;
 
     public void Reset()
     {
@@ -22,15 +21,15 @@ public class LegacyLightFlickering : MonoBehaviour
     void Start()
     {
         smoothQueue = new Queue<float>(smoothing);
-        if (light == null)
+        if (Light == null)
         {
-            light = GetComponent<Light2D>();
+            Light = GetComponent<Light2D>();
         }
     }
 
     void Update()
     {
-        if (light == null)
+        if (Light == null)
             return;
 
         while (smoothQueue.Count >= smoothing)
@@ -42,7 +41,7 @@ public class LegacyLightFlickering : MonoBehaviour
         smoothQueue.Enqueue(newVal);
         lastSum += newVal;
 
-        light.intensity = lastSum / (float)smoothQueue.Count;
+        Light.intensity = lastSum / (float)smoothQueue.Count;
     }
 
 }

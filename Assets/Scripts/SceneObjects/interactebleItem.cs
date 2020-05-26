@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Experimental.Rendering.LWRP;
 
-public class interactebleItem : MonoBehaviour
+public class InteractebleItem : MonoBehaviour
 {
     protected TextMesh textMesh;
 

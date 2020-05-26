@@ -4,6 +4,22 @@ using UnityEngine;
 
 public class ItemSpawner : MonoBehaviour
 {
+    public static ItemSpawner instance = null;
+
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+            print("Load IDB");
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+
+        DontDestroyOnLoad(gameObject);
+    }
     public GameObject SpawnItem(int ID)
     {
         try

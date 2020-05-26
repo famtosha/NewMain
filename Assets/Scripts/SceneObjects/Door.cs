@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Door : interactebleItem
+public class Door : InteractebleItem
 {   
     [SerializeField] private GameObject InteractbleZone;
     [SerializeField] private AudioClip DoorSound;

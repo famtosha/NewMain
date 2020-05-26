@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemySpawn : interactebleItem
+public class EnemySpawn : InteractebleItem
 {
     [SerializeField] GameObject EnemySpawnPoint;
     [SerializeField] int EnemyCount = 1;

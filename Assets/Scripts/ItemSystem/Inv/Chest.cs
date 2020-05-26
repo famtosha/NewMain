@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Chest : interactebleItem
+public class Chest : InteractebleItem
 {
     private Inventory ChestInvenotory;
     private bool IsChestOpened = false;

@@ -8,7 +8,7 @@ public class Interacter : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        var x = collision.gameObject.GetComponent<interactebleItem>();
+        var x = collision.gameObject.GetComponent<InteractebleItem>();
         if (x)
         {
             ItemNowTouch = x.gameObject;
@@ -22,7 +22,7 @@ public class Interacter : MonoBehaviour
         {
             if(collision.gameObject == ItemNowTouch)
             {
-                ItemNowTouch.GetComponent<interactebleItem>().TouchObj(false);
+                ItemNowTouch.GetComponent<InteractebleItem>().TouchObj(false);
                 ItemNowTouch = null;              
             }
         }
@@ -34,7 +34,7 @@ public class Interacter : MonoBehaviour
         {
             if(ItemNowTouch != null)
             {
-                ItemNowTouch.GetComponent<interactebleItem>().UseObj(gameObject.transform.parent.gameObject);
+                ItemNowTouch.GetComponent<InteractebleItem>().UseObj(gameObject.transform.parent.gameObject);
             }
         }
     }

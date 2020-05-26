@@ -5,12 +5,12 @@ using UnityEngine;
 
 public class Target : MonoBehaviour, ITarget
 {
-    [SerializeField] private float _health = 100;
-    public event Action Dead;
-
+    public event Action OnDeath;
+    [SerializeField] protected float _health = 100;
+    
     private void Start()
     {
-        Dead += Death;
+        OnDeath += Death;
     }
 
     public float Health
@@ -24,21 +24,16 @@ public class Target : MonoBehaviour, ITarget
             _health = value;
             if(_health <= 0)
             {
-                if(Dead != null)
+                if(OnDeath != null)
                 {
-                    Dead();
+                    OnDeath();
                 }
             }
         }
     }
 
-    private void Death()
+    virtual protected void Death()
     {
-        var x = gameObject.GetComponent<NNAI>();
-        if(x != null)
-        {
-            NNAI.OnPlayerDetect -= x.PlayerDetectHandler;
-        }
         Destroy(gameObject);
     }
 

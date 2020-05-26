@@ -3,11 +3,11 @@ using UnityEngine;
 
 public class Item : MonoBehaviour
 {
-    public event Action OnItemRemoved;
-
     [SerializeField] public ItemData ItemDataOrigin;
     [SerializeField] public ItemData ItemDataCurrend;
-    public Transform PlayerTransform;
+
+    public event Action OnItemRemoved;
+    public Transform PlayerTransform;  
 
     public string Name => ItemDataCurrend.Name;
     public int Count => ItemDataCurrend.Count;
