@@ -26,7 +26,7 @@ MonoBehaviour:
   Craftable: 0
   _weaponType: 3
   _damage: 50
-  _ammoInMagazine: 0
+  _ammoInMagazine: 5
   _magazineCapacity: 5
   _firingRate: 0.5
   _reloadTime: 2.5
