@@ -34,7 +34,7 @@ public class ItemDB : MonoBehaviour
             if (items[i].GetComponent<Item>() != null)
             {
                 ItemDictionary.Add(i, items[i]);
-                items[i].GetComponent<Item>().ItemDataOrigin.ID = i;
+                items[i].GetComponent<Item>().ItemData.ID = i;
             }
         }
     }
@@ -70,7 +70,7 @@ public class ItemDB : MonoBehaviour
 
         for (int i = 0; i < ItemDictionary.Count; i++)
         {
-            if (ItemDictionary[i].GetComponent<Item>().ItemDataOrigin.ItemType == itemType)
+            if (ItemDictionary[i].GetComponent<Item>().ItemData.ItemType == itemType)
             {
                 Result.Add(ItemDictionary[i]);
             }
@@ -84,7 +84,7 @@ public class ItemDB : MonoBehaviour
 
         for (int i = 0; i < ItemDictionary.Count; i++)
         {
-            if (ItemDictionary[i].GetComponent<Item>().ItemDataOrigin.Rarity == itemRarity)
+            if (ItemDictionary[i].GetComponent<Item>().ItemData.Rarity == itemRarity)
             {
                 Result.Add(ItemDictionary[i]);
             }

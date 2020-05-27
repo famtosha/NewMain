@@ -119,18 +119,21 @@ public class AI : MonoBehaviour
 
         float Angle = Vector2.Angle(TargetDirect, FOVCenterDirection);
 
-        RaycastHit2D Hit = Physics2D.Raycast(MyPosition, TargetDirect, LookDist, ~(Ignore));
-
-        if (Hit)
+        if (Angle < FOV / 2)
         {
-            if (Hit.transform.gameObject == target)
+            RaycastHit2D Hit = Physics2D.Raycast(MyPosition, TargetDirect, LookDist, ~(Ignore));
+            if (Hit)
             {
-                if (Angle < FOV / 2)
+                if (Hit.transform.gameObject == target)
                 {
                     return true;
                 }
+                //Debug.DrawLine(transform.position, Hit.collider.gameObject);
             }
         }
+
+
+
 
         return false;
     }

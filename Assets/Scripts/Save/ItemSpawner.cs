@@ -36,18 +36,18 @@ public class ItemSpawner : MonoBehaviour
     public GameObject SpawnRandomItem()
     {
         var item = ItemDB.instance.GetRandomItem();
-        return SpawnItem(item.GetComponent<Item>().ItemDataOrigin.ID);
+        return SpawnItem(item.GetComponent<Item>().ItemData.ID);
     }
 
     public GameObject SpawnRandomItem(ItemRarity itemRarity)
     {
         var item = ItemDB.instance.GetRandomItem(itemRarity);
-        return SpawnItem(item.GetComponent<Item>().ItemDataOrigin.ID);
+        return SpawnItem(item.GetComponent<Item>().ItemData.ID);
     }
 
     public GameObject SpawnRandomItem(ItemType itemType)
     {
         var item = ItemDB.instance.GetRandomItem(itemType);
-        return SpawnItem(item.GetComponent<Item>().ItemDataOrigin.ID);
+        return SpawnItem(item.GetComponent<Item>().ItemData.ID);
     }
 }

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Rarity: 0
   ItemType: 0
-  ID: 7
+  ID: 6
   Name: SVD
   _count: 1
   MaxCount: 1
@@ -26,13 +26,14 @@ MonoBehaviour:
   Craftable: 0
   _weaponType: 3
   _damage: 50
-  _recoil: 4
+  _ammoInMagazine: 0
   _magazineCapacity: 5
-  _firingRate: 1
-  _reloadTime: 4
-  _shotSound: {fileID: 0}
-  _reloadSound: {fileID: 0}
+  _firingRate: 0.5
+  _reloadTime: 2.5
   ShootSoundList:
-  - {fileID: 8300000, guid: 15947269a43f4ff47b9661648449dfa2, type: 3}
+  - {fileID: 8300000, guid: fb18b2861956c9a4ea3cab4fd9fd22d0, type: 3}
   ReloadSound: {fileID: 8300000, guid: 283791f840ebd9e4ab2b6e44f1732328, type: 3}
   EmptySound: {fileID: 8300000, guid: 3f1f7407866d25541b5f9721f0e45e78, type: 3}
+  BulletPerShot: 1
+  BulletSpeed: 4000
+  Dispersion: 0.1

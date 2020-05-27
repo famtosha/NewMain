@@ -3,18 +3,16 @@ using UnityEngine;
 
 public class Item : MonoBehaviour
 {
-    [SerializeField] public ItemData ItemDataOrigin;
-    [SerializeField] public ItemData ItemDataCurrend;
+    [SerializeField] public ItemData ItemData;
 
     public event Action OnItemRemoved;
-    public Transform PlayerTransform;  
 
-    public string Name => ItemDataCurrend.Name;
-    public int Count => ItemDataCurrend.Count;
+    public string Name => ItemData.Name;
+    public int Count => ItemData.Count;
 
     private void Awake()
     {
-        ItemDataCurrend = Instantiate(ItemDataOrigin);
+        ItemData = Instantiate(ItemData);
     }
 
     protected virtual void Start()
@@ -25,7 +23,7 @@ public class Item : MonoBehaviour
     public virtual string GetInfo()
     {
         string result = "";
-        result += ItemDataCurrend.Description;
+        result += ItemData.Description;
         return result;
     }
 

@@ -4907,8 +4907,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00b84c96177c35142b9330347fc3497e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ItemDataOrigin: {fileID: 11400000, guid: c3619669c3cdcdc478a83785bd3bede6, type: 2}
-  ItemDataCurrend: {fileID: 0}
+  ItemData: {fileID: 11400000, guid: c3619669c3cdcdc478a83785bd3bede6, type: 2}
   PlayerTransform: {fileID: 0}
   Barriel: {fileID: 107361445537821542}
   audioSource: {fileID: 6018017993384502809}
@@ -4917,6 +4916,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1280
   MaxRazbros: 300
+  BulletPrefab: {fileID: 5703146271889831204, guid: dcd58ba975f5771458df1a7cc3b7a975,
+    type: 3}
 --- !u!61 &-27152034986417489
 BoxCollider2D:
   m_ObjectHideFlags: 0

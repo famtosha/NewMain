@@ -5,27 +5,22 @@ using UnityEngine;
 public class Weapon : Item
 {
     public GameObject Barriel;
+    public GameObject BulletPrefab;
 
-    private int AmmoLeft;
-    private float FiringRate;
-    private float NextFire;
+    private float CoolDown = 0;
     private bool IsReloading = false;
-    public AudioSource audioSource;
-    public ParticleSystem ParticleSystem;
-    public LayerMask Ignore;
-    public float MaxRazbros = 300;
+    private AudioSource audioSource;
+
 
     new private void Start()
     {
         base.Start();
-        WeaponData weaponData = (WeaponData)ItemDataCurrend;
-        AmmoLeft = weaponData.MagazineCapacity;
-        FiringRate = weaponData.FiringRate;
+        audioSource = gameObject.GetComponent<AudioSource>();
     }
 
     public override string GetInfo()
     {
-        return AmmoLeft + " / " + ((WeaponData)ItemDataCurrend).MagazineCapacity;
+        return ((WeaponData)ItemData).AmmoInMagazine + " / " + ((WeaponData)ItemData).MagazineCapacity;
     }
 
     public override void EquipItem()
@@ -45,59 +40,42 @@ public class Weapon : Item
     private IEnumerator StartReload()
     {
         IsReloading = true;
-        audioSource.PlayOneShot(((WeaponData)ItemDataCurrend).ReloadSound);
-        yield return new WaitForSeconds(((WeaponData)ItemDataCurrend).ReloadTime);
-        AmmoLeft = ((WeaponData)ItemDataCurrend).MagazineCapacity;      
+        audioSource.PlayOneShot(((WeaponData)ItemData).ReloadSound);
+        yield return new WaitForSeconds(((WeaponData)ItemData).ReloadTime);
+        ((WeaponData)ItemData).AmmoInMagazine = ((WeaponData)ItemData).MagazineCapacity;      
         IsReloading = false;
     }
 
     public override void UseItem(out bool IsUsed)
     {
-
-        if (Time.time > NextFire && !IsReloading)
+        if (Time.time > CoolDown && !IsReloading)
         {
-            NextFire = Time.time + FiringRate;
-            if (AmmoLeft > 0)
+            CoolDown = Time.time + ((WeaponData)ItemData).FiringRate;
+            if (((WeaponData)ItemData).AmmoInMagazine > 0)
             {
                 
-                Vector3 Start = Barriel.transform.position;
+                Vector2 Start = Barriel.transform.position;
+                Vector2 Direct = Barriel.transform.right;
+                float dispersion = ((WeaponData)ItemData).Dispersion;
 
-                Vector2 TrueStart = Start;
-                Vector2 TrueDirect = Barriel.transform.right;
 
-                RaycastHit2D hit = Physics2D.Raycast(TrueStart, TrueDirect, 30,~Ignore);
-
-                Vector2 HitPoint;
-                if (hit)
+                for (int i = 0; i < ((WeaponData)(ItemData)).BulletPerShot; i++)
                 {
-                    HitPoint = hit.point;
-                    var target = hit.transform.gameObject.GetComponent<ITarget>();
-                    if(target != null)
-                    {
-                        target.DealDamage(((WeaponData)ItemDataCurrend).Damage);
-                    }
+                    Vector2 Dispersion = new Vector2(Random.Range(-dispersion, dispersion), Random.Range(-dispersion, dispersion));
+                    Direct += Dispersion;
 
-                    var targetRB = hit.transform.gameObject.GetComponent<Rigidbody2D>();
-                    if (targetRB)
-                    {
-                        targetRB.AddForce(TrueDirect.normalized * 100);
-                    }
+                    GameObject BulletClone = Instantiate(BulletPrefab, transform.position, transform.rotation);
+                    BulletClone.GetComponent<Rigidbody2D>().AddForce(Direct * ((WeaponData)ItemData).BulletSpeed);
+                    BulletClone.GetComponent<BulletController>().Ignore = gameObject.layer;
+                    var shotlist = ((WeaponData)ItemData).ShootSoundList;
+                    audioSource.PlayOneShot(shotlist[Random.Range(0, shotlist.Count)]);                   
+                    Debug.DrawRay(transform.position, Direct * 5, Color.red, 0.2f);
                 }
-                else
-                {
-                    HitPoint = TrueStart  + (((Vector2)Barriel.transform.right) * 3);
-                }
-
-                ParticleSystem.Play();
-                Debug.DrawLine(TrueStart, HitPoint, Color.red, 0.2f);
-
-                var shotlist = ((WeaponData)ItemDataCurrend).ShootSoundList;
-                audioSource.PlayOneShot(shotlist[Random.Range(0, shotlist.Count)]);
-                AmmoLeft--;
+                ((WeaponData)ItemData).AmmoInMagazine--;
             }
             else
             {
-                audioSource.PlayOneShot(((WeaponData)ItemDataCurrend).EmptySound);
+                audioSource.PlayOneShot(((WeaponData)ItemData).EmptySound);
             }
         }
         IsUsed = false;

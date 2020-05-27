@@ -26,7 +26,7 @@ MonoBehaviour:
   Craftable: 0
   _weaponType: 3
   _damage: 10
-  _recoil: 1
+  _ammoInMagazine: 30
   _magazineCapacity: 30
   _firingRate: 0.1
   _reloadTime: 2
@@ -36,3 +36,6 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 15947269a43f4ff47b9661648449dfa2, type: 3}
   ReloadSound: {fileID: 8300000, guid: 283791f840ebd9e4ab2b6e44f1732328, type: 3}
   EmptySound: {fileID: 8300000, guid: 3f1f7407866d25541b5f9721f0e45e78, type: 3}
+  BulletPerShot: 1
+  BulletSpeed: 4000
+  Dispersion: 0.1

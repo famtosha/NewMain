@@ -94,8 +94,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a86a5e3787d3b5a438b55dcc7a9463d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ItemDataOrigin: {fileID: 11400000, guid: 6cb219d467bf51341b523c1cde925e11, type: 2}
-  ItemDataCurrend: {fileID: 0}
+  ItemData: {fileID: 11400000, guid: 6cb219d467bf51341b523c1cde925e11, type: 2}
   PlayerTransform: {fileID: 0}
 --- !u!61 &-2601216057713692206
 BoxCollider2D:

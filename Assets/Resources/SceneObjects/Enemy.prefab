@@ -139,7 +139,7 @@ MonoBehaviour:
   behaviourNow: 0
   Ignore:
     serializedVersion: 2
-    m_Bits: 1536
+    m_Bits: 3584
   FOV: 180
   LookDist: 10
   Speed: 5

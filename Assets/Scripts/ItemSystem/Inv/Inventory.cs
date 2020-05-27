@@ -25,7 +25,6 @@ public class Inventory : MonoBehaviour
     {      
         _inventory[Slot] = Item;
         Item.transform.SetParent(gameObject.transform);
-        Item.GetComponent<Item>().PlayerTransform = gameObject.transform;
         UpdateSlot(Slot);
     }
 
@@ -41,26 +40,26 @@ public class Inventory : MonoBehaviour
     {
         for (int i = 0; i < _inventory.Length; i++)
         {
-            var ItemData = Item.GetComponent<Item>().ItemDataCurrend;
+            var ItemData = Item.GetComponent<Item>().ItemData;
             if (_inventory[i] == null)
             {
                 AddToInventory(Item, i);
                 return true;
             }
-            else if(ItemData.Name == _inventory[i].GetComponent<Item>().ItemDataCurrend.Name)
+            else if(ItemData.Name == _inventory[i].GetComponent<Item>().ItemData.Name)
             {
-                if(ItemData.Count + _inventory[i].GetComponent<Item>().ItemDataCurrend.Count <= ItemData.MaxCount)
+                if(ItemData.Count + _inventory[i].GetComponent<Item>().ItemData.Count <= ItemData.MaxCount)
                 {
-                    _inventory[i].GetComponent<Item>().ItemDataCurrend.Count += ItemData.Count;
+                    _inventory[i].GetComponent<Item>().ItemData.Count += ItemData.Count;
                     Destroy(Item);
                     UpdateSlot(i);
                     return true;
                 }
                 else
                 {
-                    var totalcount = _inventory[i].GetComponent<Item>().ItemDataCurrend.Count + ItemData.Count;
+                    var totalcount = _inventory[i].GetComponent<Item>().ItemData.Count + ItemData.Count;
                     var over = totalcount - ItemData.MaxCount;
-                    _inventory[i].GetComponent<Item>().ItemDataCurrend.Count = ItemData.MaxCount;
+                    _inventory[i].GetComponent<Item>().ItemData.Count = ItemData.MaxCount;
                     ItemData.Count = over;
                     UpdateSlot(i);
                 }
@@ -72,21 +71,21 @@ public class Inventory : MonoBehaviour
     public void SwitchItems(int First, int Second)
     {
 
-        if(_inventory[First] != null && _inventory[Second] != null && _inventory[First].GetComponent<Item>().ItemDataCurrend.Name == _inventory[Second].GetComponent<Item>().ItemDataCurrend.Name)
+        if(_inventory[First] != null && _inventory[Second] != null && _inventory[First].GetComponent<Item>().ItemData.Name == _inventory[Second].GetComponent<Item>().ItemData.Name)
         {
             var firstItem = _inventory[First].GetComponent<Item>();
             var secondItem = _inventory[Second].GetComponent<Item>();
 
             var sum = firstItem.Count + secondItem.Count;
-            if (sum > firstItem.ItemDataCurrend.MaxCount)
+            if (sum > firstItem.ItemData.MaxCount)
             {
-                var over = sum - firstItem.ItemDataCurrend.MaxCount;
-                secondItem.ItemDataCurrend.Count = secondItem.ItemDataCurrend.MaxCount;
-                firstItem.ItemDataCurrend.Count = over;
+                var over = sum - firstItem.ItemData.MaxCount;
+                secondItem.ItemData.Count = secondItem.ItemData.MaxCount;
+                firstItem.ItemData.Count = over;
             }
             else
             {
-                secondItem.ItemDataCurrend.Count = sum;
+                secondItem.ItemData.Count = sum;
                 var Item = _inventory[First];
                 _inventory[First] = null;
                 Destroy(Item);
@@ -137,7 +136,7 @@ public class Inventory : MonoBehaviour
         }
         else
         {
-            return data.GetComponent<Item>().ItemDataCurrend;
+            return data.GetComponent<Item>().ItemData;
         }
         
     }

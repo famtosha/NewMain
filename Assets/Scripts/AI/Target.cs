@@ -24,10 +24,7 @@ public class Target : MonoBehaviour, ITarget
             _health = value;
             if(_health <= 0)
             {
-                if(OnDeath != null)
-                {
-                    OnDeath();
-                }
+                OnDeath?.Invoke();
             }
         }
     }
