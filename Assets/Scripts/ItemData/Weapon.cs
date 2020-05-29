@@ -66,12 +66,12 @@ public class Weapon : Item
 
                     GameObject BulletClone = Instantiate(BulletPrefab, transform.position, transform.rotation);
                     BulletClone.GetComponent<Rigidbody2D>().AddForce(Direct * ((WeaponData)ItemData).BulletSpeed);
-                    BulletClone.GetComponent<BulletController>().Ignore = gameObject.layer;
-                    var shotlist = ((WeaponData)ItemData).ShootSoundList;
-                    audioSource.PlayOneShot(shotlist[Random.Range(0, shotlist.Count)]);                   
+                    BulletClone.GetComponent<BulletController>().Ignore = gameObject.layer;              
                     Debug.DrawRay(transform.position, Direct * 5, Color.red, 0.2f);
                 }
                 ((WeaponData)ItemData).AmmoInMagazine--;
+                var shotlist = ((WeaponData)ItemData).ShootSoundList;
+                audioSource.PlayOneShot(shotlist[Random.Range(0, shotlist.Count)]);
             }
             else
             {

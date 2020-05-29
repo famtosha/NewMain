@@ -7,16 +7,16 @@ public class AI : MonoBehaviour
 {
     public static event Action<GameObject> OnPlayerDetect;
 
-    [SerializeField] private GameObject Target;
-    [SerializeField] private GameObject weapon;
+    [SerializeField] private GameObject Target = null;
+    [SerializeField] private GameObject weapon = null;
     [SerializeField] private Behaviour behaviourNow = Behaviour.Idle;
-    [SerializeField] private LayerMask Ignore;
+    [SerializeField] private LayerMask Ignore = 0;
     [SerializeField] [Range(0, 360)] private float FOV = 180;
     [SerializeField] private float LookDist = 10;
     [SerializeField] private float Speed = 5f;
     [SerializeField] private bool ShowGizmo = false;
-    private Target target;
-    private Rigidbody2D Rigidbody2D;
+    private Target target = null;
+    private Rigidbody2D Rigidbody2D = null;
     private bool IsBusy = true;
     private float NextCommand = 3;
     private float NextCommandLeft = 0;
@@ -56,13 +56,11 @@ public class AI : MonoBehaviour
 
     private void Update()
     {
-        print(behaviourNow);
         if (CanSeeTarget(Target))
         {
             if (behaviourNow != Behaviour.Chase)
             {
-                print("found!");
-                OnPlayerDetect(this.gameObject);
+                OnPlayerDetect(gameObject);
                 behaviourNow = Behaviour.Chase;
                 StopAllCoroutines();
                 ChaseTarget();
@@ -86,8 +84,7 @@ public class AI : MonoBehaviour
 
         NextCommandLeft += Time.deltaTime;
         if (NextCommand < NextCommandLeft)
-        {
-            print("start Next Command");
+        { 
             NextCommandLeft = 0;
             switch (behaviourNow)
             {
@@ -100,7 +97,6 @@ public class AI : MonoBehaviour
 
     public  void PlayerDetectHandler(GameObject sender)
     {
-        print(sender);
         if (sender != gameObject)
         {
             behaviourNow = Behaviour.Search;
@@ -128,13 +124,8 @@ public class AI : MonoBehaviour
                 {
                     return true;
                 }
-                //Debug.DrawLine(transform.position, Hit.collider.gameObject);
             }
         }
-
-
-
-
         return false;
     }
 

@@ -14,11 +14,11 @@ public class ButtonController : InteractebleItem
         if (!IsLightActive)
         {
             ChangeLightState(true);          
-            print("turn on light");
+            //print("turn on light");
         }
         else
         {
-            print("turn off light");
+            //print("turn off light");
             ChangeLightState(false);
         }
     }

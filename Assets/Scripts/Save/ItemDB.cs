@@ -13,14 +13,14 @@ public class ItemDB : MonoBehaviour
         if (instance == null)
         {
             instance = this;
-            print("Load IDB");
+            //print("Load IDB");
         }
         else
         {
             Destroy(gameObject);
         }
 
-        DontDestroyOnLoad(gameObject);
+        //DontDestroyOnLoad(gameObject);
 
         LoadDataBase();
     }

@@ -11,14 +11,14 @@ public class ItemSpawner : MonoBehaviour
         if (instance == null)
         {
             instance = this;
-            print("Load IDB");
+            //print("Load ItemSpawner");
         }
         else
         {
             Destroy(gameObject);
         }
 
-        DontDestroyOnLoad(gameObject);
+        //DontDestroyOnLoad(gameObject);
     }
     public GameObject SpawnItem(int ID)
     {

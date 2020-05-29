@@ -12,7 +12,7 @@ public class GameMan : MonoBehaviour
         if (instance == null)
         {
             instance = this;
-            print("Load Scene Change");
+            //print("Load Scene Change");
         }
         else
         {

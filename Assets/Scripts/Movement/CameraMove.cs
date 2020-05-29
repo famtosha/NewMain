@@ -5,11 +5,11 @@ using UnityEngine;
 
 public class CameraMove : MonoBehaviour
 {
-    [SerializeField] private Transform PlayerPos;
-    [SerializeField] private Transform CameraPos;
-    [SerializeField] private Camera Camera;
-    [SerializeField] private float CameraMin;
-    [SerializeField] private float CameraMax;
+    [SerializeField] private Transform PlayerPos = null;
+    [SerializeField] private Transform CameraPos = null;
+    [SerializeField] private Camera Camera = null;
+    [SerializeField] private float CameraMin = 0;
+    [SerializeField] private float CameraMax = 0;
     public bool IsInRoom = false;
     private float _time = 0f;
 
@@ -32,7 +32,7 @@ public class CameraMove : MonoBehaviour
 
         _time = Mathf.Clamp(_time, 0, 1);
         
-        Vector3 NewPos = new Vector3(PlayerPos.position.x, PlayerPos.position.y, CameraPos.position.z);
+        Vector3 NewPos = new Vector3(CameraPos.position.x, CameraPos.position.y, CameraPos.position.z);
         CameraPos.position = NewPos;
         Camera.orthographicSize = Mathf.Lerp(CameraMax, CameraMin, _time * _time);   
     }

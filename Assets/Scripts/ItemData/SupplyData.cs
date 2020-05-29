@@ -5,10 +5,10 @@ using UnityEngine;
 
 class SupplyData : ItemData
 {
-    [SerializeField] private float _foodGive;
-    [SerializeField] private float _waterGive;
-    [SerializeField] private float _temperatureGive;
-    [SerializeField] private float _healthGive;
+    [SerializeField] private float _foodGive = 0;
+    [SerializeField] private float _waterGive = 0;
+    [SerializeField] private float _temperatureGive = 0;
+    [SerializeField] private float _healthGive = 0;
 
     public float FoodGive 
     { 

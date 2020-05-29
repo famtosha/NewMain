@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class EnemySpawn : InteractebleItem
 {
-    [SerializeField] GameObject EnemySpawnPoint;
+    [SerializeField] GameObject EnemySpawnPoint = null;
     [SerializeField] int EnemyCount = 1;
-    [SerializeField] GameObject Enemy;
+    [SerializeField] GameObject Enemy = null;
 
     public override void UseObj(GameObject interacter)
     {

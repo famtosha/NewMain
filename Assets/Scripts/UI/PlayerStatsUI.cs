@@ -6,10 +6,10 @@ using UnityEngine.UI;
 
 public class PlayerStatsUI : MonoBehaviour
 {
-    [SerializeField] private Text HealthText;
-    [SerializeField] private Text WaterText;
-    [SerializeField] private Text FoodText;
-    [SerializeField] private Text TemperatureText;
+    [SerializeField] private Text HealthText = null;
+    [SerializeField] private Text WaterText = null;
+    [SerializeField] private Text FoodText = null;
+    [SerializeField] private Text TemperatureText = null;
 
     private PlayerStats playerStats;
 

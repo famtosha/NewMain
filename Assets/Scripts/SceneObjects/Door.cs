@@ -4,9 +4,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Door : InteractebleItem
-{   
-    [SerializeField] private GameObject InteractbleZone;
-    [SerializeField] private AudioClip DoorSound;
+{
+    [SerializeField] private GameObject InteractbleZone = null;
+    [SerializeField] private AudioClip DoorSound = null;
     private AudioSource audioSource;
     private Animator animator;
 

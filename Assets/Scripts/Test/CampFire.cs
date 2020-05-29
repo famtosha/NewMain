@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CampFire : MonoBehaviour
 {
-    [SerializeField] float tempPower;
+    [SerializeField] float tempPower = 0;
 
     private void OnTriggerStay2D(Collider2D collision)
     {

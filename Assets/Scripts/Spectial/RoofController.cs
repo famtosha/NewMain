@@ -7,8 +7,8 @@ using System;
 
 public class RoofController : MonoBehaviour
 {
-    [SerializeField] private Tilemap Roof;
-    [SerializeField] private CameraMove ultrashit;
+    [SerializeField] private Tilemap Roof = null;
+    [SerializeField] private CameraMove ultrashit = null;
     private GameObject Player;
 
     private void Start()
