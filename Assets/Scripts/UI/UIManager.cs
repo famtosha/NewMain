@@ -23,8 +23,6 @@ public class UIManager : MonoBehaviour
     }
 
 
-    public CanvasGroup canvasGroup;
-
     public GameObject PauseMenu;
     public GameObject BackPackMenu;
     public GameObject HotBar;

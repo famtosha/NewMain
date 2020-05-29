@@ -49,27 +49,15 @@ public class SlotUI : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler,
         BackPackUI.LeftClick(ID);
     }
 
+
     public void OnPointerEnter(PointerEventData eventData)
     {
-        if (UIManager.instance == null) return;
-
-        UIManager.instance.EnableItemContexMenu();
-        UIManager.instance.ItemContexMenu.transform.position = Input.mousePosition + new Vector3(120,-40,0);
-        var item = BackPackUI.inventory.GetSlotInfo(ID);
-        if(item != null)
-        {
-            var x = item.GetComponent<Item>();
-            UIManager.instance.ItemContexMenu.GetComponent<ItemCont>().Upadate(x.Name, x.GetInfo());
-        }
-        else
-        {
-            UIManager.instance.ItemContexMenu.GetComponent<ItemCont>().Upadate("", "");
-        }     
+        UIManager.instance.ItemContexMenu.GetComponent<ItemCont>().Enable(BackPackUI.inventory.GetSlotInfo(ID));     
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
-        if (UIManager.instance == null) return;
-        UIManager.instance.DisableItemContexMenu();
+
+        UIManager.instance.ItemContexMenu.GetComponent<ItemCont>().Disable();
     }
 }

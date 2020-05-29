@@ -6,6 +6,7 @@ using UnityEngine;
 public class HotBar : Inventory
 {
     public event Action<int, bool> OnChangeSelectedItem;
+    private float ChangeActiveSlotCooldown = 0;
 
     private ItemShower ItemShower;
 
@@ -49,27 +50,32 @@ public class HotBar : Inventory
         }
     }
 
-    private void SelectNext()
+    private void ChangeSelectedSlot(ScrolDirection direction)
     {
-        if(HotBarSelected == _inventory.Length - 1)
+        if(ChangeActiveSlotCooldown <= 0)
         {
-            HotBarSelected = 0;
-        }
-        else
-        {
-            HotBarSelected++;
-        }
-    }
-
-    private void SelectPrev()
-    {
-        if(HotBarSelected == 0)
-        {
-            HotBarSelected = _inventory.Length - 1;
-        }
-        else
-        {
-            HotBarSelected--;
+            if (direction == ScrolDirection.Next)
+            {
+                if (HotBarSelected == _inventory.Length - 1)
+                {
+                    HotBarSelected = 0;
+                }
+                else
+                {
+                    HotBarSelected++;
+                }
+            }
+            else
+            {
+                if (HotBarSelected == 0)
+                {
+                    HotBarSelected = _inventory.Length - 1;
+                }
+                else
+                {
+                    HotBarSelected--;
+                }
+            }
         }
     }
 
@@ -98,9 +104,13 @@ public class HotBar : Inventory
 
     private void Update()
     {
-        if (Input.GetAxis("Mouse ScrollWheel") > 0f) SelectNext();
-        if (Input.GetAxis("Mouse ScrollWheel") < 0f) SelectPrev();
         if(Input.GetKey(KeyCode.E)) UseItem();
         if (Input.GetKeyDown(KeyCode.R)) ReloadWeapon();
+        if (Input.GetAxis("Mouse ScrollWheel") > 0f) ChangeSelectedSlot(ScrolDirection.Next);
+        if (Input.GetAxis("Mouse ScrollWheel") < 0f) ChangeSelectedSlot(ScrolDirection.Prev);
+        if (ChangeActiveSlotCooldown >= 0)
+        {
+            ChangeActiveSlotCooldown -= Time.deltaTime;
+        }
     }
 }

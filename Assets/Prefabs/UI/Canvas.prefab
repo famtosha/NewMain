@@ -180,8 +180,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.61499, y: -12.62}
-  m_SizeDelta: {x: 31.23, y: 18.68}
+  m_AnchoredPosition: {x: 0, y: -14}
+  m_SizeDelta: {x: 12, y: 12}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1197459008634642366
 CanvasRenderer:
@@ -252,7 +252,7 @@ RectTransform:
   m_GameObject: {fileID: 3171630873025502069}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 4, y: 4, z: 2}
+  m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 6857669872063390295}
   - {fileID: 7753568258363708634}
@@ -341,7 +341,6 @@ MonoBehaviour:
   ItemSprite: {fileID: 7257131327233130935}
   BackPackUI: {fileID: 0}
   Text: {fileID: 1533759753497893125}
-  UIManager: {fileID: 0}
   BackGround: {fileID: 5738601259307967450}
   ID: 0
 --- !u!1 &3609323612291964130
