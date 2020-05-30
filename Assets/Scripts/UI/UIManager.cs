@@ -12,14 +12,11 @@ public class UIManager : MonoBehaviour
         if (instance == null)
         {
             instance = this;
-            //print("Load SceneLoader");
         }
         else
         {
             Destroy(gameObject);
         }
-
-        //DontDestroyOnLoad(gameObject);
     }
 
 
@@ -78,6 +75,11 @@ public class UIManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.I)) ChangeBackPackMenu();
     }
 
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
+
     public void CloseEveryThing()
     {
         DisableBackPackMenu();
@@ -92,6 +94,13 @@ public class UIManager : MonoBehaviour
     public void EnableDeathMenu()
     {
         DeathMenu.GetComponent<Canvas>().enabled = true;
+
+        StartCoroutine(Lose());
+        IEnumerator Lose()
+        {
+            yield return new WaitForSeconds(1f);
+            Application.Quit();
+        }
     }
 
     public void DisablePauseMenu()
@@ -171,4 +180,5 @@ public class UIManager : MonoBehaviour
             EnableItemContexMenu();
         }
     }
+
 }

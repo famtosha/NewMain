@@ -6,9 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/FamtoshaS1.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
-    path: Assets/Scenes/FamtoshaS2.unity
-    guid: 95f5a3b2c991cef4fb177a091030f3ee
+    path: Assets/Scenes/Hata.unity
+    guid: addbe1db481d25543bc2aa3de83c8367
   m_configObjects: {}

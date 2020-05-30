@@ -6,15 +6,15 @@ public class Movement : MonoBehaviour
 {
     [SerializeField] private float Speed = 1;
     [SerializeField] [Range(0, 1)] private float CameraMovePower = 0.1f;
-    private GameObject PlayerCamera;
+    private Transform PlayerCameraTransform;
     private Camera PlayerCameraCont;
     private Rigidbody2D PlayerRB;
 
     private void Start()
     {
         GameMan.instance.Player = this.gameObject;
-        PlayerCamera = Camera.main.gameObject;
-        PlayerCameraCont = PlayerCamera.GetComponent<Camera>();
+        PlayerCameraTransform = Camera.main.gameObject.transform;
+        PlayerCameraCont = PlayerCameraTransform.gameObject.GetComponent<Camera>();
         PlayerRB = gameObject.GetComponent<Rigidbody2D>();
     }
 
@@ -29,7 +29,7 @@ public class Movement : MonoBehaviour
         Vector2 PlayerPos = transform.position;
         Vector2 MousePos = PlayerCameraCont.ScreenToWorldPoint(Input.mousePosition);
         Vector2 Center = Vector2.LerpUnclamped(PlayerPos, MousePos, CameraMovePower);
-        PlayerCamera.transform.position = new Vector3(Center.x, Center.y, PlayerCamera.transform.position.z);
+        PlayerCameraTransform.position = new Vector3(Center.x, Center.y, PlayerCameraTransform.position.z);
     }
 
     void Move()
