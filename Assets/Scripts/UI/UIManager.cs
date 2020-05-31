@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour
 {
@@ -99,7 +100,7 @@ public class UIManager : MonoBehaviour
         IEnumerator Lose()
         {
             yield return new WaitForSeconds(1f);
-            Application.Quit();
+            SceneLoader.instance.RestartScene();
         }
     }
 

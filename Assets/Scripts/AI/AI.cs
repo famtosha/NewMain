@@ -97,11 +97,19 @@ public class AI : MonoBehaviour
 
     public  void PlayerDetectHandler(GameObject sender)
     {
-        if (sender != gameObject)
+        try
         {
-            behaviourNow = Behaviour.Search;
-            MoveToPostion(sender.transform.position);
+            if (sender != gameObject)
+            {
+                behaviourNow = Behaviour.Search;
+                MoveToPostion(sender.transform.position);
+            }
         }
+        catch
+        {
+
+        }
+       
     }
 
     public bool CanSeeTarget(GameObject target)
