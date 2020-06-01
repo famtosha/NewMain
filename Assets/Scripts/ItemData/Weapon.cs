@@ -6,6 +6,7 @@ public class Weapon : Item
 {
     public GameObject Barriel;
     public GameObject BulletPrefab;
+    public LayerMask Ignore;
 
     private float CoolDown = 0;
     private bool IsReloading = false;
@@ -34,7 +35,7 @@ public class Weapon : Item
         if (!IsReloading)
         {
             StartCoroutine(StartReload());
-        }       
+        }
     }
 
     private IEnumerator StartReload()
@@ -42,7 +43,7 @@ public class Weapon : Item
         IsReloading = true;
         audioSource.PlayOneShot(((WeaponData)ItemData).ReloadSound);
         yield return new WaitForSeconds(((WeaponData)ItemData).ReloadTime);
-        ((WeaponData)ItemData).AmmoInMagazine = ((WeaponData)ItemData).MagazineCapacity;      
+        ((WeaponData)ItemData).AmmoInMagazine = ((WeaponData)ItemData).MagazineCapacity;
         IsReloading = false;
     }
 
@@ -53,7 +54,6 @@ public class Weapon : Item
             CoolDown = Time.time + ((WeaponData)ItemData).FiringRate;
             if (((WeaponData)ItemData).AmmoInMagazine > 0)
             {
-                
                 Vector2 Start = Barriel.transform.position;
                 Vector2 Direct = Barriel.transform.right;
                 float dispersion = ((WeaponData)ItemData).Dispersion;
@@ -64,10 +64,22 @@ public class Weapon : Item
                     Vector2 Dispersion = new Vector2(Random.Range(-dispersion, dispersion), Random.Range(-dispersion, dispersion));
                     Direct += Dispersion;
 
-                    GameObject BulletClone = Instantiate(BulletPrefab, transform.position, transform.rotation);
-                    BulletClone.GetComponent<Rigidbody2D>().AddForce(Direct * ((WeaponData)ItemData).BulletSpeed);
-                    BulletClone.GetComponent<BulletController>().Ignore = gameObject.layer;              
-                    Debug.DrawRay(transform.position, Direct * 5, Color.red, 0.2f);
+                    RaycastHit2D Hit = Physics2D.Raycast(Start, Direct, 20, ~Ignore);
+                    var Bullet = Instantiate(BulletPrefab, transform.position, transform.rotation);
+
+                    if (Hit)
+                    {
+                        Bullet.GetComponent<NBullet>().StartBullet(Start, Hit.point, 10);
+                        var s = Hit.collider.gameObject.GetComponent<Rigidbody2D>();
+                        if (s)
+                        {
+                            s.AddForce(Direct.normalized * 10);
+                        }
+                    }
+                    else
+                    {
+                        Bullet.GetComponent<NBullet>().StartBullet(Start, Start + Direct.normalized * 100);
+                    }
                 }
                 ((WeaponData)ItemData).AmmoInMagazine--;
                 var shotlist = ((WeaponData)ItemData).ShootSoundList;
@@ -81,3 +93,24 @@ public class Weapon : Item
         IsUsed = false;
     }
 }
+
+
+
+//Vector2 Start = Barriel.transform.position;
+//Vector2 Direct = Barriel.transform.right;
+//float dispersion = ((WeaponData)ItemData).Dispersion;
+
+
+//for (int i = 0; i < ((WeaponData)(ItemData)).BulletPerShot; i++)
+//{
+//    Vector2 Dispersion = new Vector2(Random.Range(-dispersion, dispersion), Random.Range(-dispersion, dispersion));
+//    Direct += Dispersion;
+
+//    GameObject BulletClone = Instantiate(BulletPrefab, transform.position, transform.rotation);
+//    BulletClone.GetComponent<Rigidbody2D>().AddForce(Direct * ((WeaponData)ItemData).BulletSpeed);
+//    BulletClone.GetComponent<BulletController>().Ignore = gameObject.layer;
+//    Debug.DrawRay(transform.position, Direct * 5, Color.red, 0.2f);
+//}
+//((WeaponData)ItemData).AmmoInMagazine--;
+//var shotlist = ((WeaponData)ItemData).ShootSoundList;
+//audioSource.PlayOneShot(shotlist[Random.Range(0, shotlist.Count)]);
