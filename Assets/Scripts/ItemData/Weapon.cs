@@ -69,7 +69,7 @@ public class Weapon : Item
 
                     if (Hit)
                     {
-                        Bullet.GetComponent<NBullet>().StartBullet(Start, Hit.point, 10);
+                        Bullet.GetComponent<Bullet>().StartBullet(Start, Hit.point, 10);
                         var s = Hit.collider.gameObject.GetComponent<Rigidbody2D>();
                         if (s)
                         {
@@ -78,7 +78,7 @@ public class Weapon : Item
                     }
                     else
                     {
-                        Bullet.GetComponent<NBullet>().StartBullet(Start, Start + Direct.normalized * 100);
+                        Bullet.GetComponent<Bullet>().StartBullet(Start, Start + Direct.normalized * 100);
                     }
                 }
                 ((WeaponData)ItemData).AmmoInMagazine--;

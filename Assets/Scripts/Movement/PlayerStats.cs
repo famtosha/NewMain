@@ -13,18 +13,47 @@ class PlayerStats : MonoBehaviour, ITarget
 
     public bool IsInRoom = false;
 
+    public void AddBuff(Buff buff)
+    {
+        if(PlayerBuffs.IndexOf(buff) == -1)
+        {
+            PlayerBuffs.Add(buff);
+            print("buff added: " + buff.Name);
+            OnDataChanged();
+        }
+        else
+        {
+            print("update buff: " + buff.Name);
+            RemoveBuff(buff);
+            AddBuff(buff);
+        }
+    }
+
+    public void RemoveBuff(Buff buff)
+    {
+        PlayerBuffs.Remove(buff);
+        print("buff removed: " + buff.Name);
+        OnDataChanged();
+    }
+
     private void OnDataChanged()
     {
         UpdateStats?.Invoke(this);
     }
 
     private void Update()
-    {
-        Hunger -= 0.001f;       
+    { 
         foreach (Buff buff in PlayerBuffs)
         {
-            buff.DurationLeft -= 0.01f;
+            buff.DurationLeft -= Time.deltaTime;
+            if (buff.DurationLeft <= 0)
+            {
+                RemoveBuff(buff);
+                break;
+            }
         }
+
+        Hunger -= 0.001f;
 
         if (IsInRoom)
         {

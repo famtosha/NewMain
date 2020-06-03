@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NBullet : MonoBehaviour
+public class Bullet : MonoBehaviour
 {
     public void StartBullet(Vector2 startPosition, Vector2 endPosition, float MoveSpeed = 10f)
     {

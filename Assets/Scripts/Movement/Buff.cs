@@ -3,11 +3,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Buff : MonoBehaviour
+public class Buff
 {
-    public string Name;
-    public float Duration = 20;
+    public event Action<float> OnDurationChange;
+    public string Name = "";
     private float _durationLeft;
+
+    public Buff(string name, float Duration)
+    {
+        Name = name;
+        DurationLeft = Duration;
+    }
 
     public float DurationLeft
     {
@@ -22,20 +28,8 @@ public class Buff : MonoBehaviour
         }
     }
 
-    public event Action<float> OnDurationChange; 
-
     private void updateDuration()
     {
         OnDurationChange?.Invoke(DurationLeft);
-    }
-
-    private void Start()
-    {
-        DurationLeft = Duration;
-    }
-
-    private void Update()
-    {
-        Duration -= Time.deltaTime;
     }
 }

@@ -128,8 +128,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ItemData: {fileID: 11400000, guid: 63698486276f8c84f99c6cb78b6acfdb, type: 2}
   Barriel: {fileID: 1841922497041778137}
-  BulletPrefab: {fileID: 5703146271889831204, guid: dcd58ba975f5771458df1a7cc3b7a975,
+  BulletPrefab: {fileID: 8791840245062597465, guid: 7beff7c127a39cb4594aa992966a2922,
     type: 3}
+  Ignore:
+    serializedVersion: 2
+    m_Bits: 3328
 --- !u!61 &2011448564407310193
 BoxCollider2D:
   m_ObjectHideFlags: 0
