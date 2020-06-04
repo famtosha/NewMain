@@ -11,14 +11,13 @@ public class ButtonController : InteractebleItem
 
     public override void UseObj(GameObject interacter)
     {
+        base.UseObj(interacter);
         if (!IsLightActive)
         {
             ChangeLightState(true);          
-            //print("turn on light");
         }
         else
         {
-            //print("turn off light");
             ChangeLightState(false);
         }
     }

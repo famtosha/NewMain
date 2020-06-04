@@ -1,9 +1,12 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
+    public static event Action OnPlayerMove;
+
     [SerializeField] private float Speed = 1;
     [SerializeField] [Range(0, 1)] private float CameraMovePower = 0.1f;
     private Transform PlayerTransform;
@@ -30,6 +33,14 @@ public class Movement : MonoBehaviour
     {
         Vector2 PlayerPos = PlayerTransform.position;
         Vector2 MousePos = PlayerCameraCont.ScreenToWorldPoint(Input.mousePosition);
+        if (Input.GetKey(KeyCode.T))
+        {
+            CameraMovePower = 0.3f;
+        }
+        else
+        {
+            CameraMovePower = 0f;
+        }
         Vector2 Center = Vector2.LerpUnclamped(PlayerPos, MousePos, CameraMovePower);
         PlayerCameraTransform.position = new Vector3(Center.x, Center.y, PlayerCameraTransform.position.z);
     }
@@ -38,6 +49,11 @@ public class Movement : MonoBehaviour
     {
         Vector2 MoveDirection = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
         PlayerRB.MovePosition((Vector2)PlayerRB.transform.position + MoveDirection * Speed * Time.deltaTime);
+
+        if(MoveDirection != Vector2.zero)
+        {
+            OnPlayerMove?.Invoke();
+        }
     }
 
     void LookAtCursor()

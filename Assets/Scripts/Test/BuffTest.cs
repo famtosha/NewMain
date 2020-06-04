@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class BuffTest : MonoBehaviour
 {
-
     List<Buff> buffs = new List<Buff>() {
         new Buff("GANAREYA",99),
         new Buff("PAK",82),

@@ -6,8 +6,6 @@ using UnityEngine;
 public class Door : InteractebleItem
 {
     [SerializeField] private GameObject InteractbleZone = null;
-    [SerializeField] private AudioClip DoorSound = null;
-    private AudioSource audioSource;
     private Animator animator;
 
     private bool _isOpen = false;
@@ -22,10 +20,6 @@ public class Door : InteractebleItem
         {
             _isOpen = value;
             animator.SetBool("IsOpen", value);
-            if (DoorSound != null)
-            {
-                audioSource.PlayOneShot(DoorSound);
-            }
         }
     }
 
@@ -33,7 +27,6 @@ public class Door : InteractebleItem
     {
         base.Start();
         animator = transform.parent.gameObject.GetComponent<Animator>();
-        audioSource = gameObject.GetComponent<AudioSource>();
     }
 
     private void ChangeDoorState()
@@ -43,6 +36,7 @@ public class Door : InteractebleItem
 
     public override void UseObj(GameObject interacter)
     {
+        base.UseObj(interacter);
         ChangeDoorState();
     }
 

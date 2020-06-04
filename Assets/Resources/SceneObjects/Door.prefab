@@ -228,8 +228,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb0f87d82aa211e43a6ae1f8986be6ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  useSounds:
+  - {fileID: 8300000, guid: 001f825203705b9448ef73d052a836bb, type: 3}
+  audioSource: {fileID: 1561853486354202542}
   InteractbleZone: {fileID: 5776522845127574683}
-  DoorSound: {fileID: 8300000, guid: 5d72fc2f971e2ce4e864cf10f5dc4860, type: 3}
 --- !u!212 &8649302217583716287
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -317,7 +319,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 0
   Mute: 0
