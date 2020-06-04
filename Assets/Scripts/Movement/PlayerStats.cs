@@ -6,24 +6,23 @@ class PlayerStats : MonoBehaviour, ITarget
 {
     public event Action<PlayerStats> UpdateStats;
     public List<Buff> PlayerBuffs = new List<Buff>();
+    public PPController pPController;
+    public bool IsInRoom = false;
+
     [SerializeField] private float _hunger = 100;
     [SerializeField] private float _thirst = 100;
     [SerializeField] private float _health = 100;
     [SerializeField] private float _temperature = 36.6f;
-
-    public bool IsInRoom = false;
 
     public void AddBuff(Buff buff)
     {
         if(PlayerBuffs.IndexOf(buff) == -1)
         {
             PlayerBuffs.Add(buff);
-            print("buff added: " + buff.Name);
             OnDataChanged();
         }
         else
         {
-            print("update buff: " + buff.Name);
             RemoveBuff(buff);
             AddBuff(buff);
         }
@@ -32,7 +31,6 @@ class PlayerStats : MonoBehaviour, ITarget
     public void RemoveBuff(Buff buff)
     {
         PlayerBuffs.Remove(buff);
-        print("buff removed: " + buff.Name);
         OnDataChanged();
     }
 
@@ -53,7 +51,7 @@ class PlayerStats : MonoBehaviour, ITarget
             }
         }
 
-        Hunger -= 0.001f;
+        Hunger -= 0.01f;
 
         if (IsInRoom)
         {

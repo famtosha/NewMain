@@ -55,62 +55,70 @@ public class Weapon : Item
             if (((WeaponData)ItemData).AmmoInMagazine > 0)
             {
                 Vector2 Start = Barriel.transform.position;
-                Vector2 Direct = Barriel.transform.right;
+                Vector2 Direction = Barriel.transform.right;
                 float dispersion = ((WeaponData)ItemData).Dispersion;
-
 
                 for (int i = 0; i < ((WeaponData)(ItemData)).BulletPerShot; i++)
                 {
-                    Vector2 Dispersion = new Vector2(Random.Range(-dispersion, dispersion), Random.Range(-dispersion, dispersion));
-                    Direct += Dispersion;
-
-                    RaycastHit2D Hit = Physics2D.Raycast(Start, Direct, 20, ~Ignore);
-                    var Bullet = Instantiate(BulletPrefab, transform.position, transform.rotation);
-
+                    RaycastHit2D Hit = Physics2D.Raycast(Start, Direction + GetDispertion(dispersion), 20, ~Ignore);                   
+                    Vector2 HitPoint = Start + Direction * 5;
                     if (Hit)
                     {
-                        Bullet.GetComponent<Bullet>().StartBullet(Start, Hit.point, 10);
-                        var s = Hit.collider.gameObject.GetComponent<Rigidbody2D>();
-                        if (s)
-                        {
-                            s.AddForce(Direct.normalized * 10);
-                        }
+                        GameObject Target = Hit.collider.gameObject;
+                        DealDamage(Target, 10);
+                        PushTarget(Target, Direction, 10);
+                        HitPoint = Hit.point;
                     }
-                    else
-                    {
-                        Bullet.GetComponent<Bullet>().StartBullet(Start, Start + Direct.normalized * 100);
-                    }
+                    PlayerBulletAnimation(Start, HitPoint, 10);
                 }
+                PlayShootSound();
                 ((WeaponData)ItemData).AmmoInMagazine--;
-                var shotlist = ((WeaponData)ItemData).ShootSoundList;
-                audioSource.PlayOneShot(shotlist[Random.Range(0, shotlist.Count)]);
             }
             else
             {
-                audioSource.PlayOneShot(((WeaponData)ItemData).EmptySound);
+                PlayEmptySound();
             }
         }
         IsUsed = false;
     }
+
+    private Vector2 GetDispertion(float disp)
+    {
+        return new Vector2(Random.Range(-disp, disp), Random.Range(-disp, disp));
+    }
+
+    private void DealDamage(GameObject target, float damage)
+    {
+        var HitTarget = target.GetComponent<ITarget>();
+        if (HitTarget != null)
+        {
+            HitTarget.DealDamage(damage);
+        }
+    }
+
+    private void PushTarget(GameObject target, Vector2 direction, float force)
+    {
+        var HitRB = target.GetComponent<Rigidbody2D>();
+        if (HitRB)
+        {
+            HitRB.AddForce(direction.normalized * force);
+        }
+    }
+
+    private void PlayerBulletAnimation(Vector2 start, Vector2 end, float speed)
+    {
+        var bulletClone = Instantiate(BulletPrefab, transform.position, transform.rotation);
+        bulletClone.GetComponent<Bullet>().StartBullet(start, end, speed);
+    }
+
+    private void PlayShootSound()
+    {
+        var shotlist = ((WeaponData)ItemData).ShootSoundList;
+        audioSource.PlayOneShot(shotlist[Random.Range(0, shotlist.Count)]);
+    }
+
+    private void PlayEmptySound()
+    {
+        audioSource.PlayOneShot(((WeaponData)ItemData).EmptySound);
+    }
 }
-
-
-
-//Vector2 Start = Barriel.transform.position;
-//Vector2 Direct = Barriel.transform.right;
-//float dispersion = ((WeaponData)ItemData).Dispersion;
-
-
-//for (int i = 0; i < ((WeaponData)(ItemData)).BulletPerShot; i++)
-//{
-//    Vector2 Dispersion = new Vector2(Random.Range(-dispersion, dispersion), Random.Range(-dispersion, dispersion));
-//    Direct += Dispersion;
-
-//    GameObject BulletClone = Instantiate(BulletPrefab, transform.position, transform.rotation);
-//    BulletClone.GetComponent<Rigidbody2D>().AddForce(Direct * ((WeaponData)ItemData).BulletSpeed);
-//    BulletClone.GetComponent<BulletController>().Ignore = gameObject.layer;
-//    Debug.DrawRay(transform.position, Direct * 5, Color.red, 0.2f);
-//}
-//((WeaponData)ItemData).AmmoInMagazine--;
-//var shotlist = ((WeaponData)ItemData).ShootSoundList;
-//audioSource.PlayOneShot(shotlist[Random.Range(0, shotlist.Count)]);

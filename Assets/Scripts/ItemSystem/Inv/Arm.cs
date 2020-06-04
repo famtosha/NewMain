@@ -12,7 +12,6 @@ public class Arm : MonoBehaviour
     private void Start()
     {
         anotherUI = UIManager.instance.AnotherInventoryMenu.GetComponentInChildren<AnotherUI>();
-        //inventorys = gameObject.GetComponent<PlayerInvList>().list;
     }
 
     public void OpenInventory(Inventory inventory)
