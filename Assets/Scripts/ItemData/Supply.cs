@@ -7,7 +7,7 @@ class Supply : Item
     public override void UseItem(out bool IsUsed)
     {
         var data = ((SupplyData)ItemData);
-        var playerStats = GameMan.instance.Player.GetComponent<PlayerStats>();
+        var playerStats = GameMan.instance.Player.GetComponent<Stats>().playerStats;
         playerStats.Health += data.HealthGive;
         playerStats.Thirst += data.WaterGive;
         playerStats.Hunger += data.FoodGive;

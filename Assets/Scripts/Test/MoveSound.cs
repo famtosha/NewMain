@@ -5,36 +5,42 @@ using UnityEngine.Experimental.PlayerLoop;
 
 public class MoveSound : MonoBehaviour
 {
-    [SerializeField] private List<AudioClip> _stepSounds;
-    [SerializeField] private AudioSource _stepSoundSource;
-    [SerializeField] private float _stepCoolDownLeft;
+    [SerializeField] private List<AudioClip> stepSounds;
+    [SerializeField] private float stepCoolDownLeft;
+    private AudioSource stepSoundSource;
+
     public float StepCoolDown = 0.5f;
 
     private void Start()
     {
         Movement.OnPlayerMove += PlayerStepHandler;
+        stepSoundSource = gameObject.GetComponent<AudioSource>();
     }
 
     private void Update()
     {
-        if (_stepCoolDownLeft >= 0)
+        if (stepCoolDownLeft >= 0)
         {
-            _stepCoolDownLeft -= Time.deltaTime;
+            stepCoolDownLeft -= Time.deltaTime;
         }
     }
 
     private void PlayerStepHandler()
     {
-        if (_stepCoolDownLeft <= 0)
+        if (stepCoolDownLeft <= 0)
         {
             PlayStepSound();
-            _stepCoolDownLeft = StepCoolDown;
+            stepCoolDownLeft = StepCoolDown;
         }
     }
 
     private void PlayStepSound()
     {
-        AudioClip randomClipSound = _stepSounds[Random.Range(0, _stepSounds.Count)];
-        _stepSoundSource.PlayOneShot(randomClipSound);
+        AudioClip randomClipSound = stepSounds[Random.Range(0, stepSounds.Count)];
+
+        if (stepSoundSource)
+        {
+            stepSoundSource.PlayOneShot(randomClipSound);
+        }
     }
 }

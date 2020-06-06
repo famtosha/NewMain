@@ -6,30 +6,33 @@ using UnityEngine;
 public class Buff
 {
     public event Action<float> OnDurationChange;
-    public string Name = "";
-    private float _durationLeft;
 
-    public Buff(string name, float Duration)
-    {
-        Name = name;
-        DurationLeft = Duration;
-    }
+    public BuffType buffType;
+    public BuffAffect affect;
+    private float duration;
 
-    public float DurationLeft
+    public float Duration
     {
-        get
-        {
-            return _durationLeft;
-        }
+        get => duration;
         set
         {
-            _durationLeft = value;
-            updateDuration();
+            duration = value;
+            OnDurationChange?.Invoke(duration);
         }
     }
 
-    private void updateDuration()
+    public Buff(BuffType buffType, BuffAffect affect, float duration)
     {
-        OnDurationChange?.Invoke(DurationLeft);
+        this.affect = affect;
+        this.duration = duration;
+        this.buffType = buffType;
+    }
+
+    public static void AddAffect(PlayerStats playerStats, Buff buffAffect)
+    {
+        playerStats.Hunger -= buffAffect.affect.hunger;
+        playerStats.Thirst -= buffAffect.affect.water;
+        playerStats.Health -= buffAffect.affect.health;
+        playerStats.Temperature -= buffAffect.affect.temperature;
     }
 }

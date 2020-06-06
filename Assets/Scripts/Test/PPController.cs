@@ -13,12 +13,12 @@ public class PPController : MonoBehaviour
     [SerializeField] private float ColdActive = 35;
     [SerializeField] private float HungerActive = 50;
 
-    private PlayerStats _playerStats;
+    private Stats _playerStats;
 
     private void Start()
     {
-        _playerStats = GameMan.instance.Player.GetComponent<PlayerStats>();
-        _playerStats.UpdateStats += PlayerStatsChangeHandler;
+        _playerStats = GameMan.instance.Player.GetComponent<Stats>();
+        _playerStats.playerStats.OnStatsUpdate += PlayerStatsChangeHandler;
     }
 
     private void PlayerStatsChangeHandler(PlayerStats playerStats)

@@ -11,7 +11,7 @@ public class PlayerStatsUI : MonoBehaviour
     [SerializeField] private Text FoodText = null;
     [SerializeField] private Text TemperatureText = null;
 
-    private PlayerStats playerStats;
+    private Stats playerStats;
 
     private void UpdatePlayerStats(PlayerStats x)
     {
@@ -24,7 +24,7 @@ public class PlayerStatsUI : MonoBehaviour
 
     private void Start()
     {
-        playerStats = GameMan.instance.Player.GetComponent<PlayerStats>();
+        playerStats = GameMan.instance.Player.GetComponent<Stats>();
         playerStats.UpdateStats += UpdatePlayerStats;
     }
 }

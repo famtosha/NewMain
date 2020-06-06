@@ -1,156 +1,95 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-class PlayerStats : MonoBehaviour, ITarget
+[CreateAssetMenu(fileName = "PlayerStats", menuName = "PlayerStats", order = 51)]
+
+public class PlayerStats
 {
-    public event Action<PlayerStats> UpdateStats;
-    public List<Buff> PlayerBuffs = new List<Buff>();
-    public PPController pPController;
-    public bool IsInRoom = false;
+    public event Action<PlayerStats> OnStatsUpdate;
+    public event Action OnPlayerDeath;
 
-    [SerializeField] private float _hunger = 100;
-    [SerializeField] private float _thirst = 100;
-    [SerializeField] private float _health = 100;
-    [SerializeField] private float _temperature = 36.6f;
+    private float hunger = 100;
+    private float thirst = 100;
+    private float health = 100;
+    private float temperature = 36.6f;
 
-    public void AddBuff(Buff buff)
-    {
-        if(PlayerBuffs.IndexOf(buff) == -1)
-        {
-            PlayerBuffs.Add(buff);
-            OnDataChanged();
-        }
-        else
-        {
-            RemoveBuff(buff);
-            AddBuff(buff);
-        }
+    private void UpdateStats() 
+    {       
+        OnStatsUpdate?.Invoke(this);
     }
 
-    public void RemoveBuff(Buff buff)
+    private void PlayerDead()
     {
-        PlayerBuffs.Remove(buff);
-        OnDataChanged();
-    }
-
-    private void OnDataChanged()
-    {
-        UpdateStats?.Invoke(this);
-    }
-
-    private void Update()
-    { 
-        foreach (Buff buff in PlayerBuffs)
-        {
-            buff.DurationLeft -= Time.deltaTime;
-            if (buff.DurationLeft <= 0)
-            {
-                RemoveBuff(buff);
-                break;
-            }
-        }
-
-        Hunger -= 0.01f;
-
-        if (IsInRoom)
-        {
-            Temperature -= 0.0001f;
-        }
-        else
-        {
-            Temperature -= 0.01f;
-        }
-    }
-
-    public float Health
-    {
-        get
-        {
-            return _health;
-        }
-        set
-        {
-            _health = value;
-            if(_health <= 0)
-            {
-                PlayerDeath();
-            }
-            else
-            {
-                _health = Mathf.Clamp(_health, 0, 100);
-            }
-            OnDataChanged();
-        }
-    }
-
-    public float Temperature
-    {
-        get
-        {
-            return _temperature;
-        }
-        set
-        {
-            _temperature = value;
-            if(_temperature > 42 || _temperature < 34)
-            {
-                PlayerDeath();
-            }
-            OnDataChanged();
-        }
+        OnPlayerDeath?.Invoke();
     }
 
     public float Hunger
     {
-        get
-        {
-            return _hunger;
-        }
+        get => hunger;
         set
         {
-            _hunger = value;
-            if (_hunger < 0)
+            if(value <= 0)
             {
-                _hunger = 0;
+                PlayerDead();
             }
             else
             {
-                _hunger = Mathf.Clamp(_hunger, 0, 100);
+                hunger = value;
             }
-            OnDataChanged();
+            UpdateStats();
         }
     }
 
     public float Thirst
     {
-        get
-        {
-            return _thirst;
-        }
+        get => thirst;
         set
         {
-            _thirst = value;
-            if (_thirst < 0)
+            if (value <= 0)
             {
-                _thirst = 0;
+                PlayerDead();
             }
             else
             {
-                _thirst = Mathf.Clamp(_thirst, 0, 100);
+                thirst = value;
             }
-            OnDataChanged();
+            UpdateStats();
         }
     }
 
-    private void PlayerDeath()
+    public float Health
     {
-        UIManager.instance.EnableDeathMenu();
-        gameObject.SetActive(false);
+        get => health;
+        set
+        {
+            if (value <= 0)
+            {
+                PlayerDead();
+            }
+            else
+            {
+                health = value;
+            }
+            UpdateStats();
+        }
     }
 
-    public void DealDamage(float Damage)
+    public float Temperature
     {
-        Health -= Damage;
+        get => temperature;
+        set
+        {
+            if (value <= 30 || value >= 45)
+            {
+                PlayerDead();
+            }
+            else
+            {
+                temperature = value;
+            }
+            UpdateStats();
+        }
     }
 }

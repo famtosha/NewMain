@@ -11,7 +11,7 @@ public class CampFire : MonoBehaviour
         if(collision.gameObject == GameMan.instance.Player)
         {
             float dist = Vector3.Distance(collision.gameObject.transform.position, gameObject.transform.position);
-            collision.GetComponent<PlayerStats>().Temperature += tempPower / dist;
+            collision.GetComponent<Stats>().playerStats.Temperature += tempPower / dist;
         }
     }
 }

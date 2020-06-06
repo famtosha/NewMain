@@ -5,13 +5,13 @@ using UnityEngine;
 public class Arm : MonoBehaviour
 {
     public List<Inventory> inventorys;
-    private AnotherUI anotherUI;
+    private StorageUI anotherUI;
 
     public bool IsAnyChestOpened = false;
 
     private void Start()
     {
-        anotherUI = UIManager.instance.AnotherInventoryMenu.GetComponentInChildren<AnotherUI>();
+        anotherUI = UIManager.instance.AnotherInventoryMenu.GetComponentInChildren<StorageUI>();
     }
 
     public void OpenInventory(Inventory inventory)

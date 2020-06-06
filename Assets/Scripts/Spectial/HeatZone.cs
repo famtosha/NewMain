@@ -6,12 +6,12 @@ public class HeatZone : MonoBehaviour
 {
 
     private GameObject Player;
-    private PlayerStats playerStats;
+    private Stats playerStats;
 
     private void Start()
     {
         Player = GameMan.instance.Player;
-        playerStats = Player.GetComponent<PlayerStats>();
+        playerStats = Player.GetComponent<Stats>();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

@@ -15,7 +15,7 @@ public class PlayerInvList : MonoBehaviour
     {
         BackPack = UIManager.instance.BackPackMenu.GetComponentInChildren<BackPackUI>();
         HotBar = UIManager.instance.HotBar.GetComponentInChildren<HotBarUI>();
-        AnotherInv = UIManager.instance.AnotherInventoryMenu.GetComponentInChildren<AnotherUI>();
+        AnotherInv = UIManager.instance.AnotherInventoryMenu.GetComponentInChildren<StorageUI>();
 
         list[0] = BackPack;
         list[1] = HotBar;
