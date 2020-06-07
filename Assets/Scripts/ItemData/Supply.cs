@@ -11,6 +11,7 @@ class Supply : Item
         playerStats.Health += data.HealthGive;
         playerStats.Thirst += data.WaterGive;
         playerStats.Hunger += data.FoodGive;
+        playerStats.Liver += data.VodkaGive;
         playerStats.Temperature += data.TemperatureGive;
         base.RemoveItem();
         base.UseItem();

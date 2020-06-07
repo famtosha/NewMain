@@ -2,6 +2,7 @@
 {
     Poison,
     Cold,
-    Hot,
-    Hunger
+    Flu,
+    Hunger,
+    Vodka
 }

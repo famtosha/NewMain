@@ -7,6 +7,7 @@ class SupplyData : ItemData
 {
     [SerializeField] private float _foodGive = 0;
     [SerializeField] private float _waterGive = 0;
+    [SerializeField] private float vodkaGive = 0;
     [SerializeField] private float _temperatureGive = 0;
     [SerializeField] private float _healthGive = 0;
 
@@ -26,5 +27,8 @@ class SupplyData : ItemData
     {
         get { return _healthGive; }
     }
-
+    public float VodkaGive
+    {
+        get { return vodkaGive; }
+    }
 }

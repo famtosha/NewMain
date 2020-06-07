@@ -13,8 +13,10 @@ public class PlayerStats
     private float hunger = 100;
     private float thirst = 100;
     private float health = 100;
-    private float temperature = 36.6f;
+    private float temperature = 100f;
     private float movementSpeed = 7.5f;
+    private float liver = 0f;
+
 
     private void UpdateStats() 
     {       
@@ -112,9 +114,13 @@ public class PlayerStats
         get => temperature;
         set
         {
-            if (value <= 30 || value >= 45)
+            if (value <= 0)
             {
                 PlayerDead();
+            }
+            if (value >= 100)
+            {
+                temperature = 100;
             }
             else
             {
@@ -123,4 +129,28 @@ public class PlayerStats
             UpdateStats();
         }
     }
+    public float Liver
+    {
+        get => liver;
+        set
+        {
+            if (value <=0)
+            {
+                return;
+
+            }
+            if (value >= 100)
+            {
+                GameMan.instance.Player.GetComponent<Stats>().AddBuff(BuffDB.CreateBuff(BuffType.Vodka, 1));
+                liver = 100;
+            }
+            else
+            {
+                liver = value;
+            }
+            UpdateStats();
+
+        }
+    }
 }
+    
