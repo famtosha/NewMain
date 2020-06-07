@@ -7,20 +7,21 @@ public class Movement : MonoBehaviour
 {
     public static event Action OnPlayerMove;
 
-    [SerializeField] private float Speed = 1;
-    [SerializeField] [Range(0, 1)] private float CameraMovePower = 0.1f;
-    private Transform PlayerTransform;
-    private Transform PlayerCameraTransform;
-    private Camera PlayerCameraCont;
-    private Rigidbody2D PlayerRB;
+    [SerializeField] [Range(0, 1)] private float cameraMovePower = 0.1f;
+    private PlayerStats playerStats;
+    private Transform playerTransform;
+    private Transform playerCameraTransform;
+    private Camera playerCameraCont;
+    private Rigidbody2D playerRB;
 
     private void Start()
     {
-        PlayerTransform = transform;
-        GameMan.instance.Player = this.gameObject;
-        PlayerCameraTransform = Camera.main.gameObject.transform;
-        PlayerCameraCont = PlayerCameraTransform.gameObject.GetComponent<Camera>();
-        PlayerRB = gameObject.GetComponent<Rigidbody2D>();
+        playerTransform = transform;
+        GameMan.instance.Player = gameObject;
+        playerCameraTransform = Camera.main.gameObject.transform;
+        playerCameraCont = playerCameraTransform.gameObject.GetComponent<Camera>();
+        playerRB = gameObject.GetComponent<Rigidbody2D>();
+        playerStats = gameObject.GetComponent<Stats>().playerStats;
     }
 
     void Update()
@@ -31,26 +32,26 @@ public class Movement : MonoBehaviour
     }
     void MoveCamera()
     {
-        Vector2 PlayerPos = PlayerTransform.position;
-        Vector2 MousePos = PlayerCameraCont.ScreenToWorldPoint(Input.mousePosition);
+        var playerPos = playerTransform.position;
+        var mousePos = playerCameraCont.ScreenToWorldPoint(Input.mousePosition);
         if (Input.GetKey(KeyCode.T))
         {
-            CameraMovePower = 0.3f;
+            cameraMovePower = 0.3f;
         }
         else
         {
-            CameraMovePower = 0f;
+            cameraMovePower = 0f;
         }
-        Vector2 Center = Vector2.LerpUnclamped(PlayerPos, MousePos, CameraMovePower);
-        PlayerCameraTransform.position = new Vector3(Center.x, Center.y, PlayerCameraTransform.position.z);
+        var center = Vector2.LerpUnclamped(playerPos, mousePos, cameraMovePower);
+        playerCameraTransform.position = new Vector3(center.x, center.y, playerCameraTransform.position.z);
     }
 
     void MovePlayer()
     {
-        Vector2 MoveDirection = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
-        PlayerRB.MovePosition((Vector2)PlayerRB.transform.position + MoveDirection * Speed * Time.deltaTime);
+        var moveDirection = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
+        playerRB.MovePosition((Vector2)playerRB.transform.position + moveDirection * playerStats.MovementSpeed * Time.deltaTime);
 
-        if(MoveDirection != Vector2.zero)
+        if(moveDirection != Vector2.zero)
         {
             OnPlayerMove?.Invoke();
         }
@@ -58,10 +59,10 @@ public class Movement : MonoBehaviour
 
     void LookAtCursor()
     {
-        var y = Input.mousePosition;
-        y.z = 10;
-        y = PlayerCameraCont.ScreenToWorldPoint(y);
-        var dir = new Vector3(y.x - PlayerTransform.position.x, y.y - PlayerTransform.position.y);
-        PlayerTransform.up = dir;
+        var mousePostion = Input.mousePosition;
+        mousePostion.z = 10;
+        mousePostion = playerCameraCont.ScreenToWorldPoint(mousePostion);
+        var lookDirection = new Vector3(mousePostion.x - playerTransform.position.x, mousePostion.y - playerTransform.position.y);
+        playerTransform.up = lookDirection;
     }
 }

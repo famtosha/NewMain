@@ -63,13 +63,13 @@ public class Weapon : Item
                     RaycastHit2D Hit = Physics2D.Raycast(Start, Direction + GetDispertion(dispersion), 20, ~Ignore);                   
                     Vector2 HitPoint = Start + Direction * 5;
                     if (Hit)
-                    {
+                    {                      
                         GameObject Target = Hit.collider.gameObject;
                         DealDamage(Target, 10);
                         PushTarget(Target, Direction, 10);
                         HitPoint = Hit.point;
                     }
-                    PlayerBulletAnimation(Start, HitPoint, 10);
+                    PlayerBulletAnimation(Start, HitPoint, 50);
                 }
                 PlayShootSound();
                 ((WeaponData)ItemData).AmmoInMagazine--;
@@ -89,7 +89,7 @@ public class Weapon : Item
 
     private void DealDamage(GameObject target, float damage)
     {
-        var HitTarget = target.GetComponent<ITarget>();
+        var HitTarget = target.GetComponentInParent<ITarget>();
         if (HitTarget != null)
         {
             HitTarget.DealDamage(damage);
@@ -98,7 +98,7 @@ public class Weapon : Item
 
     private void PushTarget(GameObject target, Vector2 direction, float force)
     {
-        var HitRB = target.GetComponent<Rigidbody2D>();
+        var HitRB = target.GetComponentInParent<Rigidbody2D>();
         if (HitRB)
         {
             HitRB.AddForce(direction.normalized * force);

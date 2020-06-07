@@ -4,17 +4,18 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    public void StartBullet(Vector2 startPosition, Vector2 endPosition, float MoveSpeed = 10f)
+    public void StartBullet(Vector2 startPosition, Vector2 endPosition, float moveSpeed = 10f)
     {
         StartCoroutine(move());
         IEnumerator move()
         {
             float _time = 0f;
+            moveSpeed /= Vector2.Distance(startPosition, endPosition);
             while (_time < 1)
             {
-                yield return new WaitForEndOfFrame();
-                transform.position = Vector2.Lerp(transform.position, endPosition, _time);
-                _time += Time.deltaTime * MoveSpeed;
+                yield return new WaitForFixedUpdate();
+                transform.position = Vector2.Lerp(startPosition, endPosition, _time);
+                _time += Time.deltaTime * moveSpeed;
             }
             Destroy(gameObject);
         }

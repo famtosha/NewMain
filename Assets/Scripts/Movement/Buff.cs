@@ -10,6 +10,7 @@ public class Buff
     public BuffType buffType;
     public BuffAffect affect;
     private float duration;
+    public bool single = false;
 
     public float Duration
     {

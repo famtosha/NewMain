@@ -102,7 +102,7 @@ MonoBehaviour:
     type: 3}
   Ignore:
     serializedVersion: 2
-    m_Bits: 3328
+    m_Bits: 7936
 --- !u!61 &3853829513305868570
 BoxCollider2D:
   m_ObjectHideFlags: 0

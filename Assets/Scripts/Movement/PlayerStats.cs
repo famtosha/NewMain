@@ -14,6 +14,7 @@ public class PlayerStats
     private float thirst = 100;
     private float health = 100;
     private float temperature = 36.6f;
+    private float movementSpeed = 7.5f;
 
     private void UpdateStats() 
     {       
@@ -23,6 +24,15 @@ public class PlayerStats
     private void PlayerDead()
     {
         OnPlayerDeath?.Invoke();
+    }
+
+    public float MovementSpeed
+    {
+        get => movementSpeed;
+        set
+        {
+            movementSpeed = value;
+        }
     }
 
     public float Hunger
@@ -36,7 +46,14 @@ public class PlayerStats
             }
             else
             {
-                hunger = value;
+                if(value >= 100)
+                {
+                    hunger = 100;
+                }
+                else
+                {
+                    hunger = value;
+                }
             }
             UpdateStats();
         }
@@ -53,7 +70,14 @@ public class PlayerStats
             }
             else
             {
-                thirst = value;
+                if (value >= 100)
+                {
+                    thirst = 100;
+                }
+                else
+                {
+                    thirst = value;
+                }
             }
             UpdateStats();
         }
@@ -63,14 +87,21 @@ public class PlayerStats
     {
         get => health;
         set
-        {
+        {           
             if (value <= 0)
             {
                 PlayerDead();
             }
             else
             {
-                health = value;
+                if (value >= 100)
+                {
+                    health = 100;
+                }
+                else
+                {
+                    health = value;
+                }
             }
             UpdateStats();
         }
