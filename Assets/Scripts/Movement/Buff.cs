@@ -10,7 +10,8 @@ public class Buff
     public BuffType buffType;
     public BuffAffect affect;
     private float duration;
-    public bool single = false;
+    public bool isRemoveByTime = true;
+
 
     public float Duration
     {
@@ -22,15 +23,17 @@ public class Buff
         }
     }
 
-    public Buff(BuffType buffType, BuffAffect affect, float duration)
+    public Buff(BuffType buffType, BuffAffect affect, float duration, bool isRemoveByTime)
     {
         this.affect = affect;
         this.duration = duration;
         this.buffType = buffType;
+        this.isRemoveByTime = isRemoveByTime;
     }
 
     public static void AddAffect(PlayerStats playerStats, Buff buffAffect)
     {
+        playerStats.MovementSpeed -= buffAffect.affect.speed;
         playerStats.Hunger -= buffAffect.affect.hunger;
         playerStats.Thirst -= buffAffect.affect.water;
         playerStats.Health -= buffAffect.affect.health;

@@ -12,7 +12,6 @@ public class SceneLoader : MonoBehaviour
         if (instance == null)
         {
             instance = this;
-            print("Load SceneLoader");
         }
         else
         {

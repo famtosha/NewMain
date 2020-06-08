@@ -26,5 +26,6 @@ MonoBehaviour:
   Craftable: 0
   _foodGive: 0
   _waterGive: 0
+  vodkaGive: 25
   _temperatureGive: 5
   _healthGive: 0

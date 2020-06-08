@@ -1,86 +1,87 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using UnityEngine;
 
 class Stats : MonoBehaviour, ITarget
 {
     public event Action<PlayerStats> UpdateStats;
-    public List<Buff> PlayerBuffs = new List<Buff>();
     public PPController pPController;
     public bool IsInRoom = false;
+    private Timer buffTimer;
+    private Timer statsTimer;
+
+    private BuffList buffList = new BuffList();
 
     public PlayerStats playerStats = new PlayerStats();
 
     private void Start()
     {
         playerStats.OnPlayerDeath += PlayerDeath;
-        playerStats.OnStatsUpdate += (x) => UpdateStats(x);
+        playerStats.OnStatsUpdate += (x) => OnDataChanged();
+        buffTimer = Timer.CreateTimer(1, UpdateBuffs).GetComponent<Timer>();
+        statsTimer = Timer.CreateTimer(1, UpdateStat).GetComponent<Timer>();
     }
 
-    public void AddBuff(Buff buff)
-    { 
-        if(PlayerBuffs.IndexOf(buff) == -1)
-        {
-            PlayerBuffs.Add(buff);
-            OnDataChanged();
-        }
-        else
-        {
-            RemoveBuff(buff);
-            AddBuff(buff);
-        }
-        print($"add buff: {buff.buffType}");
-    }
-
-    public void RemoveBuff(Buff buff)
+    private void Update()
     {
-        PlayerBuffs.Remove(buff);
-        print($"remove buff: {buff.buffType}");
-        OnDataChanged();
+        if(Input.GetKeyDown(KeyCode.O)) buffList.AddToList(BuffDB.CreateBuff(BuffType.Cold, 10, true));
     }
 
     private void OnDataChanged()
     {
         UpdateStats?.Invoke(playerStats);
-    }
-
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.O)) AddBuff(BuffDB.CreateRandomBuff(10));
-        UpdateBuffs();
-        UpdateStat();
+        if (playerStats.Liver == 100)
+        {
+            buffList.AddToList(BuffDB.CreateBuff(BuffType.Vodka, 0, false));
+        }
+        else
+        {
+            buffList.RemoveFromList(BuffType.Vodka);
+        }
     }
 
     private void UpdateStat()
     {
-        playerStats.Hunger -= 0.01f;
+        playerStats.Hunger -= 1f;
 
         if (IsInRoom)
         {
-            playerStats.Temperature -= 0.0001f;
+            playerStats.Temperature -= 0.1f;
         }
         else
         {
-            playerStats.Temperature -= 0.01f;
+            playerStats.Temperature -= 1f;
         }
     }
 
     private void UpdateBuffs()
     {
-        foreach (Buff buff in PlayerBuffs)
+        foreach (Buff buff in buffList.buffList)
         {
-            buff.Duration -= Time.deltaTime;
-            if (buff.Duration <= 0)
+            if (buff.isRemoveByTime)
             {
-                RemoveBuff(buff);
-                break;
+                buff.Duration -= 1;
+                if (buff.Duration <= 0)
+                {
+                    buffList.RemoveFromList(buff);
+                    break;
+                }
+                else
+                {
+                    Buff.AddAffect(playerStats, buff);
+                    OnDataChanged();
+                }
             }
             else
             {
-                Buff.AddAffect(playerStats,buff);
+                Buff.AddAffect(playerStats, buff);
                 OnDataChanged();
             }
         }
+        string debug = "Buffs: ";
+        buffList.buffList.ForEach(x => debug += $" {x.buffType} | {x.Duration} | {x.isRemoveByTime} ");
+        print(debug);
     }
 
     private void PlayerDeath()

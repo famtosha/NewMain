@@ -5,28 +5,25 @@ using UnityEngine.UI;
 
 public class ItemCont : MonoBehaviour
 {
-    private Text ItemName;
-    private Text ItemDiscr;
+    private Text itemInfo;
     public GameObject TargetNow = null;
     public bool IsEnable = false;
 
     private void Start()
     {
-        ItemName = transform.GetChild(0).GetComponent<Text>();
-        ItemDiscr = transform.GetChild(1).GetComponent<Text>();
+        itemInfo = gameObject.GetComponent<Text>();
     }
 
     public void UpdateInfo(string Name, string ItemDis)
     {
-        ItemName.text = Name;
-        ItemDiscr.text = ItemDis;
+        itemInfo.text = Name + "\n" + ItemDis;
     }
 
     public void Enable(GameObject Target)
     {
         IsEnable = true;
         TargetNow = Target;
-        UIManager.instance.EnableItemContexMenu();    
+        UIManager.instance.EnableItemContexMenu();
     }
 
     public void Disable()
@@ -41,7 +38,7 @@ public class ItemCont : MonoBehaviour
     {
         if (IsEnable)
         {
-            transform.position = Input.mousePosition + new Vector3(140, -40, 0);
+            transform.position = Input.mousePosition + new Vector3(65, -60, 0);
             if (TargetNow != null)
             {
                 var TargetInfo = TargetNow.GetComponent<Item>();

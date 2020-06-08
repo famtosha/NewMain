@@ -141,7 +141,6 @@ public class PlayerStats
             }
             if (value >= 100)
             {
-                GameMan.instance.Player.GetComponent<Stats>().AddBuff(BuffDB.CreateBuff(BuffType.Vodka, 1));
                 liver = 100;
             }
             else

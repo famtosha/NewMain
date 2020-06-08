@@ -52,7 +52,8 @@ public class SlotUI : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler,
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        UIManager.instance.ItemContexMenu.GetComponent<ItemCont>().Enable(BackPackUI.inventory.GetSlotInfo(ID));     
+        var x = BackPackUI.inventory.GetSlotInfo(ID);
+        UIManager.instance.ItemContexMenu.GetComponent<ItemCont>().Enable(x);     
     }
 
     public void OnPointerExit(PointerEventData eventData)
