@@ -44,7 +44,7 @@ public class Door : InteractebleItem
     {
         if (thing)
         {
-            textMesh.text = "B";
+            textMesh.text = "E";
         }
         else
         {

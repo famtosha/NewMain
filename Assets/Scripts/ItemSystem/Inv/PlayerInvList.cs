@@ -5,17 +5,17 @@ using UnityEngine;
 
 public class PlayerInvList : MonoBehaviour
 {
-    public InventoryUI BackPack;
-    public InventoryUI HotBar;
-    public InventoryUI AnotherInv;
+    [HideInInspector] public InventoryUI BackPack;
+    [HideInInspector] public InventoryUI HotBar;
+    [HideInInspector] public InventoryUI AnotherInv;
 
-    public List<InventoryUI> list = new List<InventoryUI>();
+    [HideInInspector] public List<InventoryUI> list = new List<InventoryUI>();
 
     private void Start()
     {
-        BackPack = UIManager.instance.BackPackMenu.GetComponentInChildren<BackPackUI>();
-        HotBar = UIManager.instance.HotBar.GetComponentInChildren<HotBarUI>();
-        AnotherInv = UIManager.instance.AnotherInventoryMenu.GetComponentInChildren<StorageUI>();
+        BackPack = UIManager.instance.BackPackMenu.GetComponent<BackPackUI>();
+        HotBar = UIManager.instance.HotBar.GetComponent<HotBarUI>();
+        AnotherInv = UIManager.instance.AnotherInventoryMenu.GetComponent<StorageUI>();
 
         list[0] = BackPack;
         list[1] = HotBar;

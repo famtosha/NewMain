@@ -28,21 +28,6 @@ public class UIManager : MonoBehaviour
     public GameObject AnotherInventoryMenu;
     public GameObject DeathMenu;
 
-    //public event Action OnPauseMenuOpen;
-    //public event Action OnPauseMenuClose;
-
-    //public event Action OnBackPackMenuOpen;
-    //public event Action OnBackPackMenuClose;
-
-    //public event Action OnHotBarOpen;
-    //public event Action OnHotBarClose;
-
-    //public event Action OnItemContexMenuOpen;
-    //public event Action OnItemContexMenuClose;
-
-    //public event Action OnAnotherInventoryMenuOpen;
-    //public event Action OnAnotherInventoryMenuClose;
-
     public bool IsBackPackOpen => BackPackMenu.GetComponent<Canvas>().enabled;
     public bool IsPauseMenuOpen => PauseMenu.GetComponent<Canvas>().enabled;
     public bool IsAnotherInventoryMenuOpen => AnotherInventoryMenu.GetComponent<Canvas>().enabled;

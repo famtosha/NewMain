@@ -35,7 +35,7 @@ public class ButtonController : InteractebleItem
     {
         if (thing)
         {
-            textMesh.text = "B";
+            textMesh.text = "E";
         }
         else
         {

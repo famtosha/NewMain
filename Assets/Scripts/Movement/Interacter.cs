@@ -30,7 +30,7 @@ public class Interacter : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.B))
+        if (Input.GetKeyDown(KeyCode.E))
         {
             if(ItemNowTouch != null)
             {

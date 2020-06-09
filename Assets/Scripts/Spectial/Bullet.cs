@@ -10,12 +10,14 @@ public class Bullet : MonoBehaviour
         IEnumerator move()
         {
             float _time = 0f;
+            bool isComplete = false;
             moveSpeed /= Vector2.Distance(startPosition, endPosition);
-            while (_time < 1)
-            {
-                yield return new WaitForFixedUpdate();
+            while (!isComplete)
+            {               
                 transform.position = Vector2.Lerp(startPosition, endPosition, _time);
                 _time += Time.deltaTime * moveSpeed;
+                if (_time >= 1) isComplete = true;
+                yield return new WaitForFixedUpdate();
             }
             Destroy(gameObject);
         }

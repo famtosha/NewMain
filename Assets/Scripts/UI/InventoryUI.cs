@@ -10,7 +10,7 @@ public abstract class InventoryUI : MonoBehaviour
     private int SelectedSlot = -1;
     [SerializeField] protected  GameObject[] SlotList;
     public Inventory inventory;
-    public PlayerInvList playerInvList;
+    protected PlayerInvList playerInvList;
 
     protected virtual void Start()
     {
