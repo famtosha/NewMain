@@ -9,11 +9,11 @@ public class DayLightChanger : MonoBehaviour
     [SerializeField] private float TimeChangeSpeed = 0.05f;
     private float _dayTime = 0;
     private float _maxDayTime = 1;
-    private Light2D _dayLight;
+    private UnityEngine.Experimental.Rendering.Universal.Light2D _dayLight;
 
     private void Start()
     {
-        _dayLight = gameObject.GetComponent<Light2D>();
+        _dayLight = gameObject.GetComponent<UnityEngine.Experimental.Rendering.Universal.Light2D>();
     }
 
     private void Update()

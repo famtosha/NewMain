@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine.Experimental.Rendering.LWRP;
 public class LightFlickering : MonoBehaviour
 {
-    public List<Light2D> LightList = new List<Light2D>();
+    public List<UnityEngine.Experimental.Rendering.Universal.Light2D> LightList = new List<UnityEngine.Experimental.Rendering.Universal.Light2D>();
     public float minIntensity = 0f;
     public float maxIntensity = 1f;
     [Range(1, 50)]

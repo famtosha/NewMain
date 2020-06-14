@@ -5,7 +5,7 @@ using UnityEngine.Experimental.Rendering.LWRP;
 
 public class ButtonController : InteractebleItem
 {
-    [SerializeField] List<Light2D> LightList = new List<Light2D>();
+    [SerializeField] List<UnityEngine.Experimental.Rendering.Universal.Light2D> LightList = new List<UnityEngine.Experimental.Rendering.Universal.Light2D>();
 
     private bool IsLightActive = false;
 
@@ -24,7 +24,7 @@ public class ButtonController : InteractebleItem
 
     private void ChangeLightState(bool state)
     {
-        foreach (Light2D light in LightList)
+        foreach (UnityEngine.Experimental.Rendering.Universal.Light2D light in LightList)
         {
             light.enabled = state;
         }

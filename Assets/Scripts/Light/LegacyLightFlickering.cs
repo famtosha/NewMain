@@ -4,7 +4,7 @@ using UnityEngine.Experimental.Rendering.LWRP;
 
 public class LegacyLightFlickering : MonoBehaviour
 {
-    public Light2D Light;
+    public UnityEngine.Experimental.Rendering.Universal.Light2D Light;
     public float minIntensity = 0f;
     public float maxIntensity = 1f;
     [Range(1, 50)] public int smoothing = 5;
@@ -23,7 +23,7 @@ public class LegacyLightFlickering : MonoBehaviour
         smoothQueue = new Queue<float>(smoothing);
         if (Light == null)
         {
-            Light = GetComponent<Light2D>();
+            Light = GetComponent<UnityEngine.Experimental.Rendering.Universal.Light2D>();
         }
     }
 

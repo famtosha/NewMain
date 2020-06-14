@@ -6,13 +6,13 @@ public class LegacyLightDisabling : MonoBehaviour
 {
 
 
-	Light2D testLight;
+	UnityEngine.Experimental.Rendering.Universal.Light2D testLight;
 	public float minWaitTime;
 	public float maxWaitTime;
 
 	void Start()
 	{
-		testLight = GetComponent<Light2D>();
+		testLight = GetComponent<UnityEngine.Experimental.Rendering.Universal.Light2D>();
 		StartCoroutine(Flashing());
 	}
 
