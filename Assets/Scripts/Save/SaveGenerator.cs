@@ -1,6 +1,5 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using UnityEngine.Tilemaps;
 
 public class SaveGenerator : MonoBehaviour
 {
@@ -35,6 +34,6 @@ public class SaveGenerator : MonoBehaviour
         /*
          удалить сцену, которая загружена сейчас 
          задгрулить дату, которую сохранил
-        */ 
+        */
     }
 }

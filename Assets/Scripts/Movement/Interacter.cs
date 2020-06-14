@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Interacter : MonoBehaviour
 {
@@ -18,12 +16,12 @@ public class Interacter : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if(ItemNowTouch != null)
+        if (ItemNowTouch != null)
         {
-            if(collision.gameObject == ItemNowTouch)
+            if (collision.gameObject == ItemNowTouch)
             {
                 ItemNowTouch.GetComponent<InteractebleItem>().TouchObj(false);
-                ItemNowTouch = null;              
+                ItemNowTouch = null;
             }
         }
     }
@@ -32,7 +30,7 @@ public class Interacter : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
-            if(ItemNowTouch != null)
+            if (ItemNowTouch != null)
             {
                 ItemNowTouch.GetComponent<InteractebleItem>().UseObj(gameObject.transform.parent.gameObject);
             }

@@ -1,15 +1,14 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class Timer: MonoBehaviour
+public class Timer : MonoBehaviour
 {
     public float timerCooldown = 0;
-    private float timerCurrentTime = 0;
     public bool singleUse = false;
     public bool isComplete = false;
     public Action action;
+
+    private float timerCurrentTime = 0;
 
     public void Update()
     {

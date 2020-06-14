@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class StorageUI : InventoryUI
 {
@@ -10,25 +8,25 @@ public class StorageUI : InventoryUI
         playerInvList = GameMan.instance.Player.GetComponent<PlayerInvList>();
     }
 
-    public void OpenInventory(Inventory ChestInventory)
+    public void OpenInventory(Inventory chestInventory)
     {
-        inventory = ChestInventory;
+        inventory = chestInventory;
         inventory._updateSlot += UpdateSlot;
         SlotList = new GameObject[inventory.InventorySize];
         for (int i = 0; i < inventory.InventorySize; i++)
         {
-            var slot = Instantiate(SlotModel);          
-            SlotList[i] = slot;         
+            var slot = Instantiate(SlotModel);
+            SlotList[i] = slot;
             slot.GetComponent<SlotUI>().ID = i;
             slot.GetComponent<SlotUI>().BackPackUI = this;
             slot.transform.SetParent(gameObject.transform);
             UpdateSlot(i, inventory.GetData(i));
         }
-        UIManager.instance.EnableAnotherInventoryMenu();
+        UIManager.instance.anotherInventoryMenu.EnablePanel();
     }
 
     public void CloseInvenotory()
-    {       
+    {
         for (int i = 0; i < SlotList.Length; i++)
         {
             var x = SlotList[i];
@@ -37,6 +35,6 @@ public class StorageUI : InventoryUI
         }
         inventory._updateSlot -= UpdateSlot;
         inventory = null;
-        UIManager.instance.DisableAnotherInventoryMenu();
+        UIManager.instance.anotherInventoryMenu.DisablePanel();
     }
 }

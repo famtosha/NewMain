@@ -1,29 +1,28 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 public class ItemCont : MonoBehaviour
 {
-    private Text itemInfo;
     public GameObject TargetNow = null;
     public bool IsEnable = false;
+
+    private Text itemInfo;
 
     private void Start()
     {
         itemInfo = gameObject.GetComponent<Text>();
     }
 
-    public void UpdateInfo(string Name, string ItemDis)
+    public void UpdateInfo(string name, string itemDiscription)
     {
-        itemInfo.text = Name + "\n" + ItemDis;
+        itemInfo.text = name + "\n" + itemDiscription;
     }
 
-    public void Enable(GameObject Target)
+    public void Enable(GameObject target)
     {
         IsEnable = true;
-        TargetNow = Target;
-        UIManager.instance.EnableItemContexMenu();
+        TargetNow = target;
+        UIManager.instance.itemContexMenu.EnablePanel();
     }
 
     public void Disable()
@@ -31,7 +30,7 @@ public class ItemCont : MonoBehaviour
         IsEnable = false;
         TargetNow = null;
         UpdateInfo("", "");
-        UIManager.instance.DisableItemContexMenu();
+        UIManager.instance.itemContexMenu.DisablePanel();
     }
 
     private void Update()

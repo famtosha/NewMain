@@ -52,7 +52,7 @@ public class AI : MonoBehaviour
     {
         OnPlayerDetect -= PlayerDetectHandler;
     }
-    
+
 
     private void Update()
     {
@@ -84,7 +84,7 @@ public class AI : MonoBehaviour
 
         NextCommandLeft += Time.deltaTime;
         if (NextCommand < NextCommandLeft)
-        { 
+        {
             NextCommandLeft = 0;
             switch (behaviourNow)
             {
@@ -95,7 +95,7 @@ public class AI : MonoBehaviour
         }
     }
 
-    public  void PlayerDetectHandler(GameObject sender)
+    public void PlayerDetectHandler(GameObject sender)
     {
         try
         {
@@ -109,7 +109,7 @@ public class AI : MonoBehaviour
         {
 
         }
-       
+
     }
 
     public bool CanSeeTarget(GameObject target)
@@ -137,10 +137,10 @@ public class AI : MonoBehaviour
         return false;
     }
 
-    public void LookAtPoint(Vector3 Point)
+    public void LookAtPoint(Vector3 point)
     {
         Vector2 MyPosition = transform.position;
-        Vector2 TargetDirection = (Vector2)Point - MyPosition;
+        Vector2 TargetDirection = (Vector2)point - MyPosition;
         transform.up = TargetDirection;
     }
 
@@ -181,10 +181,10 @@ public class AI : MonoBehaviour
         }
     }
 
-    private void MoveToPostion(Vector2 Position)
+    private void MoveToPostion(Vector2 position)
     {
-        Debug.DrawLine(transform.position, Position, Color.green, 1);
-        StartCoroutine(CMoveToPos(Position));
+        Debug.DrawLine(transform.position, position, Color.green, 1);
+        StartCoroutine(CMoveToPos(position));
     }
 
     private void ChaseTarget()

@@ -1,14 +1,13 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Crate : Target
 {
-    [SerializeField] ItemType ItemDropType = ItemType.Default;
+    [SerializeField] private ItemType ItemDropType = ItemType.Default;
+
     protected override void Death()
-    {      
-        var Item = ItemSpawner.instance.SpawnRandomItem(ItemDropType);
-        Item.transform.position = gameObject.transform.position;
+    {
+        var item = ItemSpawner.instance.SpawnRandomItem(ItemDropType);
+        item.transform.position = gameObject.transform.position;
         base.Death();
     }
 }

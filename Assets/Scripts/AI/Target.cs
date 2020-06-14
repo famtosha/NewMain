@@ -1,13 +1,11 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Target : MonoBehaviour, ITarget
 {
     public event Action OnDeath;
     [SerializeField] protected float _health = 100;
-    
+
     private void Start()
     {
         OnDeath += Death;
@@ -15,14 +13,11 @@ public class Target : MonoBehaviour, ITarget
 
     public float Health
     {
-        get
-        {
-            return _health;
-        }
+        get => _health;
         set
         {
             _health = value;
-            if(_health <= 0)
+            if (_health <= 0)
             {
                 OnDeath?.Invoke();
             }
@@ -34,8 +29,8 @@ public class Target : MonoBehaviour, ITarget
         Destroy(gameObject);
     }
 
-    public void DealDamage(float Damage)
+    public void DealDamage(float damage)
     {
-        if (Damage > 0) Health -= Damage;
+        if (damage > 0) Health -= damage;
     }
 }

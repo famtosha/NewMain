@@ -1,7 +1,5 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Experimental.Rendering.LWRP;
 
 public class InteractebleItem : MonoBehaviour
 {
@@ -26,12 +24,12 @@ public class InteractebleItem : MonoBehaviour
 
     private void PlayUseSound()
     {
-        if(useSounds != null)
+        if (useSounds != null)
         {
             if (useSounds.Count > 0)
             {
-                AudioClip RandomClip = useSounds[Random.Range(0, useSounds.Count)];
-                audioSource.PlayOneShot(RandomClip);
+                AudioClip randomClip = useSounds[Random.Range(0, useSounds.Count)];
+                audioSource.PlayOneShot(randomClip);
             }
         }
     }

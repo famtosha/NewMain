@@ -1,12 +1,17 @@
 ﻿using System;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour
 {
     public static UIManager instance = null;
+
+    public UIPanel pauseMenu;
+    public UIPanel backPackMenu;
+    public UIPanel hotBar;
+    public UIPanel itemContexMenu;
+    public UIPanel anotherInventoryMenu;
+    public UIPanel deathMenu;
 
     private void Awake()
     {
@@ -20,45 +25,35 @@ public class UIManager : MonoBehaviour
         }
     }
 
-
-    public GameObject PauseMenu;
-    public GameObject BackPackMenu;
-    public GameObject HotBar;
-    public GameObject ItemContexMenu;
-    public GameObject AnotherInventoryMenu;
-    public GameObject DeathMenu;
-
-    public bool IsBackPackOpen => BackPackMenu.GetComponent<Canvas>().enabled;
-    public bool IsPauseMenuOpen => PauseMenu.GetComponent<Canvas>().enabled;
-    public bool IsAnotherInventoryMenuOpen => AnotherInventoryMenu.GetComponent<Canvas>().enabled;
-
-    public void MakeEvent(Action action)
-    {
-        action?.Invoke();
-    }
-
     private void Start()
     {
-        HotBar.GetComponent<Canvas>().enabled = true;
+        hotBar.GetComponent<Canvas>().enabled = true;
     }
 
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            if (IsBackPackOpen)
+            if (backPackMenu.isPanelEnable)
             {
-                ChangeBackPackMenu();
+                backPackMenu.ChangePanelState();
             }
             else
             {
-                if (!IsAnotherInventoryMenuOpen)
+                if (!anotherInventoryMenu.isPanelEnable)
                 {
-                    ChangePausemenuState();
+                    if (pauseMenu.isPanelEnable)
+                    {
+                        UnPause();
+                    }
+                    else
+                    {
+                        Pause();
+                    }
                 }
             }
         }
-        if (Input.GetKeyDown(KeyCode.I)) ChangeBackPackMenu();
+        if (Input.GetKeyDown(KeyCode.I)) backPackMenu.ChangePanelState();
     }
 
     public void QuitGame()
@@ -68,18 +63,12 @@ public class UIManager : MonoBehaviour
 
     public void CloseEveryThing()
     {
-        DisableBackPackMenu();
-        DisableAnotherInventoryMenu();
+        backPackMenu.DisablePanel();
+        backPackMenu.DisablePanel();
     }
-
-    public void DisableDeathMenu()
-    {
-        DeathMenu.GetComponent<Canvas>().enabled = false;
-    }
-
     public void EnableDeathMenu()
     {
-        DeathMenu.GetComponent<Canvas>().enabled = true;
+        deathMenu.EnablePanel();
 
         StartCoroutine(Lose());
         IEnumerator Lose()
@@ -89,82 +78,15 @@ public class UIManager : MonoBehaviour
         }
     }
 
-    public void DisablePauseMenu()
+    public void Pause()
     {
-        PauseMenu.GetComponent<Canvas>().enabled = false;
-        Time.timeScale = 1;
-    }
-
-    public void EnablePauseMenu()
-    {
-        PauseMenu.GetComponent<Canvas>().enabled = true;
+        pauseMenu.EnablePanel();
         Time.timeScale = 0f;
     }
 
-    public void ChangePausemenuState()
-    {
-        if (IsPauseMenuOpen)
-        {
-            DisablePauseMenu();
-        }
-        else
-        {
-            EnablePauseMenu();
-        }
+    public void UnPause()
+    { 
+        pauseMenu.DisablePanel();
+        Time.timeScale = 1f;
     }
-
-    public void DisableAnotherInventoryMenu()
-    {
-        AnotherInventoryMenu.GetComponent<Canvas>().enabled = false;
-    }
-
-    public void EnableAnotherInventoryMenu()
-    {
-        AnotherInventoryMenu.GetComponent<Canvas>().enabled = true;
-    }
-
-    public void DisableBackPackMenu()
-    {
-        BackPackMenu.GetComponent<Canvas>().enabled = false;
-    }
-
-    public void EnableBackPackMenu()
-    {
-        BackPackMenu.GetComponent<Canvas>().enabled = true;
-    }
-
-    public void ChangeBackPackMenu()
-    {
-        if (IsBackPackOpen)
-        {
-            DisableBackPackMenu();
-        }
-        else
-        {
-            EnableBackPackMenu();
-        }
-    }
-
-    public void DisableItemContexMenu()
-    {
-        ItemContexMenu.GetComponent<Canvas>().enabled = false;
-    }
-
-    public void EnableItemContexMenu()
-    {
-        ItemContexMenu.GetComponent<Canvas>().enabled = true;
-    }
-
-    public void ChangeItemContexMenu()
-    {
-        if (IsBackPackOpen)
-        {
-            DisableItemContexMenu();
-        }
-        else
-        {
-            EnableItemContexMenu();
-        }
-    }
-
 }

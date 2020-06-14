@@ -1,17 +1,16 @@
-﻿using UnityEngine;
-using System.Collections.Generic;
-using UnityEngine.Experimental.Rendering.LWRP;
+﻿using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.Experimental.Rendering.Universal;
+
 public class LightFlickering : MonoBehaviour
 {
-    public List<UnityEngine.Experimental.Rendering.Universal.Light2D> LightList = new List<UnityEngine.Experimental.Rendering.Universal.Light2D>();
+    public List<Light2D> LightList = new List<Light2D>();
     public float minIntensity = 0f;
     public float maxIntensity = 1f;
-    [Range(1, 50)]
-    public int smoothing = 5;
-    Queue<float> smoothQueue;
-    float lastSum = 0;
+    [Range(1, 50)] public int smoothing = 5;
 
-
+    private Queue<float> smoothQueue;
+    private float lastSum = 0;
 
     public void Reset()
     {
@@ -26,8 +25,7 @@ public class LightFlickering : MonoBehaviour
 
     void Update()
     {
-        if (LightList == null)
-            return;
+        if (LightList == null) return;
 
         while (smoothQueue.Count >= smoothing)
         {
@@ -42,5 +40,4 @@ public class LightFlickering : MonoBehaviour
             CurLight.intensity = lastSum / (float)smoothQueue.Count;
         }
     }
-
 }

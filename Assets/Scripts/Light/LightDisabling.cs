@@ -1,14 +1,11 @@
-﻿using UnityEngine;
-using System.Collections;
-using UnityEngine.Experimental.Rendering.LWRP;
+﻿using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
+using UnityEngine;
+using UnityEngine.Experimental.Rendering.Universal;
 
 public class LightDisabling : MonoBehaviour
 {
-
-
-    public List<UnityEngine.Experimental.Rendering.Universal.Light2D> Disabling = new List<UnityEngine.Experimental.Rendering.Universal.Light2D>();
+    public List<Light2D> Disabling = new List<Light2D>();
     public float minWaitTime;
     public float maxWaitTime;
     public bool IsSync;
@@ -18,7 +15,7 @@ public class LightDisabling : MonoBehaviour
 
         for (int i = 0; i < transform.childCount; i++)
         {
-            Disabling.Add(transform.GetChild(i).gameObject.GetComponent<UnityEngine.Experimental.Rendering.Universal.Light2D>());
+            Disabling.Add(transform.GetChild(i).gameObject.GetComponent<Light2D>());
         }
         if (IsSync)
         {
@@ -31,12 +28,9 @@ public class LightDisabling : MonoBehaviour
 
                 StartCoroutine(AsyncFlashing(CurLight));
             }
-
         }
-
     }
     IEnumerator syncFlashing()
-
     {
         while (true)
         {
@@ -45,19 +39,15 @@ public class LightDisabling : MonoBehaviour
             {
                 light.enabled = !light.enabled;
             }
-
         }
     }
 
-    IEnumerator AsyncFlashing(UnityEngine.Experimental.Rendering.Universal.Light2D light)
+    IEnumerator AsyncFlashing(Light2D light)
     {
-
         while (true)
         {
             yield return new WaitForSeconds(Random.Range(minWaitTime, maxWaitTime));
             light.enabled = !light.enabled;
-
         }
     }
-
 }

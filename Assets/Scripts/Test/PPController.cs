@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.Rendering.PostProcessing;
 
 public class PPController : MonoBehaviour
@@ -23,7 +21,7 @@ public class PPController : MonoBehaviour
 
     private void PlayerStatsChangeHandler(PlayerStats playerStats)
     {
-        if(playerStats.Health <= LowHealthActive)
+        if (playerStats.Health <= LowHealthActive)
         {
             LowHealthPP.enabled = true;
         }
@@ -32,7 +30,7 @@ public class PPController : MonoBehaviour
             LowHealthPP.enabled = false;
         }
 
-        if(playerStats.Temperature <= ColdActive)
+        if (playerStats.Temperature <= ColdActive)
         {
             ColdPP.enabled = true;
         }
@@ -41,7 +39,7 @@ public class PPController : MonoBehaviour
             ColdPP.enabled = false;
         }
 
-        if(playerStats.Hunger <= HungerActive)
+        if (playerStats.Hunger <= HungerActive)
         {
             HungerPP.enabled = true;
         }

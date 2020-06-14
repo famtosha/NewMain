@@ -1,8 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class BuffAffect
+﻿public class BuffAffect
 {
     public float speed = 0;
     public float health = 0;

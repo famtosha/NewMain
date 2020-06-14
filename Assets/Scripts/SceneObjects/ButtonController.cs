@@ -1,12 +1,10 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Experimental.Rendering.LWRP;
+using UnityEngine.Experimental.Rendering.Universal;
 
 public class ButtonController : InteractebleItem
 {
-    [SerializeField] List<UnityEngine.Experimental.Rendering.Universal.Light2D> LightList = new List<UnityEngine.Experimental.Rendering.Universal.Light2D>();
-
+    [SerializeField] private List<Light2D> LightList = new List<Light2D>();
     private bool IsLightActive = false;
 
     public override void UseObj(GameObject interacter)
@@ -14,7 +12,7 @@ public class ButtonController : InteractebleItem
         base.UseObj(interacter);
         if (!IsLightActive)
         {
-            ChangeLightState(true);          
+            ChangeLightState(true);
         }
         else
         {
@@ -24,7 +22,7 @@ public class ButtonController : InteractebleItem
 
     private void ChangeLightState(bool state)
     {
-        foreach (UnityEngine.Experimental.Rendering.Universal.Light2D light in LightList)
+        foreach (Light2D light in LightList)
         {
             light.enabled = state;
         }

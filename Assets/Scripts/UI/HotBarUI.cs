@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class HotBarUI : InventoryUI
 {
@@ -10,33 +7,30 @@ public class HotBarUI : InventoryUI
     protected override void Start()
     {
         inventory = GameMan.instance.Player.GetComponent<HotBar>();
-
         base.Start();
         ((HotBar)inventory).OnChangeSelectedItem += UpdateSlot;
-
-
         SlotList[((HotBar)inventory).HotBarSelected].GetComponent<SlotUI>().ChangeColor(Color.cyan);
     }
 
-    public void EnableItem(int Num)
+    public void EnableItem(int num)
     {
-        SlotList[Num].GetComponent<SlotUI>().ChangeColor(Color.cyan);     
+        SlotList[num].GetComponent<SlotUI>().ChangeColor(Color.cyan);
     }
 
-    public void DisableItem(int Num)
+    public void DisableItem(int num)
     {
-        SlotList[Num].GetComponent<SlotUI>().ChangeColor(Color.white);    
+        SlotList[num].GetComponent<SlotUI>().ChangeColor(Color.white);
     }
 
-    private void UpdateSlot(int Num, bool Active)
+    private void UpdateSlot(int num, bool active)
     {
-        if (Active)
+        if (active)
         {
-            EnableItem(Num);
+            EnableItem(num);
         }
         else
         {
-            DisableItem(Num);
+            DisableItem(num);
         }
     }
 }

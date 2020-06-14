@@ -1,19 +1,16 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.Experimental.Rendering.LWRP;
+﻿using UnityEngine;
+using UnityEngine.Experimental.Rendering.Universal;
 
 public class DayLightChanger : MonoBehaviour
 {
     [SerializeField] private float TimeChangeSpeed = 0.05f;
     private float _dayTime = 0;
     private float _maxDayTime = 1;
-    private UnityEngine.Experimental.Rendering.Universal.Light2D _dayLight;
+    private Light2D _dayLight;
 
     private void Start()
     {
-        _dayLight = gameObject.GetComponent<UnityEngine.Experimental.Rendering.Universal.Light2D>();
+        _dayLight = gameObject.GetComponent<Light2D>();
     }
 
     private void Update()
@@ -40,7 +37,6 @@ public class DayLightChanger : MonoBehaviour
         float power = Mathf.Sin(currentTime * 3);
         float red = power * min;
         Color color = new Color((red + (255 - min)) / 255, 1, 1);
-        //print($"Power: {power} Red: {red} + Color: {color}");
         return color;
     }
 }

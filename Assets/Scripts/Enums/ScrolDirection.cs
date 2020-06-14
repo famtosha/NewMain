@@ -1,8 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-enum ScrolDirection
+﻿enum ScrolDirection
 {
     Next,
     Prev

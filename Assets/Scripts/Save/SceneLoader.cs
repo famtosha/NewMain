@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class SceneLoader : MonoBehaviour
@@ -21,9 +19,9 @@ public class SceneLoader : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
-    public void LoadScene(int SceneNumber)
+    public void LoadScene(int sceneNumber)
     {
-        SceneManager.LoadScene(SceneNumber);
+        SceneManager.LoadScene(sceneNumber);
     }
 
     public void RestartScene()
@@ -32,8 +30,8 @@ public class SceneLoader : MonoBehaviour
         SceneManager.LoadScene(0);
     }
 
-    public void LoadScene(string SceneName)
+    public void LoadScene(string sceneName)
     {
-        SceneManager.LoadScene(SceneName);
+        SceneManager.LoadScene(sceneName);
     }
 }

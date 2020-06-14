@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using System.Collections.Generic;
 
 public class BuffList
 {
@@ -21,7 +19,7 @@ public class BuffList
         }
         else
         {
-            if(!Consist(buff,out Buff bufInList))
+            if (!Consist(buff, out Buff bufInList))
             {
                 buffList.Add(buff);
             }

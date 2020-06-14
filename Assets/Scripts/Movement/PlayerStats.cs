@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-[CreateAssetMenu(fileName = "PlayerStats", menuName = "PlayerStats", order = 51)]
 
 public class PlayerStats
 {
@@ -18,8 +13,8 @@ public class PlayerStats
     private float liver = 0f;
 
 
-    private void UpdateStats() 
-    {       
+    private void UpdateStats()
+    {
         OnStatsUpdate?.Invoke(this);
     }
 
@@ -42,13 +37,13 @@ public class PlayerStats
         get => hunger;
         set
         {
-            if(value <= 0)
+            if (value <= 0)
             {
                 PlayerDead();
             }
             else
             {
-                if(value >= 100)
+                if (value >= 100)
                 {
                     hunger = 100;
                 }
@@ -89,7 +84,7 @@ public class PlayerStats
     {
         get => health;
         set
-        {           
+        {
             if (value <= 0)
             {
                 PlayerDead();
@@ -134,7 +129,7 @@ public class PlayerStats
         get => liver;
         set
         {
-            if (value <=0)
+            if (value <= 0)
             {
                 return;
 
@@ -152,4 +147,3 @@ public class PlayerStats
         }
     }
 }
-    

@@ -4,9 +4,7 @@ using UnityEngine;
 public class Item : MonoBehaviour
 {
     [SerializeField] public ItemData ItemData;
-
     public event Action OnItemRemoved;
-
     public string Name => ItemData.Name;
     public int Count => ItemData.Count;
 
@@ -17,7 +15,7 @@ public class Item : MonoBehaviour
 
     protected virtual void Start()
     {
-        
+
     }
 
     public virtual string GetInfo()
@@ -32,9 +30,9 @@ public class Item : MonoBehaviour
         OnItemRemoved?.Invoke();
     }
 
-    public virtual void UseItem(out bool IsUsed)
+    public virtual void UseItem(out bool isUsed)
     {
-        IsUsed = false;
+        isUsed = false;
     }
 
     public virtual void UseItem()

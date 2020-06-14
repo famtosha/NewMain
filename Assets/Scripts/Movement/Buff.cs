@@ -1,17 +1,13 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 
 public class Buff
 {
     public event Action<float> OnDurationChange;
-
     public BuffType buffType;
     public BuffAffect affect;
-    private float duration;
     public bool isRemoveByTime = true;
 
+    private float duration;
 
     public float Duration
     {

@@ -1,5 +1,4 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Weapon : Item
@@ -11,7 +10,6 @@ public class Weapon : Item
     private float CoolDown = 0;
     private bool IsReloading = false;
     private AudioSource audioSource;
-
 
     new private void Start()
     {
@@ -47,29 +45,29 @@ public class Weapon : Item
         IsReloading = false;
     }
 
-    public override void UseItem(out bool IsUsed)
+    public override void UseItem(out bool isUsed)
     {
         if (Time.time > CoolDown && !IsReloading)
         {
             CoolDown = Time.time + ((WeaponData)ItemData).FiringRate;
             if (((WeaponData)ItemData).AmmoInMagazine > 0)
             {
-                Vector2 Start = Barriel.transform.position;
-                Vector2 Direction = Barriel.transform.right;
+                Vector2 start = Barriel.transform.position;
+                Vector2 direction = Barriel.transform.right;
                 float dispersion = ((WeaponData)ItemData).Dispersion;
 
                 for (int i = 0; i < ((WeaponData)(ItemData)).BulletPerShot; i++)
                 {
-                    RaycastHit2D Hit = Physics2D.Raycast(Start, Direction + GetDispertion(dispersion), 20, ~Ignore);                   
-                    Vector2 HitPoint = Start + Direction * 5;
-                    if (Hit)
-                    {                      
-                        GameObject Target = Hit.collider.gameObject;
-                        DealDamage(Target, 10);
-                        PushTarget(Target, Direction, 10);
-                        HitPoint = Hit.point;
+                    RaycastHit2D hit = Physics2D.Raycast(start, direction + GetDispertion(dispersion), 20, ~Ignore);
+                    Vector2 hitPoint = start + direction * 5;
+                    if (hit)
+                    {
+                        GameObject target = hit.collider.gameObject;
+                        DealDamage(target, 10);
+                        PushTarget(target, direction, 10);
+                        hitPoint = hit.point;
                     }
-                    PlayerBulletAnimation(Start, HitPoint, 50);
+                    PlayerBulletAnimation(start, hitPoint, 50);
                 }
                 PlayShootSound();
                 ((WeaponData)ItemData).AmmoInMagazine--;
@@ -79,29 +77,29 @@ public class Weapon : Item
                 PlayEmptySound();
             }
         }
-        IsUsed = false;
+        isUsed = false;
     }
 
-    private Vector2 GetDispertion(float disp)
+    private Vector2 GetDispertion(float dispersion)
     {
-        return new Vector2(Random.Range(-disp, disp), Random.Range(-disp, disp));
+        return new Vector2(Random.Range(-dispersion, dispersion), Random.Range(-dispersion, dispersion));
     }
 
     private void DealDamage(GameObject target, float damage)
     {
-        var HitTarget = target.GetComponentInParent<ITarget>();
-        if (HitTarget != null)
+        var hitTarget = target.GetComponentInParent<ITarget>();
+        if (hitTarget != null)
         {
-            HitTarget.DealDamage(damage);
+            hitTarget.DealDamage(damage);
         }
     }
 
     private void PushTarget(GameObject target, Vector2 direction, float force)
     {
-        var HitRB = target.GetComponentInParent<Rigidbody2D>();
-        if (HitRB)
+        var hitRB = target.GetComponentInParent<Rigidbody2D>();
+        if (hitRB)
         {
-            HitRB.AddForce(direction.normalized * force);
+            hitRB.AddForce(direction.normalized * force);
         }
     }
 

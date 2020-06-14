@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections;
-using UnityEngine;
-
-class Supply : Item
+﻿class Supply : Item
 {
-    public override void UseItem(out bool IsUsed)
+    public override void UseItem(out bool isUsed)
     {
         var data = ((SupplyData)ItemData);
         var playerStats = GameMan.instance.Player.GetComponent<Stats>().playerStats;
@@ -15,8 +11,7 @@ class Supply : Item
         playerStats.Temperature += data.TemperatureGive;
         base.RemoveItem();
         base.UseItem();
-        IsUsed = true;
+        isUsed = true;
         Destroy(gameObject);
     }
 }
-

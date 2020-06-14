@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 
 [CreateAssetMenu(fileName = "New Weapon", menuName = "Weapon", order = 51)]
@@ -22,10 +21,7 @@ public class WeaponData : ItemData
 
     public float Damage
     {
-        get
-        {
-            return _damage;
-        }
+        get => _damage;
         set
         {
             _damage = value;
@@ -33,10 +29,7 @@ public class WeaponData : ItemData
     }
     public int MagazineCapacity
     {
-        get
-        {
-            return _magazineCapacity;
-        }
+        get => _magazineCapacity;
         set
         {
             _magazineCapacity = value;
@@ -44,10 +37,7 @@ public class WeaponData : ItemData
     }
     public int AmmoInMagazine
     {
-        get
-        {
-            return _ammoInMagazine;
-        }
+        get => _ammoInMagazine;
         set
         {
             _ammoInMagazine = value;
@@ -55,10 +45,7 @@ public class WeaponData : ItemData
     }
     public float FiringRate
     {
-        get
-        {
-            return _firingRate;
-        }
+        get => _firingRate;
         set
         {
             _firingRate = value;
@@ -66,10 +53,7 @@ public class WeaponData : ItemData
     }
     public float ReloadTime
     {
-        get
-        {
-            return _reloadTime;
-        }
+        get => _reloadTime;
         set
         {
             _reloadTime = value;

@@ -1,8 +1,6 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.UI;
+﻿using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class SlotUI : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler, IPointerExitHandler
 {
@@ -10,12 +8,11 @@ public class SlotUI : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler,
     public InventoryUI BackPackUI;
     public Text Text;
     public Image BackGround;
-
     public int ID;
 
     public void UpdateData(ItemData trashData)
     {
-        if(trashData == null)
+        if (trashData == null)
         {
             ItemSprite.sprite = null;
             Text.text = "";
@@ -32,7 +29,7 @@ public class SlotUI : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler,
                 Text.text = "";
             }
         }
-    }  
+    }
 
     public void Drop()
     {
@@ -49,16 +46,14 @@ public class SlotUI : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler,
         BackPackUI.LeftClick(ID);
     }
 
-
     public void OnPointerEnter(PointerEventData eventData)
     {
         var x = BackPackUI.inventory.GetSlotInfo(ID);
-        UIManager.instance.ItemContexMenu.GetComponent<ItemCont>().Enable(x);     
+        UIManager.instance.itemContexMenu.GetComponent<ItemCont>().Enable(x);
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
-
-        UIManager.instance.ItemContexMenu.GetComponent<ItemCont>().Disable();
+        UIManager.instance.itemContexMenu.GetComponent<ItemCont>().Disable();
     }
 }

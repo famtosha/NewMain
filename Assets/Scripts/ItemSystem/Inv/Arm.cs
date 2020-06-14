@@ -1,17 +1,16 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 public class Arm : MonoBehaviour
 {
-    public List<Inventory> inventorys;
-    private StorageUI anotherUI;
-
     public bool IsAnyChestOpened = false;
+    public List<Inventory> inventorys;
+
+    private StorageUI anotherUI;
 
     private void Start()
     {
-        anotherUI = UIManager.instance.AnotherInventoryMenu.GetComponentInChildren<StorageUI>();
+        anotherUI = UIManager.instance.anotherInventoryMenu.GetComponentInChildren<StorageUI>();
     }
 
     public void OpenInventory(Inventory inventory)
@@ -28,28 +27,28 @@ public class Arm : MonoBehaviour
         IsAnyChestOpened = false;
     }
 
-    public void PickUpItem(GameObject Item)
+    public void PickUpItem(GameObject item)
     {
         foreach (var inv in inventorys)
         {
-            Item.SetActive(false);
-            if (inv.AddToFreeSlot(Item))
+            item.SetActive(false);
+            if (inv.AddToFreeSlot(item))
             {
-                Item.transform.SetParent(gameObject.transform);
+                item.transform.SetParent(gameObject.transform);
                 return;
             }
             else
             {
-                Item.SetActive(true);
+                item.SetActive(true);
             }
-        }    
+        }
     }
 
-    public void DropItem(GameObject Item)
+    public void DropItem(GameObject item)
     {
-        if (Item == null) return;
-        Item.SetActive(true);
-        Item.transform.SetParent(null);
-        Item.transform.Translate(2, 0, 0);
+        if (item == null) return;
+        item.SetActive(true);
+        item.transform.SetParent(null);
+        item.transform.Translate(2, 0, 0);
     }
 }

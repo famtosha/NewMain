@@ -1,13 +1,11 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class HotBar : Inventory
 {
     public event Action<int, bool> OnChangeSelectedItem;
-    private ItemShower ItemShower;
 
+    private ItemShower ItemShower;
     private int _hotBarSelected = 0;
 
     public int HotBarSelected
@@ -32,18 +30,18 @@ public class HotBar : Inventory
         ItemShower = gameObject.GetComponentInChildren<ItemShower>();
     }
 
-    protected override void UpdateSlot(int ID)
+    protected override void UpdateSlot(int id)
     {
-        base.UpdateSlot(ID);
-        if (_inventory[ID] == null)
+        base.UpdateSlot(id);
+        if (_inventory[id] == null)
         {
             ItemShower.HideItem();
         }
         else
         {
-            if (ID == HotBarSelected)
+            if (id == HotBarSelected)
             {
-                ItemShower.ShowItem(_inventory[ID]);
+                ItemShower.ShowItem(_inventory[id]);
             }
         }
     }
@@ -78,7 +76,7 @@ public class HotBar : Inventory
 
     private void UseItem()
     {
-        if (!UIManager.instance.IsBackPackOpen)
+        if (!UIManager.instance.backPackMenu.isPanelEnable)
         {
             var item = _inventory[HotBarSelected];
             if (item)
@@ -95,7 +93,7 @@ public class HotBar : Inventory
 
     private void ReloadWeapon()
     {
-        if (!UIManager.instance.IsBackPackOpen)
+        if (!UIManager.instance.backPackMenu.isPanelEnable)
         {
             _inventory[HotBarSelected]?.GetComponent<Weapon>()?.Reload();
         }

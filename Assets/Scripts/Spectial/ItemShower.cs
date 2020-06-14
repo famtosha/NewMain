@@ -1,24 +1,22 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class ItemShower : MonoBehaviour
 {
     public GameObject ItemToShow;
 
-    public void ShowItem(GameObject Item)
+    public void ShowItem(GameObject item)
     {
         if (ItemToShow != null) HideItem();
-        if (Item)
+        if (item)
         {
-            ItemToShow = Item;
+            ItemToShow = item;
             ItemToShow.gameObject.SetActive(true);
             ItemToShow.transform.position = gameObject.transform.position;
             ItemToShow.gameObject.transform.rotation = gameObject.transform.rotation;
             ItemToShow.GetComponent<BoxCollider2D>().enabled = false;
             ItemToShow.gameObject.transform.Rotate(0, 0, 90);
             ItemToShow.GetComponent<Item>().EquipItem();
-        }       
+        }
     }
 
     public void HideItem()

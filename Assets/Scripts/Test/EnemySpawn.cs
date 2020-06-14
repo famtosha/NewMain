@@ -1,12 +1,10 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class EnemySpawn : InteractebleItem
 {
-    [SerializeField] GameObject EnemySpawnPoint = null;
-    [SerializeField] int EnemyCount = 1;
-    [SerializeField] GameObject Enemy = null;
+    [SerializeField] private GameObject EnemySpawnPoint = null;
+    [SerializeField] private int EnemyCount = 1;
+    [SerializeField] private GameObject Enemy = null;
 
     public override void UseObj(GameObject interacter)
     {

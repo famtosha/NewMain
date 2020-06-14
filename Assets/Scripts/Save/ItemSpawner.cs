@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class ItemSpawner : MonoBehaviour
 {
@@ -11,14 +9,11 @@ public class ItemSpawner : MonoBehaviour
         if (instance == null)
         {
             instance = this;
-            //print("Load ItemSpawner");
         }
         else
         {
             Destroy(gameObject);
         }
-
-        //DontDestroyOnLoad(gameObject);
     }
     public GameObject SpawnItem(int ID)
     {

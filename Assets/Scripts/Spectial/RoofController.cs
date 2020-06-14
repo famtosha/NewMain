@@ -1,9 +1,5 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.Tilemaps;
-using UnityEngine.EventSystems;
-using System;
 
 public class RoofController : MonoBehaviour
 {
@@ -41,12 +37,12 @@ public class RoofController : MonoBehaviour
         if (collision.gameObject.name == Player.name)
         {
             ultrashit.IsInRoom = true;
-        }      
+        }
     }
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if(collision.gameObject.name == Player.name)
+        if (collision.gameObject.name == Player.name)
         {
             IsInRoom = true;
             ultrashit.IsInRoom = true;
@@ -59,6 +55,6 @@ public class RoofController : MonoBehaviour
         {
             IsInRoom = false;
             ultrashit.IsInRoom = false;
-        }         
+        }
     }
 }

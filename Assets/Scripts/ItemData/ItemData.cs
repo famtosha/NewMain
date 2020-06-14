@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Net.NetworkInformation;
-using UnityEngine;
-using UnityEngine.UI;
+﻿using UnityEngine;
 
 [CreateAssetMenu(fileName = "New Item", menuName = "Item", order = 51)]
 
@@ -24,7 +19,7 @@ public class ItemData : ScriptableObject
 
     public int Count
     {
-        get { return _count; }
+        get => _count;
         set { if (value >= 0 && value < MaxCount) { _count = value; } }
-    }  
+    }
 }

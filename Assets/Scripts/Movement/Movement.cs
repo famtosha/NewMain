@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Movement : MonoBehaviour
@@ -24,7 +22,7 @@ public class Movement : MonoBehaviour
         playerStats = gameObject.GetComponent<Stats>().playerStats;
     }
 
-    void Update()
+    private void Update()
     {
         MovePlayer();
         MoveCamera();
@@ -51,7 +49,7 @@ public class Movement : MonoBehaviour
         var moveDirection = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
         playerRB.MovePosition((Vector2)playerRB.transform.position + moveDirection * playerStats.MovementSpeed * Time.deltaTime);
 
-        if(moveDirection != Vector2.zero)
+        if (moveDirection != Vector2.zero)
         {
             OnPlayerMove?.Invoke();
         }

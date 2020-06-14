@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class GameMan : MonoBehaviour
 {
@@ -12,7 +10,6 @@ public class GameMan : MonoBehaviour
         if (instance == null)
         {
             instance = this;
-            //print("Load Scene Change");
         }
         else
         {
@@ -20,5 +17,4 @@ public class GameMan : MonoBehaviour
         }
         Player = gameObject;
     }
-
 }

@@ -1,5 +1,4 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Bullet : MonoBehaviour
@@ -13,7 +12,7 @@ public class Bullet : MonoBehaviour
             bool isComplete = false;
             moveSpeed /= Vector2.Distance(startPosition, endPosition);
             while (!isComplete)
-            {               
+            {
                 transform.position = Vector2.Lerp(startPosition, endPosition, _time);
                 _time += Time.deltaTime * moveSpeed;
                 if (_time >= 1) isComplete = true;

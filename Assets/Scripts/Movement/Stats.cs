@@ -1,19 +1,16 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
 using UnityEngine;
 
 class Stats : MonoBehaviour, ITarget
 {
+    public PlayerStats playerStats = new PlayerStats();
     public event Action<PlayerStats> UpdateStats;
     public PPController pPController;
     public bool IsInRoom = false;
+
     private Timer buffTimer;
     private Timer statsTimer;
-
     private BuffList buffList = new BuffList();
-
-    public PlayerStats playerStats = new PlayerStats();
 
     private void Start()
     {
@@ -25,7 +22,7 @@ class Stats : MonoBehaviour, ITarget
 
     private void Update()
     {
-        if(Input.GetKeyDown(KeyCode.O)) buffList.AddToList(BuffDB.CreateBuff(BuffType.Cold, 10, true));
+        if (Input.GetKeyDown(KeyCode.O)) buffList.AddToList(BuffDB.CreateBuff(BuffType.Cold, 10, true));
     }
 
     private void OnDataChanged()

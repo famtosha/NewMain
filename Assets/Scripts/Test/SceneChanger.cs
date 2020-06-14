@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class SceneChanger : MonoBehaviour
 {
@@ -11,7 +9,6 @@ public class SceneChanger : MonoBehaviour
         if (instance == null)
         {
             instance = this;
-            print("Load Scene Change");
         }
         else
         {
