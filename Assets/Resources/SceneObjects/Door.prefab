@@ -46,6 +46,8 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -70,6 +72,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!102 &307690190629095245
 TextMesh:
   serializedVersion: 3
@@ -193,6 +196,7 @@ GameObject:
   - component: {fileID: 8649302217583716287}
   - component: {fileID: 2151546216824016626}
   - component: {fileID: 1561853486354202542}
+  - component: {fileID: 1701910635505899343}
   m_Layer: 0
   m_Name: Main
   m_TagString: Untagged
@@ -246,6 +250,8 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -403,6 +409,32 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1701910635505899343
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6690138314818444487}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7db70e0ea77f5ac47a8f4565a9406397, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ShadowGroup: 0
+  m_HasRenderer: 1
+  m_UseRendererSilhouette: 1
+  m_CastsShadows: 1
+  m_SelfShadows: 0
+  m_ApplyToSortingLayers: 8f77fa8123a6f8ef9959d55dab99b42b000000009bdb04ce
+  m_ShapePath:
+  - {x: -0.32035425, y: -0.04046346, z: 0}
+  - {x: 0.3197162, y: -0.04029168, z: 0}
+  - {x: 0.3206071, y: 0.050083257, z: 0}
+  - {x: -0.319974, y: 0.05020426, z: 0}
+  m_ShapePathHash: -1754238768
+  m_Mesh: {fileID: 0}
+  m_InstanceId: -19762
 --- !u!1 &7636941258559755152
 GameObject:
   m_ObjectHideFlags: 0
