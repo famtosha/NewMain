@@ -1,24 +1,36 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using UnityEditor;
+using UnityEditor.Tilemaps;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
 public class MoveSound : MonoBehaviour
 {
     [SerializeField] private float stepCoolDownLeft;
-    public Tilemap groundTileMap;
-    public Tilemap floorTileMap;
     private AudioSource stepSoundSource;
 
-    public List<TileBase> SnowTiles;
-    public List<TileBase> WoodTiles;
-    public List<TileBase> RoadTiles;
+    public Tilemap groundTileMap;
+    public Tilemap floorTileMap;
 
     public AudioClip SnowStepSound;
-    public AudioClip RoadStepSound;
     public AudioClip WoodStepSound;
+    public AudioClip StoneGroundSound;
+    public AudioClip IronGroundSound;
     public AudioClip DefaultGroundSound;
 
     public float StepCoolDown = 0.5f;
+
+    private Dictionary<TileMaterial, AudioClip> StepSoundDict = new Dictionary<TileMaterial, AudioClip>();
+
+    private void Awake()
+    {
+        StepSoundDict.Add(TileMaterial.Snow, SnowStepSound);
+        StepSoundDict.Add(TileMaterial.Wood, WoodStepSound);
+        StepSoundDict.Add(TileMaterial.Stone, StoneGroundSound);
+        StepSoundDict.Add(TileMaterial.Iron, IronGroundSound);
+        StepSoundDict.Add(TileMaterial.Default, DefaultGroundSound);
+    }
 
     private void Start()
     {
@@ -45,33 +57,26 @@ public class MoveSound : MonoBehaviour
 
     private void PlayStepSound()
     {
-        if (stepSoundSource)
+        var tile = GetHighestTile();
+        if (tile)
         {
-            TileBase shit = floorTileMap.GetTile(Vector3Int.FloorToInt(transform.position));            
-            AudioClip sound = GetSound(shit);          
-
-            if(sound == null)
-            {
-                shit = groundTileMap.GetTile(Vector3Int.FloorToInt(transform.position));
-                sound = GetSound(shit);
-            }
-
-            if(sound != null)
-            {
-                stepSoundSource.PlayOneShot(sound);
-            }
-            else
-            {
-                stepSoundSource.PlayOneShot(DefaultGroundSound);
-            }
+            AudioClip stepSound = StepSoundDict[tile.tileMaterial];
+            stepSoundSource.PlayOneShot(stepSound);
         }
+
     }
 
-    private AudioClip GetSound(TileBase tile)
+    private MattersTile GetHighestTile()
     {
-        if (SnowTiles.IndexOf(tile) != -1) return SnowStepSound;
-        if (RoadTiles.IndexOf(tile) != -1) return RoadStepSound;
-        if (WoodTiles.IndexOf(tile) != -1) return WoodStepSound;
-        return null;
+        MattersTile tile = floorTileMap.GetTile(Vector3Int.FloorToInt(transform.position)) as MattersTile;
+        if (tile)
+        {
+            return tile;
+        }
+        else
+        {
+            tile = groundTileMap.GetTile(Vector3Int.FloorToInt(transform.position)) as MattersTile;
+            return tile;
+        }
     }
 }

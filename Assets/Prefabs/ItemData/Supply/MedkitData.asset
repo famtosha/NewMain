@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89614d340046b32449bef9ed66ff6c49, type: 3}
+  m_Name: MedkitData
+  m_EditorClassIdentifier: 
+  Rarity: 0
+  ItemType: 5
+  ID: 1
+  Name: MedKit
+  _count: 1
+  MaxCount: 1
+  SpriteInArm: {fileID: 21300000, guid: 4c9b20249c110e84e83593c2bccba5d4, type: 3}
+  SpriteInWorld: {fileID: 21300000, guid: 4c9b20249c110e84e83593c2bccba5d4, type: 3}
+  Description: Some heal
+  Tradable: 0
+  Craftability: 0
+  Craftable: 0
+  _foodGive: 0
+  _waterGive: 0
+  vodkaGive: 0
+  _temperatureGive: 0
+  _healthGive: 50
