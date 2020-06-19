@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 195088526907892061}
   - component: {fileID: 195088526907892062}
   - component: {fileID: 195088526907892063}
+  - component: {fileID: 238131243435551307}
   m_Layer: 0
   m_Name: Coach
   m_TagString: Untagged
@@ -48,6 +49,8 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -69,8 +72,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 733256107
-  m_SortingLayer: -1
+  m_SortingLayerID: -100382789
+  m_SortingLayer: -2
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: a46316439f907aa40aef338759359854, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -122,7 +125,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.4803516, y: 0.027674928}
+  m_Offset: {x: -0.47457, y: 0.027674928}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -133,7 +136,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.09394628, y: 0.30395156}
+  m_Size: {x: 0.10550946, y: 0.30395156}
   m_EdgeRadius: 0
 --- !u!61 &195088526907892063
 BoxCollider2D:
@@ -161,3 +164,38 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.12905598, y: 0.26872864}
   m_EdgeRadius: 0
+--- !u!114 &238131243435551307
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 195088526907892034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7db70e0ea77f5ac47a8f4565a9406397, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ShadowGroup: 0
+  m_HasRenderer: 1
+  m_UseRendererSilhouette: 1
+  m_CastsShadows: 1
+  m_SelfShadows: 0
+  m_ApplyToSortingLayers: 8f77fa8123a6f8ef9959d55dab99b42b000000009bdb04ce
+  m_ShapePath:
+  - {x: 0.3079215, y: 0.12093706, z: 0}
+  - {x: 0.30469102, y: -0.10967627, z: 0}
+  - {x: 0.43932325, y: -0.110112675, z: 0}
+  - {x: 0.43934557, y: 0.1587346, z: 0}
+  - {x: 0.37958413, y: 0.15663882, z: 0}
+  - {x: 0.37836218, y: 0.24748202, z: 0}
+  - {x: -0.33153516, y: 0.24864435, z: 0}
+  - {x: -0.4799763, y: 0.23961382, z: 0}
+  - {x: -0.4786873, y: 0.18000688, z: 0}
+  - {x: -0.5278536, y: 0.18020411, z: 0}
+  - {x: -0.52474594, y: -0.12375861, z: 0}
+  - {x: -0.42544708, y: -0.12473212, z: 0}
+  - {x: -0.42588234, y: 0.12764253, z: 0}
+  m_ShapePathHash: -1014188918
+  m_Mesh: {fileID: 0}
+  m_InstanceId: -68648

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8704412488374307479}
   - component: {fileID: 953066228150216480}
   - component: {fileID: 3229399297839218095}
+  - component: {fileID: 2764822242942726785}
   m_Layer: 0
   m_Name: Chair
   m_TagString: Untagged
@@ -47,6 +48,8 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -68,8 +71,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 733256107
-  m_SortingLayer: -1
+  m_SortingLayerID: -100382789
+  m_SortingLayer: -2
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 2683830b6860a3344a2975d0e2e05de9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -134,3 +137,37 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.28840673, y: 0.26000106}
   m_EdgeRadius: 0
+--- !u!114 &2764822242942726785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8704412488374307482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7db70e0ea77f5ac47a8f4565a9406397, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ShadowGroup: 0
+  m_HasRenderer: 1
+  m_UseRendererSilhouette: 1
+  m_CastsShadows: 1
+  m_SelfShadows: 0
+  m_ApplyToSortingLayers: 8f77fa8123a6f8ef9959d55dab99b42b000000009bdb04ce
+  m_ShapePath:
+  - {x: -0.1696626, y: -0.11977291, z: 0}
+  - {x: -0.16018784, y: -0.11981201, z: 0}
+  - {x: -0.16000342, y: -0.12987232, z: 0}
+  - {x: -0.07961595, y: -0.13001442, z: 0}
+  - {x: 0.11992788, y: -0.12004089, z: 0}
+  - {x: 0.120150924, y: -0.1403017, z: 0}
+  - {x: 0.19982278, y: -0.14027691, z: 0}
+  - {x: 0.1996634, y: 0.16012478, z: 0}
+  - {x: 0.19023204, y: 0.16993904, z: 0}
+  - {x: 0.121038556, y: 0.16892147, z: 0}
+  - {x: 0.1193434, y: 0.14080429, z: 0}
+  - {x: -0.16985452, y: 0.13998413, z: 0}
+  m_ShapePathHash: -448644923
+  m_Mesh: {fileID: 0}
+  m_InstanceId: -111010

@@ -10,7 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 413601248019350210}
   - component: {fileID: 413601248019350211}
-  - component: {fileID: 413601248019350077}
+  - component: {fileID: 7805253286164271920}
+  - component: {fileID: 1582245566091207952}
   m_Layer: 0
   m_Name: Tualet budget
   m_TagString: Untagged
@@ -46,6 +47,8 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -67,8 +70,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -268917213
-  m_SortingLayer: -3
+  m_SortingLayerID: -100382789
+  m_SortingLayer: -2
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 879df506cd80a7b4ca83e14462042599, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -81,8 +84,34 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &413601248019350077
-BoxCollider2D:
+--- !u!114 &7805253286164271920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 413601248019350208}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7db70e0ea77f5ac47a8f4565a9406397, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ShadowGroup: 0
+  m_HasRenderer: 1
+  m_UseRendererSilhouette: 1
+  m_CastsShadows: 1
+  m_SelfShadows: 0
+  m_ApplyToSortingLayers: 8f77fa8123a6f8ef9959d55dab99b42b000000009bdb04ce
+  m_ShapePath:
+  - {x: -0.19809839, y: -0.26382336, z: 0}
+  - {x: 0.19809856, y: -0.25344566, z: 0}
+  - {x: 0.3697193, y: 0.41708982, z: 0}
+  - {x: -0.19463922, y: 0.26728246, z: 0}
+  m_ShapePathHash: -864618184
+  m_Mesh: {fileID: 0}
+  m_InstanceId: 143768
+--- !u!68 &1582245566091207952
+EdgeCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -95,15 +124,67 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.64}
-    newSize: {x: 0.64, y: 0.64}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.4, y: 0.52}
   m_EdgeRadius: 0
+  m_Points:
+  - {x: 0.08028616, y: 0.2600071}
+  - {x: -0.049907334, y: 0.26004797}
+  - {x: -0.049694855, y: 0.24998593}
+  - {x: -0.15995602, y: 0.24980168}
+  - {x: -0.16792798, y: 0.23945661}
+  - {x: -0.19029126, y: 0.17906614}
+  - {x: -0.19015202, y: 0.040168412}
+  - {x: -0.19926, y: 0.039340243}
+  - {x: -0.19965595, y: 0.009721402}
+  - {x: -0.21006626, y: 0.009766414}
+  - {x: -0.20975919, y: -0.1094013}
+  - {x: -0.2095036, y: -0.10983618}
+  - {x: -0.20217595, y: -0.13647765}
+  - {x: -0.19127698, y: -0.15844344}
+  - {x: -0.18223232, y: -0.17482184}
+  - {x: -0.16470799, y: -0.19428024}
+  - {x: -0.15639386, y: -0.20330924}
+  - {x: -0.14599155, y: -0.21405868}
+  - {x: -0.1368214, y: -0.22277527}
+  - {x: -0.1200333, y: -0.23047447}
+  - {x: -0.1170731, y: -0.23585357}
+  - {x: -0.11556668, y: -0.23745382}
+  - {x: -0.109340325, y: -0.2404579}
+  - {x: -0.080205195, y: -0.25000572}
+  - {x: -0.06968196, y: -0.2601303}
+  - {x: 0.019673513, y: -0.26012534}
+  - {x: 0.019754384, y: -0.2500744}
+  - {x: 0.049591802, y: -0.2498249}
+  - {x: 0.0584831, y: -0.24119033}
+  - {x: 0.06844862, y: -0.23146781}
+  - {x: 0.06977613, y: -0.23010215}
+  - {x: 0.083262615, y: -0.22004433}
+  - {x: 0.106777176, y: -0.20216292}
+  - {x: 0.115304165, y: -0.19379692}
+  - {x: 0.12824553, y: -0.17570227}
+  - {x: 0.14543952, y: -0.15081786}
+  - {x: 0.15768431, y: -0.13308257}
+  - {x: 0.17102355, y: -0.10118788}
+  - {x: 0.17047423, y: -0.08033865}
+  - {x: 0.17981946, y: -0.08095396}
+  - {x: 0.18017004, y: -0.020031333}
+  - {x: 0.17026252, y: -0.010291265}
+  - {x: 0.1699066, y: 0.029608564}
+  - {x: 0.1605873, y: 0.039649613}
+  - {x: 0.16018829, y: 0.10987438}
+  - {x: 0.16983566, y: 0.120109975}
+  - {x: 0.17006263, y: 0.13961758}
+  - {x: 0.17979239, y: 0.13997616}
+  - {x: 0.18014449, y: 0.15980801}
+  - {x: 0.18972434, y: 0.16998257}
+  - {x: 0.18992348, y: 0.22971424}
+  - {x: 0.18031082, y: 0.22979322}
+  - {x: 0.17993048, y: 0.23948255}
+  - {x: 0.17025146, y: 0.24000058}
+  - {x: 0.1700363, y: 0.24983183}
+  - {x: 0.1403446, y: 0.24984518}
+  - {x: 0.11003225, y: 0.2599545}
+  - {x: 0.080114745, y: 0.2599259}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
