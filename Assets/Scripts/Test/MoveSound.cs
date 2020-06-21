@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using UnityEditor;
-using UnityEditor.Tilemaps;
+﻿using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
@@ -33,9 +30,18 @@ public class MoveSound : MonoBehaviour
     }
 
     private void Start()
+    { 
+        stepSoundSource = gameObject.GetComponent<AudioSource>();
+    }
+
+    private void OnEnable()
     {
         Movement.OnPlayerMove += PlayerStepHandler;
-        stepSoundSource = gameObject.GetComponent<AudioSource>();
+    }
+
+    private void OnDisable()
+    {
+        Movement.OnPlayerMove -= PlayerStepHandler;
     }
 
     private void Update()
@@ -68,15 +74,22 @@ public class MoveSound : MonoBehaviour
 
     private MattersTile GetHighestTile()
     {
-        MattersTile tile = floorTileMap.GetTile(Vector3Int.FloorToInt(transform.position)) as MattersTile;
-        if (tile)
+        if (floorTileMap)
         {
-            return tile;
+            MattersTile tile = floorTileMap.GetTile(Vector3Int.FloorToInt(transform.position)) as MattersTile;
+            if (tile)
+            {
+                return tile;
+            }
+            else
+            {
+                if (groundTileMap)
+                {
+                    tile = groundTileMap.GetTile(Vector3Int.FloorToInt(transform.position)) as MattersTile;
+                    return tile;
+                }
+            }
         }
-        else
-        {
-            tile = groundTileMap.GetTile(Vector3Int.FloorToInt(transform.position)) as MattersTile;
-            return tile;
-        }
+        return null;
     }
 }

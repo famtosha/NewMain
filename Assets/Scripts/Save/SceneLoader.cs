@@ -7,16 +7,7 @@ public class SceneLoader : MonoBehaviour
 
     private void Awake()
     {
-        if (instance == null)
-        {
-            instance = this;
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
-
-        DontDestroyOnLoad(gameObject);
+        instance = this;
     }
 
     public void LoadScene(int sceneNumber)

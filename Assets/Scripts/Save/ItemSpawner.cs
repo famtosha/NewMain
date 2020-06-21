@@ -6,15 +6,9 @@ public class ItemSpawner : MonoBehaviour
 
     private void Awake()
     {
-        if (instance == null)
-        {
-            instance = this;
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
+        instance = this;
     }
+
     public GameObject SpawnItem(int ID)
     {
         try

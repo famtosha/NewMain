@@ -3,7 +3,6 @@
 public class ChestSpawner : MonoBehaviour
 {
     public GameObject ChestPrefab;
-    public ItemSpawner ItemSpawner;
     public Arm PlayerArm;
     public ItemType itemType;
 
@@ -17,7 +16,7 @@ public class ChestSpawner : MonoBehaviour
         int itemCount = Random.Range(0, ChestInventory.InventorySize);
         for (int i = 0; i < itemCount; i++)
         {
-            GameObject item = ItemSpawner.SpawnRandomItem(itemType);
+            GameObject item = ItemSpawner.instance.SpawnRandomItem(itemType);
             ChestInventory.AddToFreeSlot(item);
             item.SetActive(false);
         }

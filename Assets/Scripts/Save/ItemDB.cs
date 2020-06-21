@@ -9,14 +9,7 @@ public class ItemDB : MonoBehaviour
 
     private void Awake()
     {
-        if (instance == null)
-        {
-            instance = this;
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
+        instance = this;
         LoadDataBase();
     }
 
