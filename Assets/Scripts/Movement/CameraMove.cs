@@ -2,18 +2,23 @@
 
 public class CameraMove : MonoBehaviour
 {
-    public bool IsInRoom = false;
 
-    [SerializeField] private Transform PlayerPos = null;
-    [SerializeField] private Transform CameraPos = null;
-    [SerializeField] private Camera Camera = null;
     [SerializeField] private float CameraMin = 0;
     [SerializeField] private float CameraMax = 0;
+
+    public bool IsInRoom = false;
+
+    private Transform CameraPos = null;
+    private Transform PlayerPos = null;
+    private Camera Camera = null;
+
     private float _time = 0f;
 
     private void Start()
     {
         PlayerPos = GameMan.instance.Player.transform;
+        CameraPos = gameObject.transform;
+        Camera = gameObject.GetComponent<Camera>();
     }
 
     void Update()

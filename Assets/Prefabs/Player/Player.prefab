@@ -1,77 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1636661244
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1636661245}
-  - component: {fileID: 1636661246}
-  m_Layer: 8
-  m_Name: Point Light 2D
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1636661245
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1636661244}
-  m_LocalRotation: {x: -0, y: -0, z: -0.02984404, w: 0.9995546}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 4570667679575164160}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1636661246
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1636661244}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_LightType: 3
-  m_BlendStyleIndex: 0
-  m_FalloffIntensity: 0.5
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1
-  m_LightVolumeOpacity: 0
-  m_ApplyToSortingLayers: 8f77fa8123a6f8ef9959d55d000000009bdb04ce
-  m_LightCookieSprite: {fileID: 0}
-  m_UseNormalMap: 0
-  m_LightOrder: 0
-  m_AlphaBlendOnOverlap: 0
-  m_ShadowIntensity: 1
-  m_ShadowVolumeIntensity: 0
-  m_PointLightInnerAngle: 70
-  m_PointLightOuterAngle: 70
-  m_PointLightInnerRadius: 0
-  m_PointLightOuterRadius: 3.18
-  m_PointLightDistance: 3
-  m_PointLightQuality: 1
-  m_ShapeLightParametricSides: 5
-  m_ShapeLightParametricAngleOffset: 0
-  m_ShapeLightParametricRadius: 1
-  m_ShapeLightFalloffSize: 0.5
-  m_ShapeLightFalloffOffset: {x: 0, y: 0}
-  m_ShapePath:
-  - {x: -0.5, y: -0.5, z: 0}
-  - {x: 0.5, y: -0.5, z: 0}
-  - {x: 0.5, y: 0.5, z: 0}
-  - {x: -0.5, y: 0.5, z: 0}
 --- !u!1 &2787206929228852045
 GameObject:
   m_ObjectHideFlags: 0
@@ -337,7 +265,6 @@ Transform:
   - {fileID: 2243423248423278946}
   - {fileID: 1754657070696981724}
   - {fileID: 2988928060931933933}
-  - {fileID: 1636661245}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -592,35 +519,10 @@ MonoBehaviour:
   stepCoolDownLeft: 0
   groundTileMap: {fileID: 0}
   floorTileMap: {fileID: 0}
-  SnowTiles:
-  - {fileID: 11400000, guid: 49d377c2bff70b84eb15e7a34dce541e, type: 2}
-  - {fileID: 11400000, guid: 771aac5219e084540a571c9dae05e86d, type: 2}
-  - {fileID: 11400000, guid: 6afaaa468420c954fa15cedf8f6a5571, type: 2}
-  - {fileID: 11400000, guid: dd4d9b2197352334a915abdf64198ef3, type: 2}
-  - {fileID: 11400000, guid: 57f5d791b5dbad249b8c85e0ae2e1e58, type: 2}
-  - {fileID: 11400000, guid: b24a825215346f94ba357dfd4ac4458e, type: 2}
-  - {fileID: 11400000, guid: 7bf180f57c2723e48ad891e92f933efe, type: 2}
-  - {fileID: 11400000, guid: 911bf7eea2a39f4488b88eca9b42aeb6, type: 2}
-  - {fileID: 11400000, guid: 5f006d34f0dc4104981c76cdb2d735e0, type: 2}
-  - {fileID: 11400000, guid: 41a612056defec84c8943cf0487fbc73, type: 2}
-  - {fileID: 11400000, guid: 716b791f3db8ccd4da85a7f6c67444ed, type: 2}
-  - {fileID: 11400000, guid: dc613c383c74ca343a6bc37e9f6d110a, type: 2}
-  - {fileID: 11400000, guid: 5833219e5beadf04d8e16460b37d2650, type: 2}
-  - {fileID: 11400000, guid: 946c6e7cc34781d428e415ef34e38aa2, type: 2}
-  WoodTiles:
-  - {fileID: 11400000, guid: 86204bce51b0d6c48aad67d36192a652, type: 2}
-  - {fileID: 11400000, guid: 94f37621786919549a99046d5619e5f1, type: 2}
-  - {fileID: 11400000, guid: 582c30663e9ad1f4891465cf633f6385, type: 2}
-  - {fileID: 11400000, guid: 962932fe6308feb4f9c8c6d020612872, type: 2}
-  RoadTiles:
-  - {fileID: 11400000, guid: 11a116e3115b8ca419740b20f6115677, type: 2}
-  - {fileID: 11400000, guid: 42e96930950e75e498b68472c84b0c33, type: 2}
-  - {fileID: 11400000, guid: 36c5b85b49110f044925c7b6fbc77a44, type: 2}
-  - {fileID: 11400000, guid: 3f3b6dfd3e3c38b45ace00002a728bf0, type: 2}
-  - {fileID: 11400000, guid: aaff2c58a8d934e4384bf16cece0b76c, type: 2}
   SnowStepSound: {fileID: 8300000, guid: b79bfce01c5ffa74eb11e8c77c446709, type: 3}
-  RoadStepSound: {fileID: 8300000, guid: 22f6dc7bc6615c147ac9fd3459846252, type: 3}
   WoodStepSound: {fileID: 8300000, guid: adb98f1c46b64dc49a95d9ba090f0bfe, type: 3}
+  StoneGroundSound: {fileID: 0}
+  IronGroundSound: {fileID: 0}
   DefaultGroundSound: {fileID: 8300000, guid: ba7c3611fb3ec664b85827077da2b158, type: 3}
   StepCoolDown: 0.5
 --- !u!82 &1225781089627536400
