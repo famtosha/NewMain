@@ -12,8 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3002c1217c3ae64f9918185499ee679, type: 3}
   m_Name: Crates_1
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: -5494983281948140313, guid: cf25e56948c850348917325f2bafe8da,
-    type: 3}
+  m_Sprite: {fileID: -5494983281948140313, guid: cf25e56948c850348917325f2bafe8da, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1

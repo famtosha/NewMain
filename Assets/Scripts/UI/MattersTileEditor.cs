@@ -4,6 +4,8 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
 
+#if UNITY_EDITOR
+
 [CanEditMultipleObjects]
 [CustomEditor(typeof(MattersTile))]
 
@@ -33,3 +35,5 @@ public class MattersTileEditor : Editor
         return new Texture2D(100,100);
     }
 }
+
+#endif

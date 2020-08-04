@@ -170,6 +170,8 @@ public class GridShadowCastersGenerator : MonoBehaviour {
     }
 }
 
+#if UNITY_EDITOR
+
 [CustomEditor(typeof(GridShadowCastersGenerator))]
 public class GridShadowCastersGeneratorEditor : Editor {
 
@@ -193,3 +195,5 @@ public class GridShadowCastersGeneratorEditor : Editor {
         }
     }
 }
+
+#endif

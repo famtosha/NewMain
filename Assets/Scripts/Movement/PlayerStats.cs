@@ -9,7 +9,7 @@ public class PlayerStats
     private float thirst = 100;
     private float health = 100;
     private float temperature = 100f;
-    private float movementSpeed = 7.5f;
+    private float movementSpeed = 2.5f;
     private float liver = 0f;
 
 
